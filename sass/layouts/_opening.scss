@@ -1,0 +1,61 @@
+.opening {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 9rem;
+
+    &_container {
+        width: 100%;
+        height: 454px;
+        display: flex;
+        background-color: aqua;
+        @include containerPosition;
+        background: #FFFFFF;
+        border-width: 3px 3px 7px 7px;
+        border-style: solid;
+        border-color: #000000;
+
+
+        &-text {
+        width: 50%;
+        padding: 105px 50px 104px 80px;
+       
+
+        h2 {
+            font-family: $font-primary-title;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 57px;
+            letter-spacing: 0.02em;
+            color: #000000;
+            margin-bottom: 2rem;
+        }
+
+        &-box {
+            width: 100%;
+            max-width: 388px;
+            display: flex;
+            justify-content: space-between;
+            @include textbox;
+            color: $color-text-primary;
+            margin-bottom: 3rem;
+        }
+
+        }
+
+        &-photo {
+            width: 50%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+
+    }
+
+}

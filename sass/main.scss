@@ -1,0 +1,22 @@
+@import "1-variables/var";
+@import "2-abstract/parallax";
+
+@import "base";
+@import "typo";
+
+// Layouts
+
+@import "layouts/events";
+@import "layouts/header";
+@import "layouts/infoBox";
+@import "layouts/ourStory";
+@import "layouts/services";
+@import "layouts/opening";
+@import "layouts/footer";
+
+// components
+
+@import "components/btn";
+@import "components/nav";
+@import "components/stickynav";
+

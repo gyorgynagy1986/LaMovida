@@ -1,0 +1,106 @@
+.events {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    &_container {
+        @include containerPosition;
+        display: flex;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 9rem;
+
+        &-text {
+            display: flex;    
+            padding-left: 4rem;    
+            width: 50%; 
+            min-height: 500px;
+
+            h2 {
+               font-family: $font-primary-title;
+               font-weight: 400;
+               font-size: 42px;
+               line-height: 120%;
+               letter-spacing: 0.02em;
+               color: $color-text-title-black;
+               text-align: right;
+               margin-bottom: 2rem
+            }
+
+            &-textbox {
+                width: 100%;
+                max-width: 416px;
+    
+                @include textbox;
+                text-align: right !important;
+                color: $color-text-primary;
+                margin-bottom: 4rem;
+            }
+
+            .events_social {
+                display: flex;
+
+                &-facebook {
+                    display: flex;
+                    margin-right: 4.3rem;
+
+                    img {
+                        margin-right: 1rem;
+                    }
+
+                    button {
+                        line-height: 29px;
+                        color: #000000;
+                        font-size: 24px;
+                    }
+                }
+
+                &-instagram {
+                    display: flex;
+
+                    img {
+                        margin-right: 1rem;
+                    }
+
+                    button {
+                        line-height: 29px;
+                        color: #000000;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+
+        &-photo {
+            width: 50%; 
+            
+            &-circle {
+                width: 50rem;
+                height: 50rem;
+                border: 7px solid #000000;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                img {
+                    object-fit: cover;
+                   
+                }
+    
+            }
+        }
+
+    }
+
+
+}
+
+.prefix-event {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+}

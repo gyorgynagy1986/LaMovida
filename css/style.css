@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap");
+.text-align-right {
+  text-align: right; }
+
+.mb-0 {
+  margin-bottom: 0 !important; }
+
+.svg-container-crab {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0rem;
+  z-index: -1; }
+  .svg-container-crab img {
+    width: auto;
+    height: auto; }
+
+.svg-container-fish {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10rem;
+  bottom: 0;
+  z-index: -1; }
+  .svg-container-fish img {
+    width: auto;
+    height: auto; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      scroll-behavior: auto; } }
+
+body {
+  font-family: "Sniglet", cursive; }
+
+li {
+  list-style: none; }
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+button {
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer; }
+
+.events {
+  padding-left: 5%;
+  padding-right: 5%; }
+  .events_container {
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 9rem; }
+    .events_container-text {
+      display: flex;
+      padding-left: 4rem;
+      width: 50%;
+      min-height: 500px; }
+      .events_container-text h2 {
+        font-family: "Rubik Dirt", cursive;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #000000;
+        text-align: right;
+        margin-bottom: 2rem; }
+      .events_container-text-textbox {
+        width: 100%;
+        max-width: 416px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #666666;
+        text-align: right !important;
+        color: #666666;
+        margin-bottom: 4rem; }
+      .events_container-text .events_social {
+        display: flex; }
+        .events_container-text .events_social-facebook {
+          display: flex;
+          margin-right: 4.3rem; }
+          .events_container-text .events_social-facebook img {
+            margin-right: 1rem; }
+          .events_container-text .events_social-facebook button {
+            line-height: 29px;
+            color: #000000;
+            font-size: 24px; }
+        .events_container-text .events_social-instagram {
+          display: flex; }
+          .events_container-text .events_social-instagram img {
+            margin-right: 1rem; }
+          .events_container-text .events_social-instagram button {
+            line-height: 29px;
+            color: #000000;
+            font-size: 24px; }
+    .events_container-photo {
+      width: 50%; }
+      .events_container-photo-circle {
+        width: 50rem;
+        height: 50rem;
+        border: 7px solid #000000;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .events_container-photo-circle img {
+          object-fit: cover; }
+
+.prefix-event {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column; }
+
+.header {
+  padding-top: 4rem;
+  padding-left: 5%;
+  padding-right: 5%; }
+  .header_container {
+    height: 454px;
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    display: flex;
+    background: #FFFFFF;
+    border-width: 3px 3px 7px 7px;
+    border-style: solid;
+    border-color: #000000; }
+    .header_container-text {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-top: 8.83rem;
+      padding-left: 8rem; }
+      .header_container-text h1 {
+        font-family: "Rubik Dirt", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 2rem; }
+      .header_container-text-textbox {
+        width: 388px;
+        font-style: normal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #666666;
+        color: #666666;
+        margin-bottom: 3rem; }
+      .header_container-text-buttons {
+        display: flex; }
+        .header_container-text-buttons button:not(:last-child) {
+          margin-right: 5rem; }
+    .header_container-photo {
+      width: 50%; }
+      .header_container-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.infoBox {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 9rem; }
+  .infoBox_container {
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    height: 308px;
+    background: #FFF4E5;
+    border-width: 3px 3px 7px 7px;
+    border-style: solid;
+    border-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 14.8rem 5rem 14.8rem; }
+    .infoBox_container h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-family: "Rubik Dirt", cursive;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      color: #FF6B00; }
+    .infoBox_container-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #666666;
+      max-width: 678px;
+      text-align: center;
+      margin-bottom: 2rem; }
+
+.story {
+  padding-top: 9rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 500px;
+  margin-bottom: 9rem; }
+  .story_container {
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%; }
+    .story_container-photo {
+      width: 50%; }
+      .story_container-photo-circle {
+        width: 50rem;
+        height: 50rem;
+        background-color: white;
+        border: 7px solid #000000;
+        border-radius: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .story_container-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+      min-height: 500px; }
+      .story_container-text h1 {
+        font-family: "Rubik Dirt", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 2rem; }
+      .story_container-text-textbox {
+        width: 100%;
+        max-width: 416px;
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #666666;
+        color: #666666;
+        margin-bottom: 3rem; }
+        .story_container-text-textbox p:not(:last-child) {
+          margin-bottom: 2rem; }
+
+.services {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 4.3rem; }
+  .services-title {
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    margin-bottom: 3.3rem; }
+    .services-title h2 {
+      font-family: "Rubik Dirt", cursive;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      color: #000000; }
+  .services_container {
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    display: flex; }
+    .services_container-box {
+      width: 100%;
+      height: 512px;
+      display: flex;
+      flex-direction: column;
+      border-width: 3px 3px 7px 7px;
+      border-style: solid;
+      border-color: #000000; }
+      .services_container-box:not(:last-child) {
+        margin-right: 5%; }
+        @media only screen and (max-width: 80em) {
+          .services_container-box:not(:last-child) {
+            margin-right: 2%; } }
+      .services_container-box-header {
+        width: 100%;
+        height: 45%; }
+        .services_container-box-header img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
+      .services_container-box-body {
+        width: 100%;
+        height: 55%;
+        padding-left: 3.3rem;
+        padding-right: 3.3rem; }
+        .services_container-box-body h3 {
+          margin-top: 2rem;
+          font-family: "Rubik Dirt", cursive;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: #000000; }
+        .services_container-box-body p {
+          margin-top: 2rem;
+          font-style: normal;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: #666666;
+          color: #666666; }
+
+.opening {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 9rem; }
+  .opening_container {
+    width: 100%;
+    height: 454px;
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto;
+    background: #FFFFFF;
+    border-width: 3px 3px 7px 7px;
+    border-style: solid;
+    border-color: #000000; }
+    .opening_container-text {
+      width: 50%;
+      padding: 105px 50px 104px 80px; }
+      .opening_container-text h2 {
+        font-family: "Rubik Dirt", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 57px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 2rem; }
+      .opening_container-text-box {
+        width: 100%;
+        max-width: 388px;
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #666666;
+        color: #666666;
+        margin-bottom: 3rem; }
+    .opening_container-photo {
+      width: 50%; }
+      .opening_container-photo img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
+
+footer {
+  background-color: #FFF4E5; }
+  footer .footer-container {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto; }
+  footer .footer-container2 {
+    height: 66px;
+    background-color: black; }
+
+.btn-big {
+  display: flex;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 155px;
+  height: 44px;
+  background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
+  color: #FFEEEE;
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25); }
+
+.btn-sm {
+  display: flex;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 121px;
+  height: 44px;
+  background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
+  color: #FFEEEE;
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25); }
+
+.btn-sm-secoundary {
+  padding: 10px 20px;
+  gap: 10px;
+  width: 126px;
+  height: 44px;
+  background: radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%);
+  font-family: "Bebas Neue", cursive;
+  color: #FFEEEE;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25); }
+
+.btn-empty {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background: none;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #666666; }
+
+.nav {
+  width: 100%;
+  max-width: 140rem;
+  height: auto;
+  margin-bottom: 4rem;
+  margin-inline: auto; }
+  .nav_container {
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .nav_container_items {
+      display: flex;
+      align-items: center; }
+      .nav_container_items ul {
+        display: flex; }
+        .nav_container_items ul li {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px; }
+          .nav_container_items ul li:nth-child(1) {
+            background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent; }
+          .nav_container_items ul li:not(:last-child) {
+            margin-right: 4rem; }
+          .nav_container_items ul li:nth-child(4) {
+            margin-right: 3rem; }
+      .nav_container_items-social a {
+        cursor: pointer; }
+        .nav_container_items-social a:not(:last-child) {
+          margin-right: 18.71px; }
+        .nav_container_items-social a:nth-child(2) {
+          margin-right: 38.47px; }
+
+.sticky {
+  position: fixed;
+  max-width: 100% !important;
+  top: 0;
+  left: 0;
+  height: 7.4rem !important;
+  height: 10rem;
+  background: #fff;
+  z-index: 1000001101010000;
+  box-shadow: 0px 15px 25px -19px rgba(150, 150, 150, 0.24);
+  border: 1px solid #000000; }
+
+.nav-sticky-prefix {
+  height: 10rem;
+  width: 100%; }
+
+.nav-c-10 {
+  height: 7.4rem;
+  max-width: 1440px;
+  margin-inline: auto; }
+
+.display-none {
+  display: none; }
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+/* ----------------------------------------------
+   * Generated by Animista on 2023-1-4 17:29:32
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation slide-bottom
+   * ----------------------------------------
+   */
+/* ----------------------------------------------
+   * Generated by Animista on 2023-1-4 17:32:55
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation slide-in-top
+   * ----------------------------------------
+   */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }

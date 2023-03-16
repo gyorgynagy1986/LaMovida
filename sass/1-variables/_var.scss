@@ -1,0 +1,82 @@
+
+//Fonts
+
+$font-primary:'Sniglet', cursive;
+$font-primary-title:'Rubik Dirt', cursive;
+$font-btn:'Bebas Neue', cursive;
+
+// COLORS
+
+  // Text
+
+$color-text-title-black:#000000;
+$color-text-nav:#000000;
+$color-text-title-orange:#FF6B00;
+$color-text-primary:#666666;
+$color-text-btn:#FFEEEE;
+
+  // Graditent
+
+$color-grad-btn-main:radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
+$color-grad-btn-sec:radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%);
+
+  // Layouts
+
+$max-width:140rem;
+
+$color-sec-background:#FFF4E5;
+$color-footer:#FFF4E5;;
+$color-sec-footer:#000000;
+
+// BREAKPOINTS
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == SMphone {
+        @media only screen and (max-width: 22.5em) { @content };    //360px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == SCtablet {
+        @media only screen and (max-width: 51.25em ) { @content };    //820px
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 64.5em) { @content };    //1032px
+    }
+
+    @if $breakpoint == SCLaptop {
+        @media only screen and (max-width: 80em) { @content };    //7 6.25em_1220px => 1280px
+    }
+}
+
+
+// MIXINS 
+
+@mixin textbox {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-text-primary;
+}
+
+@mixin containerPosition {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+}
+
+
+//
+
+.text-align-right {
+  text-align: right;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
