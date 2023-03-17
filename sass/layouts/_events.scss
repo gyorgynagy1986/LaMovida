@@ -8,21 +8,44 @@
         padding-right: 3%;
         margin-bottom: 9rem;
 
+        @include respond(phone) {
+            width: 100%;
+            height: 100%;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+
         &-text {
             display: flex;    
             padding-left: 4rem;    
             width: 50%; 
             min-height: 500px;
 
+            
+            @include respond(phone) {
+                width: 100%; 
+                min-height: 100%;
+                padding-left: 0;    
+
+            }
+
             h2 {
                font-family: $font-primary-title;
                font-weight: 400;
-               font-size: 42px;
                line-height: 120%;
                letter-spacing: 0.02em;
                color: $color-text-title-black;
                text-align: right;
-               margin-bottom: 2rem
+               margin-bottom: 2rem;
+
+               @include respond(phone) {
+                text-align: center !important;
+
+            }
             }
 
             &-textbox {
@@ -33,6 +56,12 @@
                 text-align: right !important;
                 color: $color-text-primary;
                 margin-bottom: 4rem;
+
+                @include respond(phone) {
+                    max-width: 100%;
+                    margin-bottom: 0;
+                    text-align:unset !important;
+                }
             }
 
             .events_social {
@@ -72,6 +101,11 @@
 
         &-photo {
             width: 50%; 
+           
+            @include respond(phone) {
+                width: 100%; 
+                min-height: 100%;
+            }
             
             &-circle {
                 width: 50rem;
@@ -81,10 +115,19 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+               
+                @include respond(phone) {
+                    width: 28rem;
+                    height: 28rem;
+                }
 
                 img {
                     object-fit: cover;
+                    
+                    @include respond(phone) {
+                        width: 24rem;
+                        height: 24rem;
+                    }
                    
                 }
     
@@ -101,5 +144,12 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+
+    @include respond(phone) {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: unset;
+    }
 
 }

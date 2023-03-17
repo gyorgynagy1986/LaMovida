@@ -59,12 +59,12 @@ $color-sec-footer:#000000;
 @mixin textbox {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: $fontsize-p;
   line-height: 150%;
   color: $color-text-primary;
 
   @include respond (phone) {
-    font-size: 16px;
+    font-size: $fontsize-p-mobile;
 
   }
 }
@@ -91,6 +91,10 @@ $color-sec-footer:#000000;
   text-align: right;
 }
 
+.display-block {
+  display: block !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -115,5 +119,13 @@ $color-sec-footer:#000000;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+  }
+}
+
+
+.display-only-mobile {
+  display: none;
+  @include respond (phone) {
+    display: block;
   }
 }

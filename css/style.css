@@ -1,6 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap");
 .text-align-right {
   text-align: right; }
+
+.display-block {
+  display: block !important; }
 
 .mb-0 {
   margin-bottom: 0 !important; }
@@ -21,6 +25,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5rem; } }
+
+.display-only-mobile {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .display-only-mobile {
+      display: block; } }
 
 .svg-container-crab {
   width: 100%;
@@ -123,6 +133,24 @@ button {
   border: none;
   cursor: pointer; }
 
+h1 {
+  font-size: 48px; }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 24px; } }
+
+h2 {
+  font-size: 42px; }
+  @media only screen and (max-width: 37.5em) {
+    h2 {
+      font-size: 24px; } }
+
+h3 {
+  font-size: 24px; }
+  @media only screen and (max-width: 37.5em) {
+    h3 {
+      font-size: 20px; } }
+
 .events {
   padding-left: 5%;
   padding-right: 5%; }
@@ -138,20 +166,36 @@ button {
     padding-left: 3%;
     padding-right: 3%;
     margin-bottom: 9rem; }
+    @media only screen and (max-width: 37.5em) {
+      .events_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0; } }
     .events_container-text {
       display: flex;
       padding-left: 4rem;
       width: 50%;
       min-height: 500px; }
+      @media only screen and (max-width: 37.5em) {
+        .events_container-text {
+          width: 100%;
+          min-height: 100%;
+          padding-left: 0; } }
       .events_container-text h2 {
         font-family: "Rubik Dirt", cursive;
         font-weight: 400;
-        font-size: 42px;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #000000;
         text-align: right;
         margin-bottom: 2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .events_container-text h2 {
+            text-align: center !important; } }
       .events_container-text-textbox {
         width: 100%;
         max-width: 416px;
@@ -166,6 +210,11 @@ button {
         @media only screen and (max-width: 37.5em) {
           .events_container-text-textbox {
             font-size: 16px; } }
+        @media only screen and (max-width: 37.5em) {
+          .events_container-text-textbox {
+            max-width: 100%;
+            margin-bottom: 0;
+            text-align: unset !important; } }
       .events_container-text .events_social {
         display: flex; }
         .events_container-text .events_social-facebook {
@@ -187,6 +236,10 @@ button {
             font-size: 24px; }
     .events_container-photo {
       width: 50%; }
+      @media only screen and (max-width: 37.5em) {
+        .events_container-photo {
+          width: 100%;
+          min-height: 100%; } }
       .events_container-photo-circle {
         width: 50rem;
         height: 50rem;
@@ -195,14 +248,28 @@ button {
         display: flex;
         justify-content: center;
         align-items: center; }
+        @media only screen and (max-width: 37.5em) {
+          .events_container-photo-circle {
+            width: 28rem;
+            height: 28rem; } }
         .events_container-photo-circle img {
           object-fit: cover; }
+          @media only screen and (max-width: 37.5em) {
+            .events_container-photo-circle img {
+              width: 24rem;
+              height: 24rem; } }
 
 .prefix-event {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column; }
+  @media only screen and (max-width: 37.5em) {
+    .prefix-event {
+      display: unset;
+      justify-content: unset;
+      align-items: unset;
+      flex-direction: unset; } }
 
 .header {
   padding-top: 4rem;
@@ -248,7 +315,6 @@ button {
         font-family: "Rubik Dirt", cursive;
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
         line-height: 57px;
         letter-spacing: 0.02em;
         color: #000000;
@@ -257,7 +323,6 @@ button {
           .header_container-text h1 {
             margin-top: 3rem;
             margin-bottom: 1rem;
-            font-size: 24px;
             line-height: 28px;
             text-align: center; } }
       .header_container-text-textbox {
@@ -338,7 +403,6 @@ button {
       margin-bottom: 1rem;
       font-family: "Rubik Dirt", cursive;
       font-weight: 400;
-      font-size: 42px;
       line-height: 150%;
       letter-spacing: 0.02em;
       color: #FF6B00; }
@@ -420,17 +484,16 @@ button {
         .story_container-text {
           width: 100%;
           min-height: 100%; } }
-      .story_container-text h1 {
+      .story_container-text h2 {
         font-family: "Rubik Dirt", cursive;
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
         line-height: 57px;
         letter-spacing: 0.02em;
         color: #000000;
         margin-bottom: 2rem; }
         @media only screen and (max-width: 37.5em) {
-          .story_container-text h1 {
+          .story_container-text h2 {
             font-size: 24px;
             line-height: 120%;
             text-align: center;
@@ -475,7 +538,6 @@ button {
     .services-title h2 {
       font-family: "Rubik Dirt", cursive;
       font-weight: 400;
-      font-size: 42px;
       line-height: 120%;
       letter-spacing: 0.02em;
       color: #000000; }
@@ -523,7 +585,6 @@ button {
           margin-top: 2rem;
           font-family: "Rubik Dirt", cursive;
           font-weight: 400;
-          font-size: 24px;
           line-height: 150%;
           letter-spacing: 0.02em;
           color: #000000; }
@@ -556,7 +617,6 @@ button {
     width: 100%;
     height: 454px;
     display: flex;
-    background-color: aqua;
     width: 100%;
     max-width: 140rem;
     margin-inline: auto;
@@ -564,14 +624,22 @@ button {
     border-width: 3px 3px 7px 7px;
     border-style: solid;
     border-color: #000000; }
+    @media only screen and (max-width: 37.5em) {
+      .opening_container {
+        flex-direction: column;
+        min-height: 794px; } }
     .opening_container-text {
       width: 50%;
       padding: 105px 50px 104px 80px; }
+      @media only screen and (max-width: 37.5em) {
+        .opening_container-text {
+          width: 100%;
+          height: 50%;
+          padding: 0; } }
       .opening_container-text h2 {
         font-family: "Rubik Dirt", cursive;
         font-style: normal;
         font-weight: 400;
-        font-size: 42px;
         line-height: 57px;
         letter-spacing: 0.02em;
         color: #000000;
@@ -599,6 +667,10 @@ button {
           margin-right: 5rem; }
     .opening_container-photo {
       width: 50%; }
+      @media only screen and (max-width: 37.5em) {
+        .opening_container-photo {
+          width: 100%;
+          height: 50%; } }
       .opening_container-photo img {
         object-fit: cover;
         width: 100%;
@@ -613,14 +685,26 @@ footer {
     justify-content: center;
     align-items: center;
     margin-inline: auto; }
+    @media only screen and (max-width: 37.5em) {
+      footer .footer-container {
+        height: 100%;
+        min-height: 408px;
+        padding-top: 5rem; } }
   footer .footer-container-bottom {
-    height: 66px;
+    min-height: 66px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      footer .footer-container-bottom {
+        height: 100%;
+        min-height: 248px;
+        flex-direction: column;
+        padding-top: 3rem; } }
     footer .footer-container-bottom .ul-container {
       width: 100%;
+      height: 100%;
       max-width: 140rem;
       margin-inline: auto;
       display: flex;
@@ -632,10 +716,19 @@ footer {
         footer .footer-container-bottom .ul-container {
           padding-right: 3%;
           padding-left: 3%; } }
+      @media only screen and (max-width: 37.5em) {
+        footer .footer-container-bottom .ul-container {
+          padding-right: 0;
+          padding-left: 0;
+          flex-direction: column-reverse;
+          justify-content: flex-end; } }
       footer .footer-container-bottom .ul-container ul {
         display: flex;
         color: aliceblue;
         align-items: center; }
+        @media only screen and (max-width: 37.5em) {
+          footer .footer-container-bottom .ul-container ul {
+            flex-direction: column; } }
         footer .footer-container-bottom .ul-container ul li {
           font-family: "Sniglet", cursive;
           font-style: normal;
@@ -653,8 +746,28 @@ footer {
             line-height: 26px;
             text-align: center;
             color: #FFFFFF; }
+            @media only screen and (max-width: 37.5em) {
+              footer .footer-container-bottom .ul-container ul li:nth-child(1) {
+                margin-right: 0 !important; } }
+          footer .footer-container-bottom .ul-container ul li:nth-child(2)::after {
+            position: relative; }
+            @media only screen and (max-width: 37.5em) {
+              footer .footer-container-bottom .ul-container ul li:nth-child(2)::after {
+                content: '©';
+                position: relative;
+                left: 10px; } }
+          @media only screen and (max-width: 37.5em) {
+            footer .footer-container-bottom .ul-container ul li:nth-child(3) {
+              display: none; } }
+          @media only screen and (max-width: 37.5em) {
+            footer .footer-container-bottom .ul-container ul li:nth-child(5) {
+              transform: rotate(90deg); } }
           footer .footer-container-bottom .ul-container ul li:not(:last-child) {
             margin-right: 1rem; }
+            @media only screen and (max-width: 37.5em) {
+              footer .footer-container-bottom .ul-container ul li:not(:last-child) {
+                margin-right: 0 !important;
+                margin-bottom: 11.5px; } }
       footer .footer-container-bottom .ul-container .cookie-policy {
         font-family: "Sniglet", cursive;
         font-style: normal;
@@ -663,9 +776,15 @@ footer {
         line-height: 17px;
         text-align: center;
         color: #FFF4E5; }
+        @media only screen and (max-width: 37.5em) {
+          footer .footer-container-bottom .ul-container .cookie-policy {
+            margin-bottom: 4rem; } }
 
 .nav_bottom-container_items-social a:not(:last-child) {
   margin-right: 20px; }
+  @media only screen and (max-width: 37.5em) {
+    .nav_bottom-container_items-social a:not(:last-child) {
+      margin-right: 0 !important; } }
 
 .btn-big {
   display: flex;
@@ -734,18 +853,37 @@ footer {
   margin-inline: auto; }
   @media only screen and (max-width: 37.5em) {
     .nav {
-      display: none; } }
+      display: none;
+      height: 100%; } }
   .nav_container {
     padding-left: 3%;
     padding-right: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .nav_container {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+        justify-content: unset;
+        align-items: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav_container img {
+        margin-bottom: 4rem; } }
     .nav_container_items {
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 37.5em) {
+        .nav_container_items {
+          flex-direction: column; } }
       .nav_container_items ul {
         display: flex; }
+        @media only screen and (max-width: 37.5em) {
+          .nav_container_items ul {
+            flex-direction: column;
+            align-items: center; } }
         .nav_container_items ul li {
           font-style: normal;
           font-weight: 400;
@@ -759,14 +897,28 @@ footer {
             text-fill-color: transparent; }
           .nav_container_items ul li:not(:last-child) {
             margin-right: 4rem; }
+            @media only screen and (max-width: 37.5em) {
+              .nav_container_items ul li:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 2rem; } }
           .nav_container_items ul li:nth-child(4) {
             margin-right: 3rem; }
+            @media only screen and (max-width: 37.5em) {
+              .nav_container_items ul li:nth-child(4) {
+                margin-right: 0;
+                margin-bottom: 3rem; } }
       .nav_container_items-social a {
         cursor: pointer; }
         .nav_container_items-social a:not(:last-child) {
           margin-right: 18.71px; }
+          @media only screen and (max-width: 37.5em) {
+            .nav_container_items-social a:not(:last-child) {
+              margin-right: 0; } }
         .nav_container_items-social a:nth-child(2) {
           margin-right: 38.47px; }
+          @media only screen and (max-width: 37.5em) {
+            .nav_container_items-social a:nth-child(2) {
+              margin-right: 0; } }
 
 .sticky {
   position: fixed;
