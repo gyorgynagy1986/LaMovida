@@ -5,6 +5,12 @@
 .mb-0 {
   margin-bottom: 0 !important; }
 
+.margin-prefix-nav-bottom {
+  margin-right: -38.47px !important; }
+
+.prefix-width-footer-max-width-141 {
+  max-width: 141rem !important; }
+
 .svg-container-crab {
   width: 100%;
   height: 100%;
@@ -12,6 +18,7 @@
   right: 0rem;
   z-index: -1; }
   .svg-container-crab img {
+    position: absolute;
     width: auto;
     height: auto; }
 
@@ -23,6 +30,7 @@
   bottom: 0;
   z-index: -1; }
   .svg-container-fish img {
+    position: absolute;
     width: auto;
     height: auto; }
 
@@ -270,7 +278,8 @@ button {
   padding-right: 5%;
   padding-top: 9rem;
   margin-bottom: 9rem;
-  min-height: 500px; }
+  min-height: 500px;
+  overflow: hidden; }
   .story_container {
     width: 100%;
     max-width: 140rem;
@@ -448,9 +457,59 @@ footer {
     justify-content: center;
     align-items: center;
     margin-inline: auto; }
-  footer .footer-container2 {
+  footer .footer-container-bottom {
     height: 66px;
-    background-color: black; }
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center; }
+    footer .footer-container-bottom .ul-container {
+      width: 100%;
+      max-width: 140rem;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 39px;
+      padding-left: 39px; }
+      @media only screen and (max-width: 1050px) {
+        footer .footer-container-bottom .ul-container {
+          padding-right: 3%;
+          padding-left: 3%; } }
+      footer .footer-container-bottom .ul-container ul {
+        display: flex;
+        color: aliceblue;
+        align-items: center; }
+        footer .footer-container-bottom .ul-container ul li {
+          font-family: "Sniglet", cursive;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #FFF4E5; }
+          footer .footer-container-bottom .ul-container ul li:nth-child(1) {
+            margin-right: 2rem !important;
+            font-family: "Bebas Neue", cursive;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF; }
+          footer .footer-container-bottom .ul-container ul li:not(:last-child) {
+            margin-right: 1rem; }
+      footer .footer-container-bottom .ul-container .cookie-policy {
+        font-family: "Sniglet", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFF4E5; }
+
+.nav_bottom-container_items-social a:not(:last-child) {
+  margin-right: 20px; }
 
 .btn-big {
   display: flex;
