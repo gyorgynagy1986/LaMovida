@@ -14,6 +14,7 @@ html {
 
     @include respond (phone) {
         scroll-behavior: auto;
+        overflow-x: hidden;
      }
 }
 

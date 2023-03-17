@@ -18,6 +18,11 @@
         align-items: center;
         padding: 4rem 14.8rem 5rem 14.8rem ;
 
+        @include respond (phone) {
+            height: 100%;
+            padding: 2rem ;
+         }
+
 
         h2 {
         text-align: center;
@@ -28,6 +33,12 @@
           line-height: 150%;
           letter-spacing: 0.02em;
           color: $color-text-title-orange;
+
+          @include respond (phone) {
+            font-size: 20px;
+
+         }
+
         }
 
         &-text {

@@ -11,6 +11,17 @@
 .prefix-width-footer-max-width-141 {
   max-width: 141rem !important; }
 
+@media only screen and (max-width: 37.5em) {
+  .parallax-image-display-none {
+    display: none; } }
+
+@media only screen and (max-width: 37.5em) {
+  .mobile-center-story {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem; } }
+
 .svg-container-crab {
   width: 100%;
   height: 100%;
@@ -93,7 +104,8 @@ html {
   scroll-behavior: smooth; }
   @media only screen and (max-width: 37.5em) {
     html {
-      scroll-behavior: auto; } }
+      scroll-behavior: auto;
+      overflow-x: hidden; } }
 
 body {
   font-family: "Sniglet", cursive; }
@@ -114,6 +126,10 @@ button {
 .events {
   padding-left: 5%;
   padding-right: 5%; }
+  @media only screen and (max-width: 37.5em) {
+    .events {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .events_container {
     width: 100%;
     max-width: 140rem;
@@ -147,6 +163,9 @@ button {
         text-align: right !important;
         color: #666666;
         margin-bottom: 4rem; }
+        @media only screen and (max-width: 37.5em) {
+          .events_container-text-textbox {
+            font-size: 16px; } }
       .events_container-text .events_social {
         display: flex; }
         .events_container-text .events_social-facebook {
@@ -189,6 +208,13 @@ button {
   padding-top: 4rem;
   padding-left: 5%;
   padding-right: 5%; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding-top: 0rem; } }
   .header_container {
     height: 454px;
     width: 100%;
@@ -199,12 +225,25 @@ button {
     border-width: 3px 3px 7px 7px;
     border-style: solid;
     border-color: #000000; }
+    @media only screen and (max-width: 37.5em) {
+      .header_container {
+        min-height: 726px;
+        flex-direction: column-reverse;
+        margin-bottom: 4rem; } }
     .header_container-text {
       display: flex;
       flex-direction: column;
+      height: 100%;
       width: 50%;
       padding-top: 8.83rem;
       padding-left: 8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header_container-text {
+          width: 100%;
+          height: 50%;
+          padding-top: 0;
+          padding-left: 2.2rem;
+          padding-right: 2.2rem; } }
       .header_container-text h1 {
         font-family: "Rubik Dirt", cursive;
         font-style: normal;
@@ -214,6 +253,13 @@ button {
         letter-spacing: 0.02em;
         color: #000000;
         margin-bottom: 2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .header_container-text h1 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center; } }
       .header_container-text-textbox {
         width: 388px;
         font-style: normal;
@@ -224,22 +270,51 @@ button {
         color: #666666;
         color: #666666;
         margin-bottom: 3rem; }
+        @media only screen and (max-width: 37.5em) {
+          .header_container-text-textbox {
+            font-size: 16px; } }
+        @media only screen and (max-width: 37.5em) {
+          .header_container-text-textbox {
+            width: 100%;
+            margin-bottom: 2rem; } }
       .header_container-text-buttons {
         display: flex; }
+        @media only screen and (max-width: 37.5em) {
+          .header_container-text-buttons {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; } }
         .header_container-text-buttons button:not(:last-child) {
           margin-right: 5rem; }
+          @media only screen and (max-width: 37.5em) {
+            .header_container-text-buttons button:not(:last-child) {
+              margin-right: 0;
+              margin-bottom: 3rem; } }
     .header_container-photo {
-      width: 50%; }
+      width: 50%;
+      height: 100%; }
       .header_container-photo img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+        @media only screen and (max-width: 37.5em) {
+          .header_container-photo img {
+            object-fit: cover; } }
+      @media only screen and (max-width: 37.5em) {
+        .header_container-photo {
+          width: 100%;
+          height: 50%; } }
 
 .infoBox {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 37.5em) {
+    .infoBox {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .infoBox_container {
     width: 100%;
     max-width: 140rem;
@@ -254,6 +329,10 @@ button {
     justify-content: center;
     align-items: center;
     padding: 4rem 14.8rem 5rem 14.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .infoBox_container {
+        height: 100%;
+        padding: 2rem; } }
     .infoBox_container h2 {
       text-align: center;
       margin-bottom: 1rem;
@@ -263,6 +342,9 @@ button {
       line-height: 150%;
       letter-spacing: 0.02em;
       color: #FF6B00; }
+      @media only screen and (max-width: 37.5em) {
+        .infoBox_container h2 {
+          font-size: 20px; } }
     .infoBox_container-text {
       font-style: normal;
       font-weight: 400;
@@ -272,6 +354,9 @@ button {
       max-width: 678px;
       text-align: center;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .infoBox_container-text {
+          font-size: 16px; } }
 
 .story {
   padding-left: 5%;
@@ -280,6 +365,14 @@ button {
   margin-bottom: 9rem;
   min-height: 500px;
   overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .story {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .story {
+      padding-top: 0rem;
+      margin-bottom: 0rem; } }
   .story_container {
     width: 100%;
     max-width: 140rem;
@@ -287,8 +380,16 @@ button {
     display: flex;
     padding-left: 3%;
     padding-right: 3%; }
+    @media only screen and (max-width: 37.5em) {
+      .story_container {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0; } }
     .story_container-photo {
       width: 50%; }
+      @media only screen and (max-width: 37.5em) {
+        .story_container-photo {
+          width: 100%; } }
       .story_container-photo-circle {
         width: 50rem;
         height: 50rem;
@@ -299,6 +400,15 @@ button {
         display: flex;
         justify-content: center;
         align-items: center; }
+        @media only screen and (max-width: 37.5em) {
+          .story_container-photo-circle {
+            width: 280px;
+            height: 280px;
+            margin-bottom: 3rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .story_container-photo-circle img {
+            width: 240px;
+            height: 240px; } }
     .story_container-text {
       display: flex;
       justify-content: center;
@@ -306,6 +416,10 @@ button {
       flex-direction: column;
       width: 50%;
       min-height: 500px; }
+      @media only screen and (max-width: 37.5em) {
+        .story_container-text {
+          width: 100%;
+          min-height: 100%; } }
       .story_container-text h1 {
         font-family: "Rubik Dirt", cursive;
         font-style: normal;
@@ -315,6 +429,12 @@ button {
         letter-spacing: 0.02em;
         color: #000000;
         margin-bottom: 2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .story_container-text h1 {
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            margin-bottom: 1rem; } }
       .story_container-text-textbox {
         width: 100%;
         max-width: 416px;
@@ -326,6 +446,12 @@ button {
         color: #666666;
         color: #666666;
         margin-bottom: 3rem; }
+        @media only screen and (max-width: 37.5em) {
+          .story_container-text-textbox {
+            font-size: 16px; } }
+        @media only screen and (max-width: 37.5em) {
+          .story_container-text-textbox {
+            max-width: 100%; } }
         .story_container-text-textbox p:not(:last-child) {
           margin-bottom: 2rem; }
 
@@ -334,11 +460,18 @@ button {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 4.3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .services {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .services-title {
     width: 100%;
     max-width: 140rem;
     margin-inline: auto;
     margin-bottom: 3.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .services-title {
+        margin-bottom: 2.3rem; } }
     .services-title h2 {
       font-family: "Rubik Dirt", cursive;
       font-weight: 400;
@@ -346,11 +479,17 @@ button {
       line-height: 120%;
       letter-spacing: 0.02em;
       color: #000000; }
+      @media only screen and (max-width: 37.5em) {
+        .services-title h2 {
+          font-size: 24px; } }
   .services_container {
     width: 100%;
     max-width: 140rem;
     margin-inline: auto;
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .services_container {
+        flex-direction: column; } }
     .services_container-box {
       width: 100%;
       height: 512px;
@@ -364,6 +503,10 @@ button {
         @media only screen and (max-width: 80em) {
           .services_container-box:not(:last-child) {
             margin-right: 2%; } }
+        @media only screen and (max-width: 37.5em) {
+          .services_container-box:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 1.3rem; } }
       .services_container-box-header {
         width: 100%;
         height: 45%; }
@@ -384,6 +527,9 @@ button {
           line-height: 150%;
           letter-spacing: 0.02em;
           color: #000000; }
+          @media only screen and (max-width: 37.5em) {
+            .services_container-box-body h3 {
+              font-size: 20px; } }
         .services_container-box-body p {
           margin-top: 2rem;
           font-style: normal;
@@ -393,12 +539,19 @@ button {
           line-height: 150%;
           color: #666666;
           color: #666666; }
+          @media only screen and (max-width: 37.5em) {
+            .services_container-box-body p {
+              font-size: 16px; } }
 
 .opening {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 37.5em) {
+    .opening {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .opening_container {
     width: 100%;
     height: 454px;
@@ -435,6 +588,9 @@ button {
         color: #666666;
         color: #666666;
         margin-bottom: 3rem; }
+        @media only screen and (max-width: 37.5em) {
+          .opening_container-text-box {
+            font-size: 16px; } }
         .opening_container-text-box div li:not(:last-child) {
           margin-bottom: 1rem; }
       .opening_container-text-buttons {
@@ -576,6 +732,9 @@ footer {
   height: auto;
   margin-bottom: 4rem;
   margin-inline: auto; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      display: none; } }
   .nav_container {
     padding-left: 3%;
     padding-right: 3%;

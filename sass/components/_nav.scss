@@ -4,6 +4,11 @@
     height: auto;
     margin-bottom: 4rem;
     margin-inline:auto;
+
+    @include respond (phone) {
+        display: none;
+     }
+    
     
     &_container {
         padding-left: 3%;
