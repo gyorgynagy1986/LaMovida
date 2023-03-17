@@ -1,10 +1,9 @@
 
 .story {
+    @include sectionPadding;
     padding-top: 9rem;
-    padding-left: 5%;
-    padding-right: 5%;
-    min-height: 500px;
     margin-bottom: 9rem;
+    min-height: 500px;
 
  &_container {
 
@@ -29,12 +28,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
     }
-
-
-
 
     &-text {
         display: flex;
@@ -73,12 +68,7 @@
                 
                 }
             }
-        
         }
-
+      }
     }
-
-
-    }
-
 }

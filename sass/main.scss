@@ -1,5 +1,12 @@
+// Vars
+
 @import "1-variables/var";
+
+// Abstract
+
 @import "2-abstract/parallax";
+@import "2-abstract/effects";
+
 
 @import "base";
 @import "typo";
@@ -14,7 +21,7 @@
 @import "layouts/opening";
 @import "layouts/footer";
 
-// components
+// Components
 
 @import "components/btn";
 @import "components/nav";

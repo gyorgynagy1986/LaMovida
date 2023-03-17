@@ -70,8 +70,12 @@ $color-sec-footer:#000000;
   margin-inline: auto;
 }
 
+@mixin sectionPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
-//
+//  Helpers
 
 .text-align-right {
   text-align: right;

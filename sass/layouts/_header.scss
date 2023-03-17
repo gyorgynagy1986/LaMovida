@@ -1,8 +1,7 @@
 
 .header {
     padding-top: 4rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    @include sectionPadding;
     
  &_container {
 
@@ -66,7 +65,6 @@
     }
 
 }
-
 
 }
 
