@@ -30,6 +30,8 @@
 
         @include respond (phone) {
             width: 100%; 
+            display: flex;
+            justify-content: center;
          }
 
         &-circle {
@@ -85,7 +87,6 @@
             line-height: 120%;
             text-align: center;
             margin-bottom: 1rem;
-
          }
 
         }
@@ -99,6 +100,8 @@
 
             @include respond (phone) {
                 max-width: 100%;
+                padding-right: 1rem;
+                padding-left: 1rem;
 
              }
 
