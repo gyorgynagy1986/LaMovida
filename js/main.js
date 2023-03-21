@@ -44,6 +44,8 @@ headerObserver.observe(header);
 const svgCrab = document.querySelector('.parallax-img-crab');
 const svgFish = document.querySelector('.svg-container-fish');
 const svgOctopus = document.querySelector('.svg-container-octopus');
+const svgDex = document.querySelector('.svg-container-dec');
+const seeUrchinSmall = document.querySelector('.svg-container-seaurchinsmall');
 
 
 const initialCoed = document.querySelector('.story_container-text');
@@ -54,17 +56,22 @@ console.log(cord);
 
 
 
- svgCrab.style.bottom = `${window.pageYOffset + 100}px`
- svgOctopus.style.bottom = `${window.pageYOffset + -1180}px`
+ svgCrab.style.bottom = `${window.pageYOffset +200}px`
+ svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
+ svgDex.style.bottom = `${window.pageYOffset + -950}px`
+ seeUrchinSmall.style.bottom = `${window.pageYOffset + -1200}px`
 
 
 window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop);
     
-    svgCrab.style.bottom = `${scrollTop * 3 / 22  + 100}px`
+    svgCrab.style.bottom = `${scrollTop * 3 / 22  + 200}px`
     svgFish.style.bottom = `${scrollTop * 3 / 22}px`
-    svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1180}px`
+    svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1120}px`
+    svgDex.style.bottom = `${scrollTop * 3 / 22 + -950}px`
+    seeUrchinSmall.style.bottom = `${scrollTop * 3 / 22 + -1200}px`
+
   });
 
 
