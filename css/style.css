@@ -36,24 +36,31 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  right: 0rem;
-  z-index: -1; }
+  left: 0;
+  bottom: -50rem; }
+  @media only screen and (max-width: 90em) {
+    .svg-container-crab {
+      bottom: -40rem;
+      left: 10rem; } }
   .svg-container-crab img {
-    position: absolute;
     width: auto;
-    height: auto; }
+    height: auto;
+    position: absolute;
+    right: 0; }
 
 .svg-container-fish {
   width: 100%;
   height: 100%;
+  background-color: aqua;
   position: absolute;
   left: -10rem;
   bottom: 0;
-  z-index: -1; }
+  z-index: 10101010; }
   .svg-container-fish img {
     position: absolute;
     width: auto;
-    height: auto; }
+    height: auto;
+    background-color: black; }
 
 .slide-in-top {
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -294,7 +301,8 @@ h3 {
 .header {
   padding-top: 4rem;
   padding-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%;
+  position: relative; }
   @media only screen and (max-width: 37.5em) {
     .header {
       padding-left: 2rem;
@@ -312,7 +320,9 @@ h3 {
     border-width: 3px 3px 7px 7px;
     border-style: solid;
     border-color: #000000;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    z-index: 1; }
     @media only screen and (max-width: 37.5em) {
       .header_container {
         min-height: 726px;

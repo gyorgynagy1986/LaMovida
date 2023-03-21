@@ -4,15 +4,22 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    left: 0;
+    bottom: -50rem;
 
+    @include respond (Laptop) {
+        bottom: -40rem;
+        left: 10rem;
+
+    }
+    
     img {
-        position: absolute;
         width: auto;
         height: auto;
+        position: absolute;
+        right: 0;
     }
 
-    right: 0rem;
-    z-index: -1;
   }
 
 // OUR STORY
@@ -20,15 +27,17 @@
 .svg-container-fish {
     width: 100%;
     height: 100%;
-    
+background-color: aqua;    
     img {
         position: absolute;
         width: auto;
         height: auto;
+        background-color: black;    
+
     }
 
     position: absolute;
     left: -10rem;
     bottom: 0;
-    z-index: -1;
+    z-index: 10101010;
 }

@@ -41,20 +41,20 @@ headerObserver.observe(header);
 // STICKY NAVIGATION END
 
 
-const svgCrab = document.querySelector('.svg-container-crab');
+const svgCrab = document.querySelector('.parallax-img-crab');
 const svgFish = document.querySelector('.svg-container-fish');
 
 console.log(svgCrab);
 
 
 
-svgCrab.style.bottom = `${window.pageYOffset + 450}px`
+// svgCrab.style.bottom = `${window.pageYOffset + 0}px`
 
 window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop);
     
-    svgCrab.style.bottom = `${scrollTop * 2 / 22 + 450}px`
+    svgCrab.style.bottom = `${scrollTop * 3 / 22 + 0}px`
     svgFish.style.bottom = `${scrollTop * 3 / 22}px`
   });
 
