@@ -20,7 +20,7 @@
 
 
         &-text {
-        width: 50%;
+        @include containerWidthText;
         padding: 105px 50px 104px 80px;
 
         @include respond(phone) {
@@ -67,14 +67,15 @@
     }
 
         &-photo {
-            width: 50%;
-
+            @include containerWidthPhoto;
             @include respond(phone) {
                 width: 100%;
                 height: 50%;
              }
 
             img {
+                position: relative;
+                z-index: 10011100;
                 object-fit: cover;
                 width: 100%;
                 height: 100%;

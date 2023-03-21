@@ -17,6 +17,8 @@
     border-width: 3px 3px 7px 7px;
     border-style: solid;
     border-color: #000000;
+    overflow: hidden;
+
 
     @include respond (phone) {
         min-height:726px;
@@ -25,10 +27,10 @@
      }
 
     &-text {
+       @include containerWidthText; 
        display: flex;
        flex-direction: column;
        height: 100%;
-       width: 50%; 
        padding-top: 8.83rem;
        padding-left: 8rem;
        
@@ -97,9 +99,9 @@
     }
 
     &-photo {
-        width: 50%;
         height: 100%;
-       
+        @include containerWidthPhoto;
+
         img {
             width: 100%;
             height: 100%;

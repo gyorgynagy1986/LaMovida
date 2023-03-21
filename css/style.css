@@ -311,19 +311,26 @@ h3 {
     background: #FFFFFF;
     border-width: 3px 3px 7px 7px;
     border-style: solid;
-    border-color: #000000; }
+    border-color: #000000;
+    overflow: hidden; }
     @media only screen and (max-width: 37.5em) {
       .header_container {
         min-height: 726px;
         flex-direction: column-reverse;
         margin-bottom: 4rem; } }
     .header_container-text {
+      width: 40%;
       display: flex;
       flex-direction: column;
       height: 100%;
-      width: 50%;
       padding-top: 8.83rem;
       padding-left: 8rem; }
+      @media only screen and (max-width: 90em) {
+        .header_container-text {
+          width: 43%; } }
+      @media only screen and (max-width: 64.5em) {
+        .header_container-text {
+          width: 40%; } }
       @media only screen and (max-width: 37.5em) {
         .header_container-text {
           width: 100%;
@@ -377,8 +384,15 @@ h3 {
               margin-right: 0;
               margin-bottom: 3rem; } }
     .header_container-photo {
-      width: 50%;
-      height: 100%; }
+      height: 100%;
+      width: 60%; }
+      @media only screen and (max-width: 90em) {
+        .header_container-photo {
+          width: 57%; } }
+      @media only screen and (max-width: 80em) {
+        .header_container-photo {
+          width: 60%;
+          min-width: 66rem; } }
       .header_container-photo img {
         width: 100%;
         height: 100%;
@@ -578,7 +592,7 @@ h3 {
         flex-direction: column; } }
     .services_container-box {
       width: 100%;
-      height: 512px;
+      min-height: 512px;
       display: flex;
       flex-direction: column;
       border-width: 3px 3px 7px 7px;
@@ -595,16 +609,15 @@ h3 {
             margin-bottom: 1.3rem; } }
       .services_container-box-header {
         width: 100%;
-        height: 45%; }
+        min-width: 30rem; }
         .services_container-box-header img {
-          object-fit: cover;
           width: 100%;
           height: 100%; }
       .services_container-box-body {
         width: 100%;
-        height: 55%;
         padding-left: 3.3rem;
-        padding-right: 3.3rem; }
+        padding-right: 3.3rem;
+        padding-bottom: 4rem; }
         .services_container-box-body h3 {
           margin-top: 2rem;
           font-family: "Rubik Dirt", cursive;
@@ -653,8 +666,14 @@ h3 {
         flex-direction: column;
         min-height: 794px; } }
     .opening_container-text {
-      width: 50%;
+      width: 40%;
       padding: 105px 50px 104px 80px; }
+      @media only screen and (max-width: 90em) {
+        .opening_container-text {
+          width: 43%; } }
+      @media only screen and (max-width: 64.5em) {
+        .opening_container-text {
+          width: 40%; } }
       @media only screen and (max-width: 37.5em) {
         .opening_container-text {
           width: 100%;
@@ -690,12 +709,21 @@ h3 {
         .opening_container-text-buttons button:not(:last-child) {
           margin-right: 5rem; }
     .opening_container-photo {
-      width: 50%; }
+      width: 60%; }
+      @media only screen and (max-width: 90em) {
+        .opening_container-photo {
+          width: 57%; } }
+      @media only screen and (max-width: 80em) {
+        .opening_container-photo {
+          width: 60%;
+          min-width: 66rem; } }
       @media only screen and (max-width: 37.5em) {
         .opening_container-photo {
           width: 100%;
           height: 50%; } }
       .opening_container-photo img {
+        position: relative;
+        z-index: 10011100;
         object-fit: cover;
         width: 100%;
         height: 100%; }

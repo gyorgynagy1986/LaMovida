@@ -49,9 +49,43 @@ $color-sec-footer:#000000;
     }
 
     @if $breakpoint == SCLaptop {
-        @media only screen and (max-width: 80em) { @content };    //7 6.25em_1220px => 1280px
+        @media only screen and (max-width: 80em) { @content };     // 1280px
     }
+
+    @if $breakpoint == Laptop {
+      @media only screen and (max-width: 90em) { @content };       // 1440px
+  }
 }
+
+
+// responsize logics
+
+
+
+
+@mixin containerWidthText { 
+  width: 40%;
+  @include respond(Laptop) {
+    width: 43%;
+  }
+  @include respond(tablet) {
+    width: 40%;
+  }
+}
+
+@mixin containerWidthPhoto { 
+  width: 60%;
+  @include respond(Laptop) {
+    width: 57%;
+  }
+  @include respond(SCLaptop) {
+    width:60%;
+    min-width: 66rem;
+  }
+}
+
+
+
 
 
 // MIXINS 
