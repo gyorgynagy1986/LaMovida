@@ -43,19 +43,28 @@ headerObserver.observe(header);
 
 const svgCrab = document.querySelector('.parallax-img-crab');
 const svgFish = document.querySelector('.svg-container-fish');
-
-console.log(svgCrab);
-
+const svgOctopus = document.querySelector('.svg-container-octopus');
 
 
-// svgCrab.style.bottom = `${window.pageYOffset + 0}px`
+const initialCoed = document.querySelector('.story_container-text');
+
+const cord = initialCoed.getBoundingClientRect();
+
+console.log(cord);
+
+
+
+ svgCrab.style.bottom = `${window.pageYOffset + 100}px`
+ svgOctopus.style.bottom = `${window.pageYOffset + -1180}px`
+
 
 window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop);
     
-    svgCrab.style.bottom = `${scrollTop * 3 / 22 + 0}px`
+    svgCrab.style.bottom = `${scrollTop * 3 / 22  + 100}px`
     svgFish.style.bottom = `${scrollTop * 3 / 22}px`
+    svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1180}px`
   });
 
 

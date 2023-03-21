@@ -37,10 +37,9 @@
   height: 100%;
   position: absolute;
   left: 0;
-  bottom: -50rem; }
+  z-index: -1; }
   @media only screen and (max-width: 90em) {
     .svg-container-crab {
-      bottom: -40rem;
       left: 10rem; } }
   .svg-container-crab img {
     width: auto;
@@ -51,16 +50,29 @@
 .svg-container-fish {
   width: 100%;
   height: 100%;
-  background-color: aqua;
   position: absolute;
-  left: -10rem;
+  left: -30rem;
   bottom: 0;
-  z-index: 10101010; }
+  z-index: -1; }
   .svg-container-fish img {
     position: absolute;
     width: auto;
+    height: auto; }
+
+.svg-container-octopus {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 41rem;
+  z-index: -1; }
+  .svg-container-octopus img {
+    position: absolute;
+    width: auto;
     height: auto;
-    background-color: black; }
+    z-index: -1; }
+  @media only screen and (max-width: 90em) {
+    .svg-container-octopus {
+      left: 20rem; } }
 
 .slide-in-top {
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -118,14 +130,17 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
   @media only screen and (max-width: 37.5em) {
     html {
       scroll-behavior: auto;
       overflow-x: hidden; } }
 
 body {
-  font-family: "Sniglet", cursive; }
+  font-family: "Sniglet", cursive;
+  position: relative;
+  overflow: hidden; }
 
 li {
   list-style: none; }
@@ -321,7 +336,6 @@ h3 {
     border-style: solid;
     border-color: #000000;
     overflow: hidden;
-    position: relative;
     z-index: 1; }
     @media only screen and (max-width: 37.5em) {
       .header_container {
@@ -605,6 +619,7 @@ h3 {
       min-height: 512px;
       display: flex;
       flex-direction: column;
+      background-color: white;
       border-width: 3px 3px 7px 7px;
       border-style: solid;
       border-color: #000000; }
@@ -618,8 +633,7 @@ h3 {
             margin-right: 0;
             margin-bottom: 1.3rem; } }
       .services_container-box-header {
-        width: 100%;
-        min-width: 30rem; }
+        width: 100%; }
         .services_container-box-header img {
           width: 100%;
           height: 100%; }
