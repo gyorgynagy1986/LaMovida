@@ -46,13 +46,19 @@ const svgFish = document.querySelector('.svg-container-fish');
 const svgOctopus = document.querySelector('.svg-container-octopus');
 const svgDex = document.querySelector('.svg-container-dec');
 const seeUrchinSmall = document.querySelector('.svg-container-seaurchinsmall');
+const fishSteak = document.querySelector('.svg-container-fishSteak');
+const flower = document.querySelector('.svg-container-flower');
+const shell = document.querySelector('.svg-container-shell');
+const something = document.querySelector('.svg-container-something');
+const smshell = document.querySelector('.svg-container-smshell');
+const bgseaurchinsmall = document.querySelector('.svg-container-bgseaurchinsmall');
 
 
-const initialCoed = document.querySelector('.story_container-text');
 
-const cord = initialCoed.getBoundingClientRect();
-
-console.log(cord);
+//const initialCoed = document.querySelector('.story_container-text');
+//const cord = initialCoed.getBoundingClientRect();
+//
+//console.log(cord);
 
 
 
@@ -60,7 +66,13 @@ console.log(cord);
  svgFish.style.bottom = `${window.pageYOffset -700}px`
  svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
  svgDex.style.bottom = `${window.pageYOffset + -950}px`
- seeUrchinSmall.style.bottom = `${window.pageYOffset + -1200}px`
+ seeUrchinSmall.style.top = `${window.pageYOffset  + 1000}px`
+ fishSteak.style.top = `${window.pageYOffset + 1450}px`
+ flower.style.top = `${window.pageYOffset + 1600}px`
+ shell.style.top = `${window.pageYOffset + 2400}px`
+ something.style.top = `${window.pageYOffset + 1800}px`
+ smshell.style.top = `${window.pageYOffset + 2500}px`
+ bgseaurchinsmall.style.top = `${window.pageYOffset + 2350}px`
 
 
 window.addEventListener('scroll', function() {
@@ -68,10 +80,16 @@ window.addEventListener('scroll', function() {
     console.log(scrollTop);
     
     svgCrab.style.top = `${scrollTop * 3 / 26  + 300}px`
-    svgFish.style.bottom = `${scrollTop * 3 / 22 -700}px`
+    svgFish.style.bottom = `${scrollTop * 3 / 22 + -700}px`
     svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1120}px`
     svgDex.style.bottom = `${scrollTop * 3 / 28 + -950}px`
-    seeUrchinSmall.style.bottom = `${scrollTop * 3 / 22 + -1200}px`
+    seeUrchinSmall.style.top = `${scrollTop * 3 / 22 + 1000}px`
+    fishSteak.style.top = `${scrollTop * 3 / 20 + 1450}px`
+    flower.style.top = `${scrollTop * 3 / 20 + 1600}px`
+    shell.style.top = `${scrollTop * 3 / 20 + 2400}px`
+    something.style.top = `${scrollTop * 5 / 18 + 1800}px`
+    smshell.style.top = `${scrollTop * 3 / 20 + 2500}px`
+    bgseaurchinsmall.style.top = `${scrollTop * 3 / 20 + 2350}px`
 
   });
 

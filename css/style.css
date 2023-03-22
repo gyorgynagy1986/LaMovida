@@ -32,6 +32,12 @@
     .display-only-mobile {
       display: block; } }
 
+.parallax-container {
+  position: relative;
+  height: 100%;
+  max-width: 1980px;
+  margin-inline: auto; }
+
 .svg-container-crab {
   width: 100%;
   height: 100%;
@@ -80,8 +86,8 @@
 .svg-container-dec {
   width: 100%;
   height: 100%;
-  position: absolute;
   left: 70%;
+  position: absolute;
   z-index: -1; }
   .svg-container-dec img {
     position: absolute;
@@ -94,15 +100,102 @@
 
 .svg-container-seaurchinsmall {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
-  left: 0;
+  left: 5%;
   z-index: -1; }
   .svg-container-seaurchinsmall img {
     position: absolute;
     width: auto;
     height: auto;
     z-index: -1; }
+  @media only screen and (max-width: 90em) {
+    .svg-container-seaurchinsmall {
+      left: 0; } }
+
+.svg-container-fishSteak {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-fishSteak img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    right: 0%; }
+    @media only screen and (max-width: 90em) {
+      .svg-container-fishSteak img {
+        right: -10%; } }
+
+.svg-container-flower {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-flower img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    left: 0%; }
+    @media only screen and (max-width: 90em) {
+      .svg-container-flower img {
+        left: -10%; } }
+
+.svg-container-shell {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-shell img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    left: 0%; }
+    @media only screen and (max-width: 90em) {
+      .svg-container-shell img {
+        left: -2%; } }
+
+.svg-container-something {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-something img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    right: 10%; }
+
+.svg-container-smshell {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-smshell img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    right: 50%; }
+
+.svg-container-bgseaurchinsmall {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  .svg-container-bgseaurchinsmall img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    right: 13%; }
+    @media only screen and (max-width: 90em) {
+      .svg-container-bgseaurchinsmall img {
+        right: 0%; } }
 
 .slide-in-top {
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -319,7 +412,8 @@ h3 {
         border-radius: 100%;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        background-color: white; }
         @media only screen and (max-width: 37.5em) {
           .events_container-photo-circle {
             width: 28rem;
