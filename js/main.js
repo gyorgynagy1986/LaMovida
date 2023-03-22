@@ -56,7 +56,8 @@ console.log(cord);
 
 
 
- svgCrab.style.bottom = `${window.pageYOffset +200}px`
+ svgCrab.style.top = `${window.pageYOffset + 300}px`
+ svgFish.style.bottom = `${window.pageYOffset -700}px`
  svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
  svgDex.style.bottom = `${window.pageYOffset + -950}px`
  seeUrchinSmall.style.bottom = `${window.pageYOffset + -1200}px`
@@ -66,10 +67,10 @@ window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop);
     
-    svgCrab.style.bottom = `${scrollTop * 3 / 22  + 200}px`
-    svgFish.style.bottom = `${scrollTop * 3 / 22}px`
+    svgCrab.style.top = `${scrollTop * 3 / 26  + 300}px`
+    svgFish.style.bottom = `${scrollTop * 3 / 22 -700}px`
     svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1120}px`
-    svgDex.style.bottom = `${scrollTop * 3 / 22 + -950}px`
+    svgDex.style.bottom = `${scrollTop * 3 / 28 + -950}px`
     seeUrchinSmall.style.bottom = `${scrollTop * 3 / 22 + -1200}px`
 
   });
