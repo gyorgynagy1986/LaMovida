@@ -276,7 +276,8 @@ a:visited {
 button {
   text-transform: uppercase;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background: unset; }
 
 h1 {
   font-size: 48px; }
@@ -1045,6 +1046,17 @@ footer {
   text-decoration-line: underline;
   color: #666666; }
 
+.btn-lang {
+  font-family: "Sniglet", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center; }
+
+.btn-lang-active {
+  color: #999999; }
+
 .nav {
   width: 100%;
   max-width: 140rem;
@@ -1115,10 +1127,12 @@ footer {
             .nav_container_items-social a:not(:last-child) {
               margin-right: 0; } }
         .nav_container_items-social a:nth-child(2) {
-          margin-right: 38.47px; }
+          margin-right: 28.74px; }
           @media only screen and (max-width: 37.5em) {
             .nav_container_items-social a:nth-child(2) {
               margin-right: 0; } }
+    .nav_container-languageSelector {
+      margin-right: 5rem; }
 
 .sticky {
   position: fixed;

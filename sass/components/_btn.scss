@@ -67,4 +67,15 @@
     color: $color-text-primary;
 }
 
+.btn-lang {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
 
+.btn-lang-active {
+    color: #999999;
+}

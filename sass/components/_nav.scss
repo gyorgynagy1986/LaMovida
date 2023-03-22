@@ -97,13 +97,16 @@
                     }
 
                     &:nth-child(2) {
-                        margin-right: 38.47px;
+                        margin-right: 28.74px;
                         @include respond (phone) {
                             margin-right: 0;
                         }
                     }
                 }
             }    
+        }
+        &-languageSelector {
+            margin-right: 5rem;
         }
     }
 }
