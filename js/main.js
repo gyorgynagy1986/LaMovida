@@ -1,3 +1,26 @@
+// Mobile menu
+
+
+const mobilMenuClose = document.querySelector('.mobile-menu-close');
+const mobilOpen = document.querySelector('.mobile-menu-open');
+
+mobilMenuClose.addEventListener('click', ()=> {
+  console.log('clicked');
+
+  document.querySelector('.nav-mobile-container').classList.add('hidden')
+
+})
+
+mobilOpen.addEventListener('click', ()=> {
+  console.log('clicked-open');
+  
+  document.querySelector('.nav-mobile-container').classList.remove('hidden')
+
+
+})
+
+
+
 // STICKY NAVIGATIOn
 
 const nav = document.querySelector('.nav');
@@ -60,37 +83,52 @@ const bgseaurchinsmall = document.querySelector('.svg-container-bgseaurchinsmall
 //
 //console.log(cord);
 
+const mediaQuery = window.matchMedia('(min-width: 600px)');
+
+// Add a listener to the media query
+mediaQuery.addListener(handleMediaQueryChange);
 
 
- svgCrab.style.top = `${window.pageYOffset + 300}px`
- svgFish.style.bottom = `${window.pageYOffset -700}px`
- svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
- svgDex.style.bottom = `${window.pageYOffset + -950}px`
- seeUrchinSmall.style.top = `${window.pageYOffset  + 1000}px`
- fishSteak.style.top = `${window.pageYOffset + 1450}px`
- flower.style.top = `${window.pageYOffset + 1600}px`
- shell.style.top = `${window.pageYOffset + 2400}px`
- something.style.top = `${window.pageYOffset + 1800}px`
- smshell.style.top = `${window.pageYOffset + 2500}px`
- bgseaurchinsmall.style.top = `${window.pageYOffset + 2350}px`
+function handleMediaQueryChange(event) {
+  if (event.matches) {
+    svgCrab.style.top = `${window.pageYOffset + 300}px`
+    svgFish.style.bottom = `${window.pageYOffset -700}px`
+    svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
+    svgDex.style.bottom = `${window.pageYOffset + -950}px`
+    seeUrchinSmall.style.top = `${window.pageYOffset  + 1000}px`
+    fishSteak.style.top = `${window.pageYOffset + 1450}px`
+    flower.style.top = `${window.pageYOffset + 1600}px`
+    shell.style.top = `${window.pageYOffset + 2400}px`
+    something.style.top = `${window.pageYOffset + 1800}px`
+    smshell.style.top = `${window.pageYOffset + 2500}px`
+    bgseaurchinsmall.style.top = `${window.pageYOffset + 2350}px`
+   
+   
+   window.addEventListener('scroll', function() {
+       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+       console.log(scrollTop);
+       
+       svgCrab.style.top = `${scrollTop * 3 / 26  + 300}px`
+       svgFish.style.bottom = `${scrollTop * 3 / 22 + -700}px`
+       svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1120}px`
+       svgDex.style.bottom = `${scrollTop * 3 / 28 + -950}px`
+       seeUrchinSmall.style.top = `${scrollTop * 3 / 22 + 1000}px`
+       fishSteak.style.top = `${scrollTop * 3 / 20 + 1450}px`
+       flower.style.top = `${scrollTop * 3 / 20 + 1600}px`
+       shell.style.top = `${scrollTop * 3 / 20 + 2400}px`
+       something.style.top = `${scrollTop * 5 / 18 + 1800}px`
+       smshell.style.top = `${scrollTop * 3 / 20 + 2500}px`
+       bgseaurchinsmall.style.top = `${scrollTop * 3 / 20 + 2350}px`
+   
+     });
+  } else {
+    // Do something else if the media query doesn't match
+  }
+}
+
+// Call the function initially to check the media query
+handleMediaQueryChange(mediaQuery);
 
 
-window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop);
-    
-    svgCrab.style.top = `${scrollTop * 3 / 26  + 300}px`
-    svgFish.style.bottom = `${scrollTop * 3 / 22 + -700}px`
-    svgOctopus.style.bottom = `${scrollTop * 3 / 22 + -1120}px`
-    svgDex.style.bottom = `${scrollTop * 3 / 28 + -950}px`
-    seeUrchinSmall.style.top = `${scrollTop * 3 / 22 + 1000}px`
-    fishSteak.style.top = `${scrollTop * 3 / 20 + 1450}px`
-    flower.style.top = `${scrollTop * 3 / 20 + 1600}px`
-    shell.style.top = `${scrollTop * 3 / 20 + 2400}px`
-    something.style.top = `${scrollTop * 5 / 18 + 1800}px`
-    smshell.style.top = `${scrollTop * 3 / 20 + 2500}px`
-    bgseaurchinsmall.style.top = `${scrollTop * 3 / 20 + 2350}px`
-
-  });
 
 
