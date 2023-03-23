@@ -16,11 +16,20 @@ section {
     margin-top: 5rem;
     margin-bottom: 9rem;
 
+    @include respond (phone) {
+        grid-template-columns: 90px 90px  90px;
+
+    }
+
 
     img {
         cursor: pointer;
         width: 254px;
-        height:254px; ;
+        height:254px;
+        @include respond (phone) {
+            width: 90px;
+            height: 90px;
+        }
         justify-self: center;
       // &:not(:last-child) {
       //      margin-right: 3rem;
