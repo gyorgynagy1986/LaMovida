@@ -23,6 +23,8 @@ $color-grad-btn-sec:radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%
   // Layouts
 
 $max-width:140rem;
+$max-width-resized:140rem;
+
 
 $color-sec-background:#FFF4E5;
 $color-footer:#FFF4E5;;
@@ -40,6 +42,10 @@ $color-sec-footer:#000000;
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
 
+    @if $breakpoint == phoneMinwidth {
+      @media only screen and (min-width: 37.5em) { @content };    //600px
+  }
+
     @if $breakpoint == SCtablet {
         @media only screen and (max-width: 51.25em ) { @content };    //820px
     }
@@ -54,6 +60,14 @@ $color-sec-footer:#000000;
 
     @if $breakpoint == Laptop {
       @media only screen and (max-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == LaptopMinwidth {
+      @media only screen and (min-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == SC1600 {
+      @media only screen and (max-width: 100em) { @content };       // 1440px
   }
 }
 
@@ -109,6 +123,12 @@ $color-sec-footer:#000000;
   margin-inline: auto;
 }
 
+@mixin containerPositionResized {
+  width: 100%;
+  max-width: $max-width-resized;
+  margin-inline: auto;
+}
+
 @mixin sectionPadding {
     padding-left: 5%;
     padding-right: 5%;
@@ -123,6 +143,12 @@ $color-sec-footer:#000000;
 
 .text-align-right {
   text-align: right;
+}
+
+.mb-4 {
+  @include respond (phone) {
+    margin-bottom: 4rem;
+  }
 }
 
 .display-block {

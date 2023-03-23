@@ -19,11 +19,15 @@
         width: auto;
         height: auto;
         position: absolute;
-        right: 0;
+        right: -5%;
+    }
+
+    @include respond (SC1600) {
+        right: -5%;
     }
 
     @include respond (Laptop) {
-        right: -10%;
+        right: -5%;
     }
   }
 

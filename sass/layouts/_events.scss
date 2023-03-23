@@ -2,7 +2,7 @@
    @include sectionPadding;
 
     &_container {
-        @include containerPosition;
+        @include containerPositionResized;
         display: flex;
         padding-left: 3%;
         padding-right: 3%;
@@ -52,6 +52,9 @@
             &-textbox {
                 width: 100%;
                 max-width: 416px;
+                @include respond (LaptopMinwidth) {
+                    max-width: 500px;
+                }
     
                 @include textbox;
                 text-align: right !important;
@@ -160,8 +163,6 @@
         }
 
     }
-
-
 }
 
 .prefix-event {

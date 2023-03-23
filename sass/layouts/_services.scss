@@ -44,7 +44,7 @@
             border-color: #000000;
 
             &:not(:last-child) {
-                margin-right: 5%;
+                margin-right: 4.3rem;
                 
                 @include respond (SCLaptop) {
                     margin-right: 2%;

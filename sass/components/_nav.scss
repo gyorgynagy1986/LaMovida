@@ -12,8 +12,8 @@
     
     
     &_container {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,7 +29,7 @@
     
         img {
             @include respond (phone) {
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
              }
 
         }
@@ -92,7 +92,7 @@
                     &:not(:last-child) {
                         margin-right:18.71px;
                         @include respond (phone) {
-                            margin-right: 0;
+                            margin-right: 28.7px;
                         }
                     }
 
@@ -107,6 +107,10 @@
         }
         &-languageSelector {
             margin-right: 5rem;
+            @include respond (phone) {
+               margin-inline: auto;
+               margin-bottom: 2rem;
+            }
         }
     }
 }

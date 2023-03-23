@@ -13,7 +13,7 @@
 
  &_container {
 
-    @include containerPosition;
+    @include containerPositionResized;
     
     display: flex;
     padding-left: 3%;
@@ -27,6 +27,8 @@
 
     &-photo {
         width: 50%; 
+        display: flex;
+        justify-content: flex-end;
 
         @include respond (phone) {
             width: 100%; 
@@ -67,10 +69,12 @@
         flex-direction: column;
         width: 50%; 
         min-height: 500px;
+        padding-left: 4rem;
 
         @include respond (phone) {
             width: 100%; 
             min-height: 100%;
+            padding-left: 0rem;
          }
 
         h2 {
@@ -95,6 +99,9 @@
             width: 100%;
             max-width: 416px;
             position: relative;
+            @include respond (LaptopMinwidth) {
+                max-width: 500px;
+            }
         
             @include textbox;
 
