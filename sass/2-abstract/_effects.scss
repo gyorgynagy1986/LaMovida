@@ -53,3 +53,12 @@
     }
   }
   
+
+
+  .blur {
+    filter: blur(40px); 
+  }
+
+  .blur-off {
+    filter: blur(0px) !important; 
+  }

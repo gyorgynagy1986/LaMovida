@@ -8,6 +8,7 @@ mobilMenuClose.addEventListener('click', ()=> {
   console.log('clicked');
 
   document.querySelector('.nav-mobile-container').classList.add('hidden')
+  document.querySelector('html').classList.remove('overflow-hidden')
 
 })
 
@@ -15,10 +16,9 @@ mobilOpen.addEventListener('click', ()=> {
   console.log('clicked-open');
   
   document.querySelector('.nav-mobile-container').classList.remove('hidden')
-
+  document.querySelector('html').classList.add('overflow-hidden')
 
 })
-
 
 
 // STICKY NAVIGATIOn
@@ -106,7 +106,6 @@ function handleMediaQueryChange(event) {
    
    window.addEventListener('scroll', function() {
        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-       console.log(scrollTop);
        
        svgCrab.style.top = `${scrollTop * 3 / 26  + 300}px`
        svgFish.style.bottom = `${scrollTop * 3 / 22 + -700}px`
@@ -131,4 +130,24 @@ handleMediaQueryChange(mediaQuery);
 
 
 
+
+// Gallery
+
+
+document.querySelector('.gallery-covers').addEventListener('click', (e) => {
+
+    const selectedItem = Number(e.target.id)
+    console.log(selectedItem);
+
+
+    if(selectedItem !== 0) {
+      
+      document.querySelector('.galley').classList.remove('hidden')
+      document.querySelector('html').classList.add('overflow-hidden')
+
+      console.log('go to gallery', selectedItem);
+    } else {
+      console.log('opsss');
+    }
+})
 
