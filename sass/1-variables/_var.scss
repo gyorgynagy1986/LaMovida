@@ -141,8 +141,20 @@ $color-sec-footer:#000000;
 
 //  Helpers
 
+.text-align-center {
+  text-align: center;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
 .text-align-right {
   text-align: right;
+}
+
+.w-100 {
+  width: 100% !important;
 }
 
 .mb-4 {

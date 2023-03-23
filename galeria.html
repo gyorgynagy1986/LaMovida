@@ -9,13 +9,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fav//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav//favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>La Movida</title>
+    <title>Galéria - La Movida</title>
 </head>
 <body>
+<!-- PARALLAX CONTAINER-->      
+    <figure class="parallax-container">
+        <div class="svg-container-fish parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/fish.svg" alt=""></div>
+        <div class="svg-container-crab parallax-image-display-none"><img class="parallax-img-crab parallax-image-display-none" src="/assets/svg/crab.svg" alt=""></div>
+        <div class="svg-container-octopus parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/octopus.svg" alt=""></div>
+        <div class="svg-container-dec parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/dec.svg" alt=""></div>
+        <div class="svg-container-seaurchinsmall parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/seaurchinsmall.svg" alt=""></div>
+        <div class="svg-container-fishSteak parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/fishSteak.svg" alt=""></div>
+        <div class="svg-container-flower parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/flower.svg" alt=""></div>
+        <div class="svg-container-shell parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/shell.svg" alt=""></div>
+        <div class="svg-container-something parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/something.svg" alt=""></div>
+        <div class="svg-container-smshell parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/smshell.svg" alt=""></div>
+        <div class="svg-container-bgseaurchinsmall parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/bgseaurchinsmall.svg" alt=""></div>
+    </figure>
+
 <!-- HEADER-->      
     <header class="header">
         <!-- DESKTOP NAVIGATION-->   
         <div class="nav-sticky-prefix ">
+         <nav class="nav-mobile">
+            <div class="nav-mobile-container hidden">
+                <div class="nav-mobile-container-header">
+                    <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+                    <img class="mobile-menu-close" src="/assets/mobile/hamburger-close.svg" alt="LaMovida hamburger menu">
+                </div>
+            </div>
+            <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+            <img class="mobile-menu-open" src="/assets/mobile/hamburger-open.svg" alt="LaMovida hamburger menu">
+            
+         </nav>   
         <nav class="nav">
             <div class="nav_container">
                 <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója">
@@ -23,9 +49,9 @@
                 <div class="nav_container_items">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a class="active-page" href="/gallery.html">Galéria</a></li>
+                        <li><a href="#">Étlap</a></li>
+                        <li><a href="#">Kapcsolat</a></li>
                     </ul>
                     <div class="nav_container_items-social">
                         <a href="#"><img src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
@@ -36,53 +62,85 @@
                         <span class="btn-lang btn-lang-active">/</span>
                         <button class="btn-lang btn-lang-active">HU</button>
                     </div>
-                    <button class="btn-big"><a href="#">BOOK a table now</a></button>
+                    <button class="btn-big"><a href="#">asztalfoglalás</a></button>
                 </div>
             </div>
         </nav>
+        </div>   
+        <!-- DESKTOP NAVIGATION END-->      
+        <div class="header_container-text text-align-center p-0 w-100">
+            <h1>Galéria</h1>
+        </div>
     </header>
 <!-- HEADER END-->   
 <!-- MAIN CONTENT-->      
     <main>
- <!-- OUR STORY-->       
-
-<!-- OPENING HOURS END-->  
+        <section>
+            <figure class="gallery-covers">
+                <img id="1"  src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="2"  src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="3"  src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="4"  src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="5"  src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="6"  src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="7"  src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="8"  src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="9"  src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="10" src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="11" src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="12" src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="13" src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="14" src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="15" src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
+                <img id="16" src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
+            </figure>
+        </section>
     </main>
+    
 <!-- MAIN CONTENT END-->      
+<!-- PARALLAX CONTAINER END-->    
 <!-- FOOTER -->  
     <footer>
         <div class="footer-container">
             <nav class="nav display-block mb-0 prefix-width-footer-max-width-141">
-            <div class="nav_container">
-                <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója">
-                <img class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
-                <div class="nav_container_items">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <div class="nav_bottom-container_items-social">
-                        <a href="#"><img src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
-                        <a href="#"><img src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
+                <div class="nav_container">
+                    <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója">
+                    <img class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
+                    <div class="nav_container_items">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a class="active-page" href="/gallery.html">Galéria</a></li>
+                            <li><a href="#">Étlap</a></li>
+                            <li><a href="#">Kapcsolat</a></li>
+                        </ul>
+                        <div class="nav_container_items-social">
+                            <a href="#"><img src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
+                            <a href="#"><img src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
+                        </div>
+                        
+                        <button class="btn-big mb-4"><a href="#">asztalfoglalás</a></button>
                     </div>
                 </div>
-            </div>
         </nav>
         </div>
         <div class="footer-container-bottom">
+            <a class="cookie-policy-mobile" href="#">Cookie policy</a>
+            <div class="footer-container-bottom-textBox">
+                <h4>grupo10</h4>
+                <div>
+                    <p>Quisque ornare convallis quam sit amet hendrerit. Duis tincidunt condimentum eros ut laoreet. </p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
             <div class="ul-container">
                 <ul>
-                    <li>grupo10</li>
-                    <li>All rights reserved </li>
+                    <li>All rights reserved</li>
                     <li>©</li>
                     <li>Grupo10.hu</li>
                     <li>|</li>
                     <li>2023</li>
                 </ul>
                 <a class="cookie-policy" href="#">Cookie policy</a>
-               
             </div>
         </div>
     </footer>
