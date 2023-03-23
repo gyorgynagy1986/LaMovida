@@ -1202,7 +1202,6 @@ section {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
   text-align: center;
   text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25); }
 
@@ -1316,13 +1315,14 @@ section {
 .nav-mobile {
   display: none; }
   .nav-mobile-container {
-    background-color: #f7f7f7;
+    background-color: white;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100000;
     left: 0;
-    top: 0; }
+    top: 0;
+    right: 0; }
     .nav-mobile-container-header {
       width: 100%;
       height: 8rem;

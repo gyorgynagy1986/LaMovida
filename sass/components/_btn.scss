@@ -20,7 +20,6 @@
     height: 44px;
     background:$color-grad-btn-main;
     color: $color-text-btn;
-
     font-family: $font-btn;
     font-style: normal;
     font-weight: 400;
@@ -35,18 +34,14 @@
     width: 126px;
     height: 44px;
     background:$color-grad-btn-sec;
-
     font-family: $font-btn;
     color: $color-text-btn;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
-
     text-align: center;
     text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25);
-
 }
 
 .btn-empty {

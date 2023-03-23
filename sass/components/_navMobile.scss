@@ -6,14 +6,14 @@
     display: none;
 
     &-container {
-        background-color: rgb(247, 247, 247);
+        background-color: rgb(255, 255, 255);
         height: 100vh;
         width: 100%;
         position: fixed;
         z-index: 100000;
         left: 0;
         top: 0;
-
+        right: 0;
 
        &-header {
         width: 100%;
@@ -25,19 +25,14 @@
         padding-right: 2rem;
         padding-left: 2rem;
        } 
-
     }
 
-    
     @include respond (phone) {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-
     }
-
-
 }
 
 .active {
