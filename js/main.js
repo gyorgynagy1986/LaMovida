@@ -133,21 +133,79 @@ handleMediaQueryChange(mediaQuery);
 
 // Gallery
 
+const bgImage = document.querySelector('.galley-container-photos');
+const right = document.querySelector('.gallery-next-right');
+const left = document.querySelector('.gallery-next-left');
+const index = document.querySelector('.number-of-photo');
+
+
 
 document.querySelector('.gallery-covers').addEventListener('click', (e) => {
-
-    const selectedItem = Number(e.target.id)
-    console.log(selectedItem);
-
-
-    if(selectedItem !== 0) {
-      
-      document.querySelector('.galley').classList.remove('hidden')
-      document.querySelector('html').classList.add('overflow-hidden')
-
-      console.log('go to gallery', selectedItem);
-    } else {
-      console.log('opsss');
+  
+  const selectedItem = Number(e.target.id)
+  console.log(selectedItem);
+  
+  
+  if(selectedItem !== 0) {
+    
+    document.querySelector('.galley').classList.remove('hidden')
+    document.querySelector('html').classList.add('overflow-hidden')
+    console.log('go to gallery', selectedItem);
+    
+    galerryHandeling(selectedItem) 
+    
+    
+  } else {
+    console.log('opsss');
     }
-})
+  })
+  
+  
+  
+  
+  function galerryHandeling(item) {
+      
+      let counter = `${item}`;
 
+      bgImage.style.backgroundImage=`url(/assets/gallery/photos/${item}.png)`;
+      index.textContent = `${item}`
+    
+      photos =  function (c) {
+
+        bgImage.style.backgroundImage=`url(/assets/gallery/photos/${c}.png)`;
+        bgImage.style.transition = ('.3s all');
+    }
+    
+    numP = function () {
+      index.textContent = `${counter}`
+    }
+    
+    const rc = () => {
+      if(counter > 7) {
+        counter = 1; 
+      } else {
+        counter++;
+      }
+      photos(counter);
+      numP();
+    }
+    
+    const lc = () => {
+      if(counter < 2) {
+        counter = 8; 
+      } else {
+        counter--;
+      }
+      photos(counter);
+      numP();
+    }
+    
+    right.addEventListener('click', rc)
+    left.addEventListener('click', lc)
+    
+    document.addEventListener('keydown', function (e) {
+      if(e.key === 'ArrowLeft') lc()
+      if(e.key === 'ArrowRight') rc()
+    })
+
+}

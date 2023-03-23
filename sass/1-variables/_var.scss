@@ -75,8 +75,6 @@ $color-sec-footer:#000000;
 // responsize logics
 
 
-
-
 @mixin containerWidthText { 
   width: 40%;
   @include respond(Laptop) {
@@ -97,9 +95,6 @@ $color-sec-footer:#000000;
     min-width: 66rem;
   }
 }
-
-
-
 
 
 // MIXINS 
@@ -140,6 +135,15 @@ $color-sec-footer:#000000;
 }
 
 //  Helpers
+
+
+.active {
+  display: block ;
+}
+
+.hidden {
+  display: none !important ;
+}
 
 .text-align-center {
   text-align: center;
