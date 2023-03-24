@@ -9,10 +9,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fav//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav//favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Galéria - La Movida</title>
+    <title>Étlap - La Movida</title>
 </head>
 <body>
-    <!-- PARALLAX CONTAINER-->      
+<!-- PARALLAX CONTAINER-->      
     <figure class="parallax-container top-300-negative">
         <div class="svg-container-fish parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/fish.svg" alt=""></div>
         <div class="svg-container-crab parallax-image-display-none"><img class="parallax-img-crab parallax-image-display-none" src="/assets/svg/crab.svg" alt=""></div>
@@ -26,25 +26,7 @@
         <div class="svg-container-smshell parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/smshell.svg" alt=""></div>
         <div class="svg-container-bgseaurchinsmall parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/bgseaurchinsmall.svg" alt=""></div>
     </figure>
-    <!-- PARALLAX CONTAINER END--> 
-    <div class="gallery slide-in-fwd-center hidden" id="gallery">
-        <div class="gallery-container">
-                <span class="gallery-container-close"><img src="/assets/gallery/close.svg" alt="photo gallery close"></span>
-            <div class="gallery-container-photos">
-
-            </div>
-            <div class="gallery-container-photo-handeling">
-               <span class="left-padding click-effect-left gallery-next-left"><img src="/assets/gallery/left.svg" alt="left button gallery"></span> 
-                <div class="gallery-dinamic-info">
-                    <span class="number-of-photo">1</span>
-                    <span>/</span>
-                    <span>8</span>
-                </div>
-               <span class="right-padding click-effect-right gallery-next-right"> <img src="/assets/gallery/right.svg" alt="right button gallery"></span>
-            </div>
-        </div>
-            
-    </div>
+<!-- PARALLAX CONTAINER END-->    
 <!-- HEADER-->      
     <header class="header">
         <!-- DESKTOP NAVIGATION-->   
@@ -52,23 +34,23 @@
          <nav class="nav-mobile">
             <div class="nav-mobile-container hidden">
                 <div class="nav-mobile-container-header">
-                    <img  onclick="window.location.href='/'" src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+                    <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
                     <img class="mobile-menu-close" src="/assets/mobile/hamburger-close.svg" alt="LaMovida hamburger menu">
                 </div>
             </div>
-            <img onclick="window.location.href='/'" src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+            <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
             <img class="mobile-menu-open" src="/assets/mobile/hamburger-open.svg" alt="LaMovida hamburger menu">
             
          </nav>   
         <nav class="nav">
             <div class="nav_container">
-                <img onclick="window.location.href='/'" class="nav-logo" src="/assets/svg/logo.svg" alt="La Movida étterem logója">
-                <img onclick="window.location.href='/'" class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
+                <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója">
+                <img class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
                 <div class="nav_container_items">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a class="active-page" href="/gallery.html">Galéria</a></li>
-                        <li><a href="#">Étlap</a></li>
+                        <li><a href="/galeria.html">Galéria</a></li>
+                        <li><a class="active-page" href="/etlap.html">Étlap</a></li>
                         <li><a href="#">Kapcsolat</a></li>
                     </ul>
                     <div class="nav_container_items-social">
@@ -76,7 +58,7 @@
                         <a href="#"><img src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
                     </div>
                     <div class="nav_container-languageSelector">
-                        <button onclick="window.location.href='/en/gallery.html'" class="btn-lang">EN</button>
+                        <button onclick="window.location.href='/en/home.html'" class="btn-lang">EN</button>
                         <span class="btn-lang btn-lang-active">/</span>
                         <button class="btn-lang btn-lang-active">HU</button>
                     </div>
@@ -85,42 +67,41 @@
             </div>
         </nav>
         </div>   
-        <!-- DESKTOP NAVIGATION END-->      
         <div class="header_container-text text-align-center mgt-1 p-0 w-100">
-            <h1>Galéria</h1>
+            <h1>Étlap</h1>
         </div>
+    <!-- DESKTOP NAVIGATION END-->      
     </header>
 <!-- HEADER END-->   
 <!-- MAIN CONTENT-->      
     <main>
-        <section>
-            <figure class="gallery-covers">
-                <img id="1"  src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="2"  src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="3"  src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="4"  src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="5"  src="/assets/gallery/covers/1.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="6"  src="/assets/gallery/covers/2.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="7"  src="/assets/gallery/covers/3.png" alt="cover photo for gallery Lamovida restaurant ">
-                <img id="8"  src="/assets/gallery/covers/4.png" alt="cover photo for gallery Lamovida restaurant ">
-            </figure>
+        <section class="menu">
+            <div class="menu-container">
+                <picture onclick="window.location.href='/assets/pdf/menu_food_beverage.pdf'">
+                    <source srcset="/assets/menu/webp/1.webp" type="image/webp">  
+                    <img src="/assets/menu/1.png" alt="LaMovida étterem étlapja">
+                </picture>
+
+                <picture onclick="window.location.href='/assets/pdf/cocktail.pdf'">
+                    <source srcset="/assets/menu/webp/2.webp" type="image/webp">  
+                    <img src="/assets/menu/2.png" alt="LaMovida étterem étlapja">
+                </picture>
+            </div>
         </section>
     </main>
-    
 <!-- MAIN CONTENT END-->      
-<!-- PARALLAX CONTAINER END-->    
 <!-- FOOTER -->  
     <footer>
         <div class="footer-container">
             <nav class="nav display-block mb-0 prefix-width-footer-max-width-141">
                 <div class="nav_container">
-                    <img class="nav-logo " onclick="window.location.href='/'" src="/assets/svg/logo.svg" alt="La Movida étterem logója">
+                    <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója">
                     <img class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
                     <div class="nav_container_items">
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a class="active-page" href="/gallery.html">Galéria</a></li>
-                            <li><a href="#">Étlap</a></li>
+                            <li><a class="active-page" href="/">Home</a></li>
+                            <li ><a href="/galeria.html">Galéria</a></li>
+                            <li><a class="active-page" href="/etlap.html">Étlap</a></li>
                             <li><a href="#">Kapcsolat</a></li>
                         </ul>
                         <div class="nav_container_items-social">

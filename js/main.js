@@ -246,8 +246,8 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
      
       // Close the gallery using Escape
       if(e.key === 'Escape') {
-        document.querySelector('.gallery').classList.add('hidden')
         document.querySelector('html').classList.remove('overflow-hidden')
+        document.querySelector('.gallery').classList.add('hidden')
       }
     })
 
