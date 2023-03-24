@@ -131,37 +131,72 @@ handleMediaQueryChange(mediaQuery);
 
 
 
-// Gallery
+// *****************************GALLERY ***********************************************//
 
-const bgImage = document.querySelector('.galley-container-photos');
+const galleryContainer = document.querySelector('.gallery');
+const bgImage = document.querySelector('.gallery-container-photos');
 const right = document.querySelector('.gallery-next-right');
 const left = document.querySelector('.gallery-next-left');
 const index = document.querySelector('.number-of-photo');
+const galleryClose = document.querySelector('.gallery-container-close');
+const ClickEffectL = document.querySelector('.click-effect-left');
+const ClickEffectR = document.querySelector('.click-effect-right');
 
 
+// Some effect on the left, and right button
 
+ClickEffectL.addEventListener('click', ()=> {
+  ClickEffectL.style.transform = "translateX(-1px)";
+
+  setTimeout(()=> {
+    ClickEffectL.style.transform = "translateX(1px)";
+  }, 150)
+})
+
+ClickEffectR.addEventListener('click', ()=> {
+  ClickEffectR.style.transform = "translateX(1px)";
+
+  setTimeout(()=> {
+    ClickEffectR.style.transform = "translateX(-1px)";
+  }, 150)
+})
+
+  // Close the gallery
+galleryClose.addEventListener('click', ()=> {
+  console.log('close');
+  document.querySelector('.gallery').classList.add('hidden')
+})
+
+// Colse the gallery if click the background
+
+galleryContainer.addEventListener('click', (e)=> {
+
+  if(e.target.id === 'gallery') {
+    document.querySelector('.gallery').classList.add('hidden')
+  }
+})
+
+  // Photo Gallery logic
 document.querySelector('.gallery-covers').addEventListener('click', (e) => {
   
+  // Check the ID of the photo clicked
   const selectedItem = Number(e.target.id)
-  console.log(selectedItem);
   
-  
+  // Checked that the clicked element is a number above 0
   if(selectedItem !== 0) {
     
-    document.querySelector('.galley').classList.remove('hidden')
+  // If > 0 then the gallery is OPEN   
+    document.querySelector('.gallery').classList.remove('hidden')
     document.querySelector('html').classList.add('overflow-hidden')
     console.log('go to gallery', selectedItem);
     
+  // This function handles the the gallery. SelectedItem holds the number of the photo which will be the start point of the gallery  
     galerryHandeling(selectedItem) 
-    
     
   } else {
     console.log('opsss');
     }
   })
-  
-  
-  
   
   function galerryHandeling(item) {
       
@@ -206,6 +241,13 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
     document.addEventListener('keydown', function (e) {
       if(e.key === 'ArrowLeft') lc()
       if(e.key === 'ArrowRight') rc()
+     
+      // Close the gallery using Escape
+      if(e.key === 'Escape') {
+        document.querySelector('.gallery').classList.add('hidden')
+      }
     })
 
 }
+
+// *****************************GALLERY ***********************************************//
