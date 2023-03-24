@@ -1438,7 +1438,7 @@ section {
       background-repeat: no-repeat; }
       @media only screen and (max-width: 37.5em) {
         .gallery-container-photos {
-          background-size: unset; } }
+          background-size: contain; } }
     .gallery-container-photo-handeling {
       width: 250px;
       margin-top: 3rem;

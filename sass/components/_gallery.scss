@@ -63,7 +63,7 @@
             background-repeat: no-repeat;
 
             @include respond (phone) {
-                background-size: unset;
+                background-size: contain;
 
              }
         }
