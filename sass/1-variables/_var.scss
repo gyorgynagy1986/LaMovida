@@ -1,9 +1,9 @@
 
 //Fonts
 
-$font-primary:'Sniglet', cursive;
-$font-primary-title:'Rubik Dirt', cursive;
-$font-btn:'Bebas Neue', cursive;
+$font-primary:'Sniglet';
+$font-primary-title:'Rubik Dirt';
+$font-btn:'Bebas Neue';
 
 // COLORS
 
@@ -69,6 +69,14 @@ $color-sec-footer:#000000;
     @if $breakpoint == SC1600 {
       @media only screen and (max-width: 100em) { @content };       // 1440px
   }
+}
+
+#preloader {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 1000000000000;
 }
 
 

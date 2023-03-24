@@ -1,5 +1,10 @@
+main {
+    min-height: 100vh;
+}
+
 .menu {
     @include sectionPadding;
+    min-height: 100vh;
     padding-top: 3rem;
     width: 100%;
     height: 100%;

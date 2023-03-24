@@ -1,5 +1,14 @@
 // Mobile menu
 
+const loader = document.getElementById('preloader');
+
+window.addEventListener('load', function(load) {
+  window.removeEventListener('load', load, false);               
+  setTimeout(function(){loader.style.display = 'none'},0);
+
+},false);
+
+
 
 const mobilMenuClose = document.querySelector('.mobile-menu-close');
 const mobilOpen = document.querySelector('.mobile-menu-open');
