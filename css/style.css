@@ -319,6 +319,11 @@
   padding: 0;
   box-sizing: inherit; }
 
+*:focus, *:active {
+  outline: none;
+  box-shadow: none;
+  /* any other relevant styles */ }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
