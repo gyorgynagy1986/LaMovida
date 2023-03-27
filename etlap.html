@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="preload" href="/fonts/Sniglet/Sniglet-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Sniglet/Sniglet-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Rubik_Dirt/RubikDirt-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Bebas_Neue/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/fav//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/fav//favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Étlap - La Movida</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="preload" href="https://fonts.gstatic.com/s/sniglet/v17/cIf9MaFLtkE3UjaJ9C6hYQ.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://fonts.gstatic.com/s/rubikdirt/v1/DtVmJxC7WLEj1uIXEWAdilss6w.woff2" as="font" type="font/woff2" crossorigin>
+    
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com">
+        <link href="https://fonts.gstatic.com" crossorigin>
+        <link
+            rel="preload"
+            href="/assets/svg/instagram.svg"
+            as="image"
+        />
+        <link
+            rel="preload"
+            href="/assets/svg/facebook.svg"
+            as="image"
+        />
+        <link
+            rel="preload"
+            href="/assets/svg/logo.svg"
+            as="image"
+        />
+        <link
+            rel="preload"
+            href="/assets/header.png"
+            as="image"
+        />
+        <link
+            rel="preload"
+            href="/assets/2.png"
+            as="image"
+        />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/fav//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/fav//favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>La Movida</title>
+    </head>
 <body >
 <!-- <div id="preloader"></div> -->
 <!-- PARALLAX CONTAINER-->      
@@ -83,7 +112,7 @@
     <main>
         <div class="cursor"></div>
         <section class="menu ">
-            <div class="menu-container ">
+            <div class="menu-container fade-in">
                 <picture  onclick="window.location.href='/assets/pdf/menu_food_beverage.pdf'">
                     <source srcset="/assets/menu/webp/1.webp" type="image/webp">  
                     <img class="forefect" src="/assets/menu/1.png" alt="LaMovida étterem étlapja">
@@ -143,6 +172,6 @@
         </div>
     </footer>
     <!-- FOOTER END-->  
-    <script  src="/js/main.js"></script>
+    <script defer src="/js/main.js"></script>
 </body>
 </html>
