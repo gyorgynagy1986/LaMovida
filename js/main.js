@@ -1,12 +1,12 @@
 // Mobile menu
 
-const loader = document.getElementById('preloader');
-
-window.addEventListener('load', function(load) {
-  window.removeEventListener('load', load, false);               
-  setTimeout(function(){loader.style.display = 'none'},0);
-
-},false);
+//const loader = document.getElementById('preloader');
+//
+//window.addEventListener('load', function(load) {
+//  window.removeEventListener('load', load, false);               
+//  setTimeout(function(){loader.style.display = 'none'},0);
+//
+//},false);
 
 
 

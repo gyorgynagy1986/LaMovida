@@ -6,12 +6,16 @@
     text-fill-color: transparent;
 }
 
+.logo-container {
+    width: auto;
+    height: 63px;
+}
 
 .nav {
     width: 100%;
     max-width: $max-width;
     height: auto;
-    margin-bottom: 4rem;
+  //  margin-bottom: 4rem;
     margin-inline:auto;
 
     @include respond (phone) {
@@ -75,17 +79,18 @@
                     }
                 }
 
-                &:nth-child(4) {
-                    margin-right: 3rem;
-                    @include respond (phone) {
-                        margin-right: 0;
-                        margin-bottom: 3rem;
-                    }
-                }
+               &:nth-child(4) {
+                   margin-right: 3rem;
+                   @include respond (phone) {
+                       margin-right: 0;
+                       margin-bottom: 3rem;
+                   }
+               }
             }
                 }
             
             &-social {
+                min-width: 120px;
 
                 a {
                     cursor: pointer;
@@ -106,12 +111,12 @@
                 }
             }    
         }
-        &-languageSelector {
-            margin-right: 5rem;
-            @include respond (phone) {
-               margin-inline: auto;
-               margin-bottom: 2rem;
-            }
-        }
+       &-languageSelector {
+           margin-right: 5rem;
+           @include respond (phone) {
+              margin-inline: auto;
+              margin-bottom: 2rem;
+           }
+       }
     }
 }
