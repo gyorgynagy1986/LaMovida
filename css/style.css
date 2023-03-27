@@ -418,7 +418,7 @@ html {
       overflow-x: hidden; } }
 
 body {
-  font-family: "Sniglet", cursive;
+  font-family: "Sniglet", Sniglet;
   position: relative;
   overflow: hidden; }
 
@@ -438,7 +438,7 @@ button {
 
 h1 {
   font-size: 48px;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", Rubik Dirt;
   font-style: normal;
   font-weight: 400;
   line-height: 57px;
@@ -460,34 +460,6 @@ h3 {
   @media only screen and (max-width: 37.5em) {
     h3 {
       font-size: 20px; } }
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2"), url("/fonts/Bebas_Neue/BebasNeue-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  display: swap; }
-
-@font-face {
-  font-family: 'Sniglet';
-  src: url("/fonts/Sniglet/Sniglet-Regular.woff2") format("woff2"), url("/fonts/Sniglet/Sniglet-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  display: swap; }
-
-@font-face {
-  font-family: 'Sniglet';
-  src: url("/fonts/Sniglet/Sniglet-ExtraBold.woff2") format("woff2"), url("/fonts/Sniglet/Sniglet-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  display: swap; }
-
-@font-face {
-  font-family: 'Rubik Dirt';
-  src: url("/fonts/Rubik_Dirt/RubikDirt-Regular.woff2") format("woff2"), url("/fonts/Rubik_Dirt/RubikDirt-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  display: swap; }
 
 .events {
   padding-left: 5%;
@@ -524,7 +496,7 @@ h3 {
           min-height: 100%;
           padding-left: 0; } }
       .events_container-text h2 {
-        font-family: "Rubik Dirt", cursive;
+        font-family: "Rubik Dirt", Rubik Dirt;
         font-weight: 400;
         line-height: 120%;
         letter-spacing: 0.02em;
@@ -795,7 +767,7 @@ h3 {
     .infoBox_container h2 {
       text-align: center;
       margin-bottom: 1rem;
-      font-family: "Rubik Dirt", cursive;
+      font-family: "Rubik Dirt", Rubik Dirt;
       font-weight: 400;
       line-height: 150%;
       letter-spacing: 0.02em;
@@ -885,7 +857,7 @@ h3 {
           min-height: 100%;
           padding-left: 0rem; } }
       .story_container-text h2 {
-        font-family: "Rubik Dirt", cursive;
+        font-family: "Rubik Dirt", Rubik Dirt;
         font-style: normal;
         font-weight: 400;
         line-height: 57px;
@@ -941,7 +913,7 @@ h3 {
       .services-title {
         margin-bottom: 2.3rem; } }
     .services-title h2 {
-      font-family: "Rubik Dirt", cursive;
+      font-family: "Rubik Dirt", Rubik Dirt;
       font-weight: 400;
       line-height: 120%;
       letter-spacing: 0.02em;
@@ -987,7 +959,7 @@ h3 {
         padding-bottom: 4rem; }
         .services_container-box-body h3 {
           margin-top: 2rem;
-          font-family: "Rubik Dirt", cursive;
+          font-family: "Rubik Dirt", Rubik Dirt;
           font-weight: 400;
           line-height: 150%;
           letter-spacing: 0.02em;
@@ -1047,7 +1019,7 @@ h3 {
           height: 40%;
           padding: 0; } }
       .opening_container-text h2 {
-        font-family: "Rubik Dirt", cursive;
+        font-family: "Rubik Dirt", Rubik Dirt;
         font-style: normal;
         font-weight: 400;
         line-height: 57px;
@@ -1163,7 +1135,7 @@ footer {
       @media only screen and (max-width: 37.5em) {
         footer .footer-container-bottom .cookie-policy-mobile {
           display: block;
-          font-family: "Sniglet", cursive;
+          font-family: "Sniglet", Sniglet;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -1193,7 +1165,7 @@ footer {
           padding-right: 3%;
           padding-left: 3%; } }
       footer .footer-container-bottom-textBox h4 {
-        font-family: "Bebas Neue", cursive;
+        font-family: "Bebas Neue", Bebas Neue;
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
@@ -1201,7 +1173,7 @@ footer {
         color: #FFFFFF;
         margin-bottom: .5rem; }
       footer .footer-container-bottom-textBox p {
-        font-family: "Sniglet", cursive;
+        font-family: "Sniglet", Sniglet;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1209,7 +1181,7 @@ footer {
         color: #FFF4E5;
         margin-bottom: .5rem; }
       footer .footer-container-bottom-textBox a {
-        font-family: "Sniglet", cursive;
+        font-family: "Sniglet", Sniglet;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1255,7 +1227,7 @@ footer {
           footer .footer-container-bottom .ul-container ul {
             flex-direction: column; } }
         footer .footer-container-bottom .ul-container ul li {
-          font-family: "Sniglet", cursive;
+          font-family: "Sniglet", Sniglet;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -1285,7 +1257,7 @@ footer {
               footer .footer-container-bottom .ul-container ul li:not(:last-child) {
                 margin-right: 0 !important; } }
       footer .footer-container-bottom .ul-container .cookie-policy {
-        font-family: "Sniglet", cursive;
+        font-family: "Sniglet", Sniglet;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1376,7 +1348,7 @@ main {
   height: 44px;
   background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
   color: #FFEEEE;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", Bebas Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1390,7 +1362,7 @@ main {
   height: 44px;
   background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
   color: #FFEEEE;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", Bebas Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1403,7 +1375,7 @@ main {
   width: 126px;
   height: 44px;
   background: radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%);
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", Bebas Neue;
   color: #FFEEEE;
   font-style: normal;
   font-weight: 400;
@@ -1413,7 +1385,7 @@ main {
   text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25); }
 
 .btn-empty {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", Bebas Neue;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1424,7 +1396,7 @@ main {
   color: #666666; }
 
 .btn-lang {
-  font-family: "Sniglet", cursive;
+  font-family: "Sniglet", Sniglet;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1664,7 +1636,7 @@ main {
   margin-left: 1.5rem;
   margin-right: 1.5rem; }
   .gallery-dinamic-info span {
-    font-family: "Sniglet", cursive;
+    font-family: "Sniglet", Sniglet;
     font-size: 20px; }
     .gallery-dinamic-info span:not(:last-child) {
       margin-right: .3rem; }
