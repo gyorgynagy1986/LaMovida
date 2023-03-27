@@ -263,3 +263,5 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
 }
 
 // *****************************GALLERY ***********************************************//
+
+

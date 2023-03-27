@@ -7,10 +7,19 @@ $fontsize-h1:48px;
 $fontsize-h1-mobile:24px;
 
 h1 {
-  font-size:$fontsize-h1 ;
+  font-size:$fontsize-h1;
+  font-family: $font-primary-title;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0.02em;
+
+
   @include respond (phone) {
     font-size:$fontsize-h1-mobile;
-  }
+    margin-top: 0;
+    line-height: 28px;
+ }
 
 }
 
