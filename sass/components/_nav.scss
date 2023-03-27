@@ -9,6 +9,7 @@
 .logo-container {
     width: auto;
     height: 63px;
+    
 }
 
 .nav {
@@ -92,6 +93,11 @@
             &-social {
                 min-width: 120px;
                 height: 31px;
+
+                @include respond (phone) {
+                    min-width: auto;
+                    height: auto;
+                  }
                 
                 a {
                     cursor: pointer;

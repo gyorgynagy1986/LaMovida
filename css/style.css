@@ -1475,6 +1475,10 @@ main {
       .nav_container_items-social {
         min-width: 120px;
         height: 31px; }
+        @media only screen and (max-width: 37.5em) {
+          .nav_container_items-social {
+            min-width: auto;
+            height: auto; } }
         .nav_container_items-social a {
           cursor: pointer; }
           .nav_container_items-social a:not(:last-child) {
