@@ -461,6 +461,34 @@ h3 {
     h3 {
       font-size: 20px; } }
 
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2"), url("/fonts/Bebas_Neue/BebasNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+
+@font-face {
+  font-family: 'Sniglet';
+  src: url("/fonts/Sniglet/Sniglet-Regular.woff2") format("woff2"), url("/fonts/Sniglet/Sniglet-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  display: swap; }
+
+@font-face {
+  font-family: 'Sniglet';
+  src: url("/fonts/Sniglet/Sniglet-ExtraBold.woff2") format("woff2"), url("/fonts/Sniglet/Sniglet-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  display: swap; }
+
+@font-face {
+  font-family: 'Rubik Dirt';
+  src: url("/fonts/Rubik_Dirt/RubikDirt-Regular.woff2") format("woff2"), url("/fonts/Rubik_Dirt/RubikDirt-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  display: swap; }
+
 .events {
   padding-left: 5%;
   padding-right: 5%; }
@@ -1473,7 +1501,8 @@ main {
                 margin-right: 0;
                 margin-bottom: 3rem; } }
       .nav_container_items-social {
-        min-width: 120px; }
+        min-width: 120px;
+        height: 31px; }
         .nav_container_items-social a {
           cursor: pointer; }
           .nav_container_items-social a:not(:last-child) {
