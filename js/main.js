@@ -1,17 +1,28 @@
-// Mobile menu
 
-//const loader = document.getElementById('preloader');
-//
-//window.addEventListener('load', function(load) {
-//  window.removeEventListener('load', load, false);               
-//  setTimeout(function(){loader.style.display = 'none'},0);
-//
-//},false);
+const svgCrab = document.querySelector('.parallax-img-crab');
+const svgFish = document.querySelector('.svg-container-fish');
+const svgOctopus = document.querySelector('.svg-container-octopus');
+const svgDex = document.querySelector('.svg-container-dec');
+const seeUrchinSmall = document.querySelector('.svg-container-seaurchinsmall');
+const fishSteak = document.querySelector('.svg-container-fishSteak');
+const flower = document.querySelector('.svg-container-flower');
+const shell = document.querySelector('.svg-container-shell');
+const something = document.querySelector('.svg-container-something');
+const smshell = document.querySelector('.svg-container-smshell');
+const bgseaurchinsmall = document.querySelector('.svg-container-bgseaurchinsmall');
 
-
+const nav = document.querySelector('.nav');
+const header = document.querySelector('.header');
+const prefixHeight = document.querySelector('.nav_container')
+const navLogo = document.querySelector('.nav-logo');
+const navLogoSticky = document.querySelector('.nav-logo-sticky');
+const logoContainer = document.querySelector('.logo-container');
 
 const mobilMenuClose = document.querySelector('.mobile-menu-close');
 const mobilOpen = document.querySelector('.mobile-menu-open');
+
+
+// MOBILE 
 
 mobilMenuClose.addEventListener('click', ()=> {
 
@@ -27,16 +38,7 @@ mobilOpen.addEventListener('click', ()=> {
 
 })
 
-
-// STICKY NAVIGATIOn
-
-const nav = document.querySelector('.nav');
-const header = document.querySelector('.header');
-const prefixHeight = document.querySelector('.nav_container')
-const navLogo = document.querySelector('.nav-logo');
-const navLogoSticky = document.querySelector('.nav-logo-sticky');
-const logoContainer = document.querySelector('.logo-container');
-
+// STICKY NAV
 
 const stickyNav = function(entries) {
   const [entry] = entries;
@@ -68,37 +70,16 @@ const headerObserver = new IntersectionObserver(
 
 headerObserver.observe(header);
 
-
-// STICKY NAVIGATION END
-
-
-const svgCrab = document.querySelector('.parallax-img-crab');
-const svgFish = document.querySelector('.svg-container-fish');
-const svgOctopus = document.querySelector('.svg-container-octopus');
-const svgDex = document.querySelector('.svg-container-dec');
-const seeUrchinSmall = document.querySelector('.svg-container-seaurchinsmall');
-const fishSteak = document.querySelector('.svg-container-fishSteak');
-const flower = document.querySelector('.svg-container-flower');
-const shell = document.querySelector('.svg-container-shell');
-const something = document.querySelector('.svg-container-something');
-const smshell = document.querySelector('.svg-container-smshell');
-const bgseaurchinsmall = document.querySelector('.svg-container-bgseaurchinsmall');
-
-
-
-//const initialCoed = document.querySelector('.story_container-text');
-//const cord = initialCoed.getBoundingClientRect();
-//
-//console.log(cord);
+// Parallax < 600 PX
 
 const mediaQuery = window.matchMedia('(min-width: 600px)');
 
-// Add a listener to the media query
 mediaQuery.addListener(handleMediaQueryChange);
 
-
 function handleMediaQueryChange(event) {
+
   if (event.matches) {
+
     svgCrab.style.top = `${window.pageYOffset + 300}px`
     svgFish.style.bottom = `${window.pageYOffset -700}px`
     svgOctopus.style.bottom = `${window.pageYOffset + -1120}px`
@@ -129,11 +110,11 @@ function handleMediaQueryChange(event) {
    
      });
   } else {
-    // Do something else if the media query doesn't match
+    console.log('hello, where is the parralax ? :( ');
   }
+
 }
 
-// Call the function initially to check the media query
 handleMediaQueryChange(mediaQuery);
 
 
