@@ -1651,12 +1651,27 @@ main {
       padding-top: 2.1rem;
       padding-right: 2rem;
       padding-left: 2rem; }
+  .nav-mobile .mobile-nav_container {
+    justify-content: center; }
+  .nav-mobile .mobile-nav_container_items {
+    height: 80%; }
   @media only screen and (max-width: 37.5em) {
     .nav-mobile {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 100%; } }
+
+.mobile-nav-ul li {
+  margin-bottom: 3rem !important; }
+  .mobile-nav-ul li:nth-child(4) {
+    margin-bottom: 4rem !important; }
+
+.mobile-nav-social-container {
+  margin-bottom: 2rem; }
+
+.mobile-nav-languageSelector {
+  margin-bottom: 4rem; }
 
 .sticky {
   position: fixed;

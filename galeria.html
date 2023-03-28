@@ -74,16 +74,38 @@
     <header class="header  ">
         <!-- DESKTOP NAVIGATION-->   
         <div class="nav-sticky-prefix ">
-            <nav class="nav-mobile">
-               <div class="nav-mobile-container hidden">
-                   <div class="nav-mobile-container-header">
-                       <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
-                       <img class="mobile-menu-close" src="/assets/mobile/hamburger-close.svg" alt="LaMovida hamburger menu">
-                   </div>
-               </div>
-               <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
-               <img class="mobile-menu-open" src="/assets/mobile/hamburger-open.svg" alt="LaMovida hamburger menu">
-            </nav>   
+      <!-- MOBILE NAVIGATION-->   
+      <nav class="nav-mobile">
+        <div class="nav-mobile-container hidden">
+            <div class="nav-mobile-container-header">
+                <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+                <img class="mobile-menu-close" src="/assets/mobile/hamburger-close.svg" alt="LaMovida hamburger menu">
+            </div>
+            <div class="nav_container mobile-nav_container">
+                 <div class="nav_container_items mobile-nav_container_items ">
+                     <ul class="mobile-nav-ul">
+                         <li><a href="/">Home</a></li>
+                         <li><a class="active-page" href="/galeria.html">Galéria</a></li>
+                         <li><a href="/etlap.html">Étlap</a></li>
+                         <li><a href="/kapcsolat.html">Kapcsolat</a></li>
+                     </ul>
+                     <div class="nav_container_items-social mobile-nav-social-container">
+                         <a href="https://www.facebook.com/MovidaBudapest"><img  src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
+                         <a href="https://www.instagram.com/lamovidabp/"><img  src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
+                     </div>
+                     <div class="nav_container-languageSelector mobile-nav-languageSelector">
+                         <button onclick="window.location.href='/en/home.html'" class="btn-lang">EN</button>
+                         <span class="btn-lang btn-lang-active">/</span>
+                         <button class="btn-lang btn-lang-active">HU</button>
+                     </div>
+                     <button class="btn-big"><a href="#">asztalfoglalás</a></button>
+                 </div>
+             </div>
+        </div>
+        <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+        <img class="mobile-menu-open" src="/assets/mobile/hamburger-open.svg" alt="LaMovida hamburger menu">
+     </nav>   
+    <!-- MOBILE NAVIGATION END-->    
            <nav class="nav">
                <div class="nav_container">
                   <div class="logo-container"> <img class="nav-logo " src="/assets/svg/logo.svg" alt="La Movida étterem logója"> </div>
@@ -145,7 +167,7 @@
                             <li><a href="/">Home</a></li>
                             <li><a class="active-page" href="/gallery.html">Galéria</a></li>
                             <li><a href="/etlap.html">Étlap</a></li>
-                            <li><a href="/kapcsolat.html">Kapcsolat</a></li>
+                            <li><a href="/">Kapcsolat</a></li>
                         </ul>
                         <div class="nav_container_items-social">
                             <a href="https://www.facebook.com/MovidaBudapest"><img src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
