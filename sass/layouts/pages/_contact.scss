@@ -5,17 +5,36 @@ main {
 .contact {
     margin-top: 5rem;
     max-width: 100%;
+    @include respond (phone) {
+        text-align: center;
+        margin-top: 3rem;
+    }
 }
 
 .container-contact {
     height: 100%;
     min-height:618px;
     width: 100%;
+
+    @include respond (phone) {
+        height:0;
+        min-height:860px;
+    }
+
     
 }
 
 .contact-address-container {
     justify-content: unset !important;
+    
+    @include respond (phone) {
+       flex-direction: row !important;
+       max-width: 17rem;
+       text-align: center;
+       margin-inline: auto;
+       font-size: 18px;
+       line-height: 150%;
+    }
 
     p {
         margin-right: 1.2rem;
@@ -29,11 +48,21 @@ main {
 
 .contact-h2 {
     line-height: 33.18px !important;
+    margin-top: 3rem !important;
     margin-bottom: 2.2rem !important;
+    @include respond (phone) {
+        line-height: 21px !important;     
+        margin-bottom: 2rem !important;
+    }
 }
 
 .h2-contact-sec-fontsize {
     font-size: 28px;
+
+    @include respond (phone) {
+        font-size: 18px;
+
+    }
 }
 
 .container-contact-text {
@@ -41,6 +70,12 @@ main {
     padding: 0;
     padding-left: 8rem;
     padding-top: 10.2rem;
+
+    @include respond (phone) {
+        width: auto;
+        padding: 0;
+        height: auto;
+    }
 
 }
 
@@ -50,6 +85,11 @@ main {
     line-height: 150%;
     text-decoration-line: underline;
     color: #000000;
+
+    @include respond (phone) {
+        margin-top: 2rem;
+
+    }
 }
 
 .contect-phone {
@@ -58,16 +98,26 @@ main {
     line-height: 150%;
     text-decoration-line: underline;
     color: #000000;
+
 }
 
 .contect-btn-color {
     color: #000000 !important;
 }
 
+.contact-social-main-container {
+    margin-bottom: 3.5rem;
+    @include respond (phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+}
+
 .contact-container-social {
     display: flex;
     align-items: center;
-    margin-bottom: 3.5rem;
 
     &:nth-child(1) {
         margin-bottom: 2.6rem;
@@ -95,4 +145,13 @@ main {
         img {
             object-position: -20%;
         }
+
+        @include respond (phone) {
+            width: auto;
+            padding: 0;
+        }
+    @include respond (phone) {
+        background-position-y:29px;
+    }
+
 }
