@@ -35,7 +35,7 @@ const header = document.querySelector('.header');
 const prefixHeight = document.querySelector('.nav_container')
 const navLogo = document.querySelector('.nav-logo');
 const navLogoSticky = document.querySelector('.nav-logo-sticky');
-
+const logoContainer = document.querySelector('.logo-container');
 
 
 const stickyNav = function(entries) {
@@ -45,12 +45,14 @@ const stickyNav = function(entries) {
     nav.classList.add('slide-in-top');
     prefixHeight.classList.add('nav-c-10');
     navLogo.classList.add('display-none');
+    logoContainer.classList.add('display-none');
     navLogoSticky.classList.remove('display-none');
   } else {
     nav.classList.remove('sticky');
     nav.classList.remove('slide-in-top');
     prefixHeight.classList.remove('nav-c-10');
     navLogo.classList.remove('display-none');
+    logoContainer.classList.remove('display-none');
     navLogoSticky.classList.add('display-none');
 
   }

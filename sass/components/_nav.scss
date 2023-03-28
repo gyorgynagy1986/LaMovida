@@ -9,7 +9,17 @@
 .logo-container {
     width: auto;
     height: 63px;
+
+   img {
+     width: 142.85px;
+     height: 60px;
+   }
     
+}
+
+.nav-logo {
+    width: 142.85px;
+    height: 60px;
 }
 
 .nav {
@@ -94,12 +104,28 @@
                 min-width: 120px;
                 height: 31px;
 
+               
+
                 @include respond (phone) {
                     min-width: auto;
                     height: auto;
                   }
                 
                 a {
+
+                    img {
+                        
+                        &:nth-child(1) {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+
+                        &:nth-child(2) {
+                            width: 32.55px;
+                            height: 32.55px;
+                        }
+                    }
+
                     cursor: pointer;
 
                     &:not(:last-child) {
