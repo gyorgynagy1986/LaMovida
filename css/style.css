@@ -402,6 +402,15 @@
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased; }
 
+*::-webkit-scrollbar {
+  width: .8em;
+  background-color: #fde4cf; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F4720A;
+  height: 300px;
+  border-radius: 50px; }
+
 *:focus, *:active {
   outline: none;
   box-shadow: none;
@@ -1555,7 +1564,10 @@ main {
     padding-right: 4%;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    max-width: 140rem;
+    margin-inline: auto; }
     @media only screen and (max-width: 37.5em) {
       .nav_container {
         flex-direction: column;
@@ -1675,6 +1687,7 @@ main {
 
 .sticky {
   position: fixed;
+  display: flex;
   max-width: 100% !important;
   top: 0;
   left: 0;

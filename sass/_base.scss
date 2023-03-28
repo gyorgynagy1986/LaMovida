@@ -10,12 +10,22 @@
     -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;
 }
 
+
+*::-webkit-scrollbar {
+    width: .8em;
+    background-color: #fde4cf ;
+  } 
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #F4720A ;
+    height: 300px;
+    border-radius: 50px;
+  }
+
 *:focus, *:active {
     outline: none;
     box-shadow: none;
     /* any other relevant styles */
-
-
 }
 
 
