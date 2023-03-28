@@ -38,7 +38,7 @@ mobilOpen.addEventListener('click', ()=> {
 
 })
 
-// STICKY NAV
+// STICKY NAV DESKTOP
 
 const stickyNav = function(entries) {
   const [entry] = entries;
