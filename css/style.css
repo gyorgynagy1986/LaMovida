@@ -53,16 +53,16 @@
   .parallax-image-display-none {
     display: none; } }
 
-@media only screen and (max-width: 51.25em) {
+@media only screen and (max-width: 73.75em) {
   .mobile-center-story {
     width: 100%;
     display: flex;
-    justify-content: center;
     margin-bottom: 0rem; } }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 45.625em) {
   .mobile-center-story {
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem;
+    justify-content: center; } }
 
 .display-only-mobile {
   display: none; }
@@ -842,7 +842,8 @@ h3 {
     width: 100%;
     max-width: 140rem;
     margin-inline: auto;
-    height: 308px;
+    height: 100%;
+    min-height: 308px;
     background: #FFF4E5;
     border-width: 3px 3px 7px 7px;
     border-style: solid;
@@ -889,7 +890,6 @@ h3 {
       width: 100%;
       padding: 0;
       align-items: center;
-      justify-content: flex-start;
       padding: 3.9rem 4rem 3.9rem 4rem; }
       .tablet-view-infobox h2 {
         font-size: 32px; } }
@@ -1083,13 +1083,13 @@ h3 {
       border-width: 3px 3px 7px 7px;
       border-style: solid;
       border-color: #000000; }
-      .services_container-box:not(:last-child) {
+      .services_container-box:not(:nth-child(3)) {
         margin-right: 4.3rem; }
         @media only screen and (max-width: 80em) {
-          .services_container-box:not(:last-child) {
+          .services_container-box:not(:nth-child(3)) {
             margin-right: 2%; } }
         @media only screen and (max-width: 37.5em) {
-          .services_container-box:not(:last-child) {
+          .services_container-box:not(:nth-child(3)) {
             margin-right: 0;
             margin-bottom: 1.3rem; } }
       .services_container-box-header {
@@ -1557,20 +1557,24 @@ main {
       min-height: 860px; } }
 
 .contact-address-container {
-  justify-content: unset !important; }
+  justify-content: unset !important;
+  display: flex;
+  align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .contact-address-container {
       flex-direction: row !important;
-      max-width: 17rem;
+      max-width: 19rem;
       text-align: center;
       margin-inline: auto;
       font-size: 18px;
       line-height: 150%; } }
-  .contact-address-container p {
-    margin-right: 1.2rem; }
-  .contact-address-container img {
-    width: 2.7rem;
-    height: 2.7rem; }
+  .contact-address-container a {
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+    .contact-address-container a img {
+      width: 2.7rem;
+      height: 2.7rem; }
 
 .contact-h2 {
   line-height: 33.18px !important;

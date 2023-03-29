@@ -53,7 +53,7 @@
             border-style: solid;
             border-color: #000000;
 
-            &:not(:last-child) {
+            &:not(:nth-child(3)) {
                 margin-right: 4.3rem;
                 
                 @include respond (SCLaptop) {

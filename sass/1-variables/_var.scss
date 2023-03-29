@@ -224,15 +224,16 @@ $color-sec-footer:#000000;
 }
 
 .mobile-center-story {
-  @include respond (SCtablet) {
+ 
+  @include respond (custom) {
     width: 100%;
     display: flex;
-    justify-content: center;
     margin-bottom: 0rem;
   }
 
-  @include respond (phone) {
+  @include respond (tabletPrefix) {
     margin-bottom: 5rem;
+    justify-content: center;
   }
 }
 
