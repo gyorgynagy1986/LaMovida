@@ -496,21 +496,28 @@ h3 {
     padding-left: 3%;
     padding-right: 3%;
     margin-bottom: 9rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 45.625em) {
       .events_container {
         width: 100%;
         height: 100%;
         flex-direction: column-reverse;
         align-items: center;
+        margin-top: 9rem;
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .events_container {
+        margin-top: 0; } }
     .events_container-text {
       display: flex;
       padding-left: 4rem;
       width: 50%;
       min-height: 500px; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 73.75em) {
+        .events_container-text {
+          padding-left: 0; } }
+      @media only screen and (max-width: 45.625em) {
         .events_container-text {
           width: 100%;
           min-height: 100%;
@@ -523,7 +530,7 @@ h3 {
         color: #000000;
         text-align: right;
         margin-bottom: 2rem; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 45.625em) {
           .events_container-text h2 {
             text-align: center !important;
             margin-bottom: 1rem; } }
@@ -544,7 +551,7 @@ h3 {
         @media only screen and (max-width: 37.5em) {
           .events_container-text-textbox {
             font-size: 16px; } }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 45.625em) {
           .events_container-text-textbox {
             max-width: 100%;
             margin-bottom: 3.5rem;
@@ -553,7 +560,7 @@ h3 {
             text-align: unset !important; } }
       .events_container-text .events_social {
         display: flex; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 45.625em) {
           .events_container-text .events_social {
             width: 100%;
             flex-direction: column;
@@ -561,7 +568,7 @@ h3 {
         .events_container-text .events_social-facebook {
           display: flex;
           margin-right: 4.3rem; }
-          @media only screen and (max-width: 37.5em) {
+          @media only screen and (max-width: 45.625em) {
             .events_container-text .events_social-facebook {
               width: 110px;
               margin-right: 0rem;
@@ -574,10 +581,13 @@ h3 {
             font-size: 24px; }
         .events_container-text .events_social-instagram {
           display: flex; }
-          @media only screen and (max-width: 37.5em) {
+          @media only screen and (max-width: 45.625em) {
             .events_container-text .events_social-instagram {
               width: 110px;
-              margin-bottom: 6.5rem; } }
+              margin-bottom: 9rem; } }
+          @media only screen and (max-width: 37.5em) {
+            .events_container-text .events_social-instagram {
+              margin-bottom: 6rem; } }
           .events_container-text .events_social-instagram img {
             margin-right: 1rem; }
           .events_container-text .events_social-instagram button {
@@ -586,7 +596,12 @@ h3 {
             font-size: 24px; }
     .events_container-photo {
       width: 50%; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 73.75em) {
+        .events_container-photo {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end; } }
+      @media only screen and (max-width: 45.625em) {
         .events_container-photo {
           width: 100%;
           min-height: 100%;
@@ -602,23 +617,41 @@ h3 {
         justify-content: center;
         align-items: center;
         background-color: white; }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 73.75em) {
           .events_container-photo-circle {
-            width: 28rem;
-            height: 28rem; } }
+            width: 400px;
+            height: 400px;
+            margin-bottom: 3rem; } }
+        @media only screen and (max-width: 64.5em) {
+          .events_container-photo-circle {
+            width: 340px;
+            height: 340px; } }
+        @media only screen and (max-width: 51.25em) {
+          .events_container-photo-circle {
+            width: 280px;
+            height: 280px;
+            margin-bottom: 0rem; } }
         .events_container-photo-circle img {
           object-fit: cover; }
-          @media only screen and (max-width: 37.5em) {
+          @media only screen and (max-width: 73.75em) {
             .events_container-photo-circle img {
-              width: 24rem;
-              height: 24rem; } }
+              width: 350px;
+              height: 350px; } }
+          @media only screen and (max-width: 64.5em) {
+            .events_container-photo-circle img {
+              width: 300px;
+              height: 300px; } }
+          @media only screen and (max-width: 51.25em) {
+            .events_container-photo-circle img {
+              width: 240px;
+              height: 240px; } }
 
 .prefix-event {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 45.625em) {
     .prefix-event {
       display: unset;
       justify-content: unset;
@@ -780,10 +813,19 @@ h3 {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 73.75em) {
+    .infoBox {
+      display: none; } }
+  @media only screen and (max-width: 37.5em) {
+    .infoBox {
+      display: block; } }
   @media only screen and (max-width: 37.5em) {
     .infoBox {
       padding-left: 2rem;
       padding-right: 2rem; } }
+  @media only screen and (max-width: 45.625em) {
+    .infoBox {
+      margin-bottom: 4rem; } }
   .infoBox_container {
     width: 100%;
     max-width: 140rem;
@@ -826,6 +868,23 @@ h3 {
         .infoBox_container-text {
           font-size: 16px; } }
 
+.tablet-view-infobox {
+  display: none; }
+  @media only screen and (max-width: 73.75em) {
+    .tablet-view-infobox {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3.9rem 4rem 3.9rem 4rem; }
+      .tablet-view-infobox h2 {
+        font-size: 32px; } }
+  @media only screen and (max-width: 37.5em) {
+    .tablet-view-infobox {
+      display: none; } }
+
 .story {
   padding-left: 5%;
   padding-right: 5%;
@@ -848,7 +907,7 @@ h3 {
     display: flex;
     padding-left: 3%;
     padding-right: 3%; }
-    @media only screen and (max-width: 51.25em) {
+    @media only screen and (max-width: 45.625em) {
       .story_container {
         flex-direction: column;
         padding-left: 0;
@@ -860,7 +919,7 @@ h3 {
       @media only screen and (max-width: 73.75em) {
         .story_container-photo {
           align-items: center; } }
-      @media only screen and (max-width: 51.25em) {
+      @media only screen and (max-width: 45.625em) {
         .story_container-photo {
           width: 100%;
           display: flex;
@@ -909,7 +968,7 @@ h3 {
       width: 50%;
       min-height: 500px;
       padding-left: 4rem; }
-      @media only screen and (max-width: 51.25em) {
+      @media only screen and (max-width: 45.625em) {
         .story_container-text {
           width: 100%;
           min-height: 100%;
@@ -922,7 +981,7 @@ h3 {
         letter-spacing: 0.02em;
         color: #000000;
         margin-bottom: 2rem; }
-        @media only screen and (max-width: 51.25em) {
+        @media only screen and (max-width: 45.625em) {
           .story_container-text h2 {
             font-size: 24px;
             line-height: 120%;
@@ -945,7 +1004,7 @@ h3 {
         @media only screen and (max-width: 37.5em) {
           .story_container-text-textbox {
             font-size: 16px; } }
-        @media only screen and (max-width: 51.25em) {
+        @media only screen and (max-width: 45.625em) {
           .story_container-text-textbox {
             max-width: 100%;
             padding-right: 1rem;
@@ -984,9 +1043,15 @@ h3 {
     max-width: 140rem;
     margin-inline: auto;
     display: flex; }
+    @media only screen and (max-width: 73.75em) {
+      .services_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .services_container {
-        flex-direction: column; } }
+        flex-direction: column;
+        display: flex; } }
     .services_container-box {
       width: 100%;
       min-height: 512px;
@@ -1057,7 +1122,8 @@ h3 {
     background: #FFFFFF;
     border-width: 3px 3px 7px 7px;
     border-style: solid;
-    border-color: #000000; }
+    border-color: #000000;
+    overflow: hidden; }
     @media only screen and (max-width: 37.5em) {
       .opening_container {
         flex-direction: column;
@@ -1149,7 +1215,6 @@ h3 {
         background-position-y: 105px; } }
     .opening_container-photo img {
       position: relative;
-      z-index: 10011100;
       object-fit: cover;
       width: 100%;
       height: 100%; }
@@ -1351,6 +1416,14 @@ section {
   grid-gap: 3rem;
   margin-top: 5rem;
   margin-bottom: 9rem; }
+  @media only screen and (max-width: 73.75em) {
+    .gallery-covers {
+      grid-template-columns: 220px 220px 220px;
+      grid-gap: 2rem; } }
+  @media only screen and (max-width: 51.25em) {
+    .gallery-covers {
+      grid-template-columns: 180px 180px 180px;
+      grid-gap: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .gallery-covers {
       grid-template-columns: 90px 90px  90px;
@@ -1362,6 +1435,14 @@ section {
     height: 254px;
     justify-self: center;
     transition: all 200ms ease-in; }
+    @media only screen and (max-width: 73.75em) {
+      .gallery-covers img {
+        width: 220px;
+        height: 220px; } }
+    @media only screen and (max-width: 51.25em) {
+      .gallery-covers img {
+        width: 180px;
+        height: 180px; } }
     @media only screen and (max-width: 37.5em) {
       .gallery-covers img {
         width: 90px;

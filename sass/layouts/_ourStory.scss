@@ -8,7 +8,7 @@
 
     @include respond (phone) {
         padding-top: 0rem;
-         margin-bottom: 0rem;
+        margin-bottom: 0rem;
      }
 
  &_container {
@@ -19,7 +19,7 @@
     padding-left: 3%;
     padding-right: 3%;
 
-    @include respond (SCtablet) {
+    @include respond (tabletPrefix) {
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
@@ -34,7 +34,7 @@
            align-items: center;
          }
 
-        @include respond (SCtablet) {
+        @include respond (tabletPrefix) {
             width: 100%; 
             display: flex;
             justify-content: center;
@@ -98,7 +98,7 @@
         min-height: 500px;
         padding-left: 4rem;
 
-        @include respond (SCtablet) {
+        @include respond (tabletPrefix) {
             width: 100%; 
             min-height: 100%;
             padding-left: 0rem;
@@ -113,7 +113,7 @@
         color: #000000;
         margin-bottom: 2rem;
 
-        @include respond (SCtablet) {
+        @include respond (tabletPrefix) {
             font-size: 24px;
             line-height: 120%;
             text-align: center;
@@ -132,7 +132,7 @@
         
             @include textbox;
 
-            @include respond (SCtablet) {
+            @include respond (tabletPrefix) {
                 max-width: 100%;
                 padding-right: 1rem;
                 padding-left: 1rem;

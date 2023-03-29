@@ -1,7 +1,23 @@
 .infoBox {
+
+    @include respond(custom) {
+        display: none;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+
+
     width: 100%;
     @include sectionPadding;
     margin-bottom: 9rem;
+
+    @include respond (tabletPrefix) {
+        margin-bottom: 4rem;
+
+     }
+
 
 
     &_container {
@@ -49,4 +65,30 @@
     }
 
 
+}
+
+
+.tablet-view-infobox {
+
+    display: none;
+
+    @include respond (custom) {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3.9rem 4rem 3.9rem 4rem;
+
+    h2 {
+        font-size: 32px;
+    }
+    
+    }
+
+    @include respond (phone) {
+        display: none;
+     }
+   
 }

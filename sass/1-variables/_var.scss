@@ -1,4 +1,3 @@
-
 //Fonts
 
 $font-primary:'Sniglet', Sniglet;
@@ -41,6 +40,10 @@ $color-sec-footer:#000000;
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+
+    @if $breakpoint == tabletPrefix {
+      @media only screen and (max-width: 45.625em) { @content };    //730px
+  }
 
     @if $breakpoint == phoneMinwidth {
       @media only screen and (min-width: 37.5em) { @content };    //600px

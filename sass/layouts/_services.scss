@@ -29,8 +29,18 @@
     &_container {
         @include containerPosition;
         display: flex;
+
+        
+        @include respond (custom) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+         }
+
         @include respond (phone) {
             flex-direction: column;
+            display: flex;
+
          }
 
         &-box {

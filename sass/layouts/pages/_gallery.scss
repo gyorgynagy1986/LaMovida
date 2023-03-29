@@ -20,6 +20,16 @@ section {
     margin-top: 5rem;
     margin-bottom: 9rem;
 
+    @include respond (custom) {
+        grid-template-columns:  220px 220px 220px ;
+        grid-gap: 2rem;
+    }
+
+    @include respond (SCtablet) {
+        grid-template-columns:  180px 180px 180px ;
+        grid-gap: 2rem;
+    }
+
     @include respond (phone) {
         grid-template-columns: 90px 90px  90px;
         grid-gap: 2rem;
@@ -30,6 +40,15 @@ section {
         cursor: pointer;
         width: 254px;
         height:254px;
+
+        @include respond (custom) {
+            width: 220px;
+            height: 220px;
+        }
+        @include respond (SCtablet) {
+            width: 180px;
+            height: 180px;
+        }
         @include respond (phone) {
             width: 90px;
             height: 90px;
