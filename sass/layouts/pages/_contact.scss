@@ -5,6 +5,7 @@ main {
 .contact {
     margin-top: 5rem;
     max-width: 100%;
+    
     @include respond (phone) {
         text-align: center;
         margin-top: 3rem;

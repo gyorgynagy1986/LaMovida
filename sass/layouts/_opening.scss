@@ -14,6 +14,11 @@
         border-color: #000000;
         overflow: hidden;
 
+        @include respond(custom) {
+            flex-direction: column;
+            min-height: 675px;
+         }
+
         @include respond(phone) {
            flex-direction: column;
            min-height: 843px;
@@ -24,10 +29,22 @@
         @include containerWidthText;
         padding: 105px 50px 104px 80px;
 
+       
+            @include respond(custom) {
+                margin-top: 3rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 45%;
+                padding: 0; 
+            }
+        
+
         @include respond(phone) {
             width: 100%;
             height: 40%;
             padding: 0;
+            margin-top: 0rem;
 
          }
 
@@ -54,8 +71,9 @@
             color: $color-text-primary;
             margin-bottom: 3rem;
 
-            @include respond(phone) {
+            @include respond(custom) {
                 max-width: 100%;
+                min-width: 40rem;
  
             }
 
@@ -112,6 +130,16 @@
                 @include containerWidthPhoto;
             }        
 
+
+            @include respond(custom) {
+                width: 100%;
+                height: 55%;
+
+                background-image: url(/assets/tablet/map_tablet.png);
+                background-size: cover;
+                background-repeat: no-repeat; 
+            }
+
              @include respond(phone) {
                 width: 100%;
                 height: 60%;
@@ -127,10 +155,26 @@
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                @include respond(phone) {
+                @include respond(custom) {
                     display: none;
                  }
             }
         }
     }
+}
+
+
+.tex-box-container {
+    @include respond(custom) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     @include respond(phone) {
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
+     
 }

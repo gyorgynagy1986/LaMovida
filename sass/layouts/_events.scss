@@ -1,6 +1,14 @@
 .events {
    @include sectionPadding;
 
+    @include respond (custom) {
+        margin-top: 9rem; 
+    }
+    @include respond (phone) {
+        margin-top: 0;
+    }
+
+
     &_container {
         @include containerPositionResized;
         display: flex;
@@ -36,12 +44,15 @@
 
             }
 
+            @include respond(custom) {
+                min-height: 100%;
+            }
+
             
             @include respond(tabletPrefix) {
                 width: 100%; 
                 min-height: 100%;
                 padding-left: 0;    
-
             }
 
             h2 {
@@ -143,8 +154,12 @@
             @include respond (custom) {
               display: flex;
               align-items: center;
-              justify-content: flex-end;
+              justify-content: center;
              }
+
+             @include respond (tablet) {
+                justify-content: flex-end;
+            }
 
            
             @include respond(tabletPrefix) {

@@ -6,6 +6,10 @@
     min-height: 500px;
     overflow: hidden;
 
+    @include respond(custom) {
+        min-height: 100%;
+    }
+
     @include respond (phone) {
         padding-top: 0rem;
         margin-bottom: 0rem;
@@ -30,13 +34,15 @@
         display: flex;
         justify-content: flex-end;
 
+
         @include respond (custom) {
-           align-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
          }
 
         @include respond (tabletPrefix) {
             width: 100%; 
-            display: flex;
             justify-content: center;
          }
 
@@ -97,6 +103,15 @@
         width: 50%; 
         min-height: 500px;
         padding-left: 4rem;
+
+        @include respond(custom) {
+            padding-left: 0;    
+
+        }
+
+        @include respond(custom) {
+            min-height: 100%;
+        }
 
         @include respond (tabletPrefix) {
             width: 100%; 
