@@ -14,7 +14,11 @@
     border-bottom: 1px solid #000000;
     padding-left: 5%;
     padding-right: 5%;
-  
+
+    @include respond (custom) {
+      display: none;
+    }
+
   }
   
   .nav-sticky-prefix {

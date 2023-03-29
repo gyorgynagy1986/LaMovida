@@ -10,6 +10,10 @@
     width: auto;
     height: 63px;
 
+    @include respond (custom) {
+        display: none;
+    }
+
    img {
      width: 142.85px;
      height: 60px;
@@ -29,12 +33,6 @@
   //  margin-bottom: 4rem;
     margin-inline:auto;
 
-    @include respond (phone) {
-        display: none;
-        height: 100%;
-     }
-    
-    
     &_container {
         padding-left: 4%;
         padding-right: 4%;
@@ -44,6 +42,11 @@
         width: 100%;
         max-width: $max-width;
         margin-inline: auto;
+
+        @include respond (custom) {
+            flex-direction: column;
+    
+        }
 
         @include respond (phone) {
            flex-direction: column;
@@ -65,7 +68,6 @@
             display: flex;
             align-items: center;
           
-           
             @include respond (phone) {
                 flex-direction: column;
              
@@ -73,6 +75,7 @@
 
             ul {
                 display: flex;
+
 
                 @include respond (phone) {
                     flex-direction: column;
@@ -106,8 +109,6 @@
             &-social {
                 min-width: 120px;
                 height: 31px;
-
-               
 
                 @include respond (phone) {
                     min-width: auto;
@@ -154,5 +155,23 @@
               margin-bottom: 2rem;
            }
        }
+    }
+}
+
+.tablet-prefix-nav {
+    @include respond (custom) {
+        padding: 4rem;
+    }
+    @include respond (phone) {
+        padding: 0rem;
+    }
+}
+
+.tablet-prefix-container {
+    @include respond (custom) {
+        height: 13rem;
+    }
+    @include respond (phone) {
+        height: auto;
     }
 }

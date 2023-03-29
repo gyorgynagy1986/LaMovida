@@ -7,6 +7,10 @@
     max-width: 1980px;
     margin-inline: auto;
     z-index: -1;
+
+    @include respond (custom) {
+       display: none;
+      }
 }
 
 .svg-container-crab {

@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
-    
     <link rel="preload" href="https://fonts.gstatic.com/s/sniglet/v17/cIf9MaFLtkE3UjaJ9C6hYQ.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/rubikdirt/v1/DtVmJxC7WLEj1uIXEWAdilss6w.woff2" as="font" type="font/woff2" crossorigin>
-
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com">
-    <link href="https://fonts.gstatic.com" crossorigin>
     <link
         rel="preload"
         href="/assets/svg/instagram.svg"
@@ -49,9 +44,8 @@
     <title>La Movida</title>
 </head>
 <body >
- <!-- <div id="preloader"></div> --> 
 <!-- PARALLAX CONTAINER    -->  
-    <figure class=" parallax-container fade-in">
+    <figure class="parallax-container fade-in">
         <div class="svg-container-fish parallax-image-display-none"><img loading="lazy" class="parallax-image-display-none" src="/assets/svg/fish.svg" alt=""></div>
         <div class="svg-container-crab parallax-image-display-none"><img loading="lazy" class="parallax-img-crab parallax-image-display-none" src="/assets/svg/crab.svg" alt=""></div>
         <div class="svg-container-octopus parallax-image-display-none"><img loading="lazy" class="parallax-image-display-none" src="/assets/svg/octopus.svg" alt=""></div>
@@ -75,19 +69,19 @@
                     <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
                     <img class="mobile-menu-close" src="/assets/mobile/hamburger-close.svg" alt="LaMovida hamburger menu">
                 </div>
-                <div class="nav_container mobile-nav_container">
-                     <div class="nav_container_items mobile-nav_container_items ">
-                         <ul class="mobile-nav-ul">
+                <div class="nav-mobile-container-contetnt">
+                     <div class="nav-mobile-container-items">
+                         <ul class="nav-mobile-container-items-ul">
                              <li><a class="active-page" href="/">Home</a></li>
                              <li><a href="/galeria.html">Galéria</a></li>
                              <li><a href="/etlap.html">Étlap</a></li>
                              <li><a href="/kapcsolat.html">Kapcsolat</a></li>
                          </ul>
-                         <div class="nav_container_items-social mobile-nav-social-container">
+                         <div class="mobile-nav-container-social">
                              <a href="https://www.facebook.com/MovidaBudapest"><img  src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
                              <a href="https://www.instagram.com/lamovidabp/"><img  src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
                          </div>
-                         <div class="nav_container-languageSelector mobile-nav-languageSelector">
+                         <div class="nav-mobile-container-languageSelector">
                              <button onclick="window.location.href='/en/home.html'" class="btn-lang">EN</button>
                              <span class="btn-lang btn-lang-active">/</span>
                              <button class="btn-lang btn-lang-active">HU</button>
@@ -97,6 +91,18 @@
                  </div>
             </div>
             <img src="/assets/mobile/logo_mobile.svg" alt="LaMovida logo in mobile view">
+            <div class="mobile-items-container">
+                <div class="mobile-nav-container-social-2">
+                     <a href="https://www.facebook.com/MovidaBudapest"><img  src="/assets/svg/facebook.svg" alt="La Movida facebook oldala"></a>
+                     <a href="https://www.instagram.com/lamovidabp/"><img  src="/assets/svg/instagram.svg" alt="La Movida facebook oldala"></a>
+                 </div>
+                 <div class="nav-mobile-language-container">
+                     <button onclick="window.location.href='/en/home.html'" class="btn-lang">EN</button>
+                     <span class="btn-lang btn-lang-active">/</span>
+                     <button class="btn-lang btn-lang-active">HU</button>
+                 </div>
+                 <button class="btn-big"><a href="#">asztalfoglalás</a></button>
+            </div>
             <img class="mobile-menu-open" src="/assets/mobile/hamburger-open.svg" alt="LaMovida hamburger menu">
          </nav>   
         <!-- MOBILE NAVIGATION END-->   
@@ -106,7 +112,7 @@
                     <img class="nav-logo" src="/assets/svg/logo.svg" alt="La Movida étterem logója">
                 </div>
                 <img class="nav-logo-sticky display-none" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója"> 
-                <div class="nav_container_items">
+                <div class="nav_container_items display-none-tablet">
                     <ul>
                         <li><a class="active-page" href="/">Home</a></li>
                         <li><a href="/galeria.html">Galéria</a></li>
@@ -282,8 +288,8 @@
 <!-- FOOTER -->  
     <footer>
         <div class="footer-container">
-            <nav class="nav display-block mb-0 prefix-width-footer-max-width-141">
-                <div class="nav_container">
+            <nav class="nav tablet-prefix-nav display-block mb-0 prefix-width-footer-max-width-141">
+                <div class="nav_container tablet-prefix-container">
                     <img class="nav-logo" loading="lazy" src="/assets/svg/logo.svg" alt="La Movida étterem logója">
                     <img class="nav-logo-sticky display-none" loading="lazy" src="/assets/svg/logo-sticky.svg" alt="La Movida étterem logója">
                     <div class="nav_container_items">

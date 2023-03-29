@@ -72,7 +72,7 @@ headerObserver.observe(header);
 
 // Parallax < 600 PX
 
-const mediaQuery = window.matchMedia('(min-width: 600px)');
+const mediaQuery = window.matchMedia('(min-width: 1200px)');
 
 mediaQuery.addListener(handleMediaQueryChange);
 

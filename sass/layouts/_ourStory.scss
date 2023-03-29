@@ -19,7 +19,7 @@
     padding-left: 3%;
     padding-right: 3%;
 
-    @include respond (phone) {
+    @include respond (SCtablet) {
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
@@ -30,7 +30,11 @@
         display: flex;
         justify-content: flex-end;
 
-        @include respond (phone) {
+        @include respond (custom) {
+           align-items: center;
+         }
+
+        @include respond (SCtablet) {
             width: 100%; 
             display: flex;
             justify-content: center;
@@ -47,14 +51,37 @@
             justify-content: center;
             align-items: center;
 
-            @include respond (phone) {
+
+            @include respond (custom) {
+                width: 400px;
+                height: 400px;
+                margin-bottom: 3rem;
+             }
+
+             @include respond (tablet) {
+                width: 340px;
+                height: 340px;
+             }
+        
+            @include respond (SCtablet) {
                 width: 280px;
                 height: 280px;
                 margin-bottom: 3rem;
              }
 
              img {
-                @include respond (phone) {
+
+                @include respond (custom) {
+                    width: 350px;
+                    height: 350px;
+                 }
+
+                 @include respond (tablet) {
+                    width: 300px;
+                    height: 300px;
+                 }
+
+                @include respond (SCtablet) {
                     width: 240px;
                     height: 240px;
                  }
@@ -71,7 +98,7 @@
         min-height: 500px;
         padding-left: 4rem;
 
-        @include respond (phone) {
+        @include respond (SCtablet) {
             width: 100%; 
             min-height: 100%;
             padding-left: 0rem;
@@ -86,7 +113,7 @@
         color: #000000;
         margin-bottom: 2rem;
 
-        @include respond (phone) {
+        @include respond (SCtablet) {
             font-size: 24px;
             line-height: 120%;
             text-align: center;
@@ -105,7 +132,7 @@
         
             @include textbox;
 
-            @include respond (phone) {
+            @include respond (SCtablet) {
                 max-width: 100%;
                 padding-right: 1rem;
                 padding-left: 1rem;

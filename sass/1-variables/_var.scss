@@ -54,6 +54,10 @@ $color-sec-footer:#000000;
         @media only screen and (max-width: 64.5em) { @content };    //1032px
     }
 
+    @if $breakpoint == custom {
+      @media only screen and (max-width: 73.75em) { @content };    //1180px
+  }
+
     @if $breakpoint == SCLaptop {
         @media only screen and (max-width: 80em) { @content };     // 1280px
     }
@@ -149,6 +153,12 @@ $color-sec-footer:#000000;
   display: block ;
 }
 
+.display-none-tablet {
+  @include respond (custom) {
+    display: none !important;
+  }
+}
+
 .hidden {
   display: none !important ;
 }
@@ -211,10 +221,14 @@ $color-sec-footer:#000000;
 }
 
 .mobile-center-story {
-  @include respond (phone) {
+  @include respond (SCtablet) {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 0rem;
+  }
+
+  @include respond (phone) {
     margin-bottom: 5rem;
   }
 }

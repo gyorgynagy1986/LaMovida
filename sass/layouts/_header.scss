@@ -3,7 +3,7 @@
     padding-top: 4rem;
     @include sectionPadding;
 
-    @include respond (phone) {
+    @include respond (custom) {
         padding-top: 0rem;
 
      }
@@ -35,12 +35,18 @@
         overflow: hidden;
         z-index: 1;
 
+        @include respond (custom) {
+           min-height:695px;
+           flex-direction: column-reverse;
 
-    @include respond (phone) {
-        min-height:806px;
-        flex-direction: column-reverse;
-        margin-bottom: 4rem;
-     }
+        }
+        
+
+        @include respond (phone) {
+            min-height:806px;
+            flex-direction: column-reverse;
+            margin-bottom: 4rem;
+        }
 
     &-text {
        @include containerWidthText; 
@@ -49,9 +55,15 @@
        height: 100%;
        padding-top: 8.83rem;
        padding-left: 8rem;
+
+       @include respond (custom) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
        
        @include respond (phone) {
-            width: 100%; 
             height: 50%;
             padding-top: 0;
             padding-left: 2.2rem;
@@ -79,6 +91,11 @@
             @include textbox;
             color: $color-text-primary;
             margin-bottom: 3rem;
+
+            @include respond (custom) {
+                padding: 0;
+                width: 100%;
+            }
 
             @include respond (phone) {
                 width: 100%; 
@@ -113,25 +130,27 @@
     &-photo {
         height: 100%;
 
-        
-
-
         @include respond(phoneMinwidth) {
             @include containerWidthPhoto;
         }
 
         .header-photo-desktopn {
-            @include respond (phone) {
+            @include respond (custom) {
                 display: none;
              }
         }
-
-    
-            @include respond (phone) {
+             @include respond (custom) {
+                background-image: url(/assets/tablet/header_tablet.png);
                 display: block;
+                background-position:center;
+                background-size: cover;
+                width: 100%;
+
+             }
+    
+            @include respond (SMphone) {
                 background-image: url(/assets/mobile/header_mobile.png);
                 background-position:bottom;
-                background-size: cover;
 
              }
         
