@@ -48,8 +48,8 @@ const stickyNav = function(entries) {
   const [entry] = entries;
   if(!entry.isIntersecting) {
     nav.classList.add('sticky');
-    navMobile.classList.add('sticky-tablet');
     nav.classList.add('slide-in-top');
+    navMobile.classList.add('sticky-tablet');
     prefixHeight.classList.add('nav-c-10');
     navLogo.classList.add('display-none');
     logoContainer.classList.add('display-none');
