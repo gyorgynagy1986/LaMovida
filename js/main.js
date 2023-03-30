@@ -17,10 +17,14 @@ const prefixHeight = document.querySelector('.nav_container')
 const navLogo = document.querySelector('.nav-logo');
 const navLogoSticky = document.querySelector('.nav-logo-sticky');
 const logoContainer = document.querySelector('.logo-container');
-
 const mobilMenuClose = document.querySelector('.mobile-menu-close');
 const mobilOpen = document.querySelector('.mobile-menu-open');
 
+const navMobile = document.querySelector('.nav-mobile');
+const stickyMmobileLogo = document.querySelector('.sticky-mobile-logo');
+const mobileLogo = document.querySelector('.nav-logo-sticky-mobile');
+
+const navMobileContainerHeader = document.querySelector('.nav-mobile-container-header');
 
 // MOBILE 
 
@@ -44,19 +48,26 @@ const stickyNav = function(entries) {
   const [entry] = entries;
   if(!entry.isIntersecting) {
     nav.classList.add('sticky');
+    navMobile.classList.add('sticky-tablet');
     nav.classList.add('slide-in-top');
     prefixHeight.classList.add('nav-c-10');
     navLogo.classList.add('display-none');
     logoContainer.classList.add('display-none');
     navLogoSticky.classList.remove('display-none');
+    mobileLogo.classList.remove('display-none-mobile')
+    stickyMmobileLogo.classList.add('display-none-mobile')
+    navMobileContainerHeader.style.height = '70px'
   } else {
     nav.classList.remove('sticky');
+    navMobile.classList.remove('sticky-tablet');
     nav.classList.remove('slide-in-top');
     prefixHeight.classList.remove('nav-c-10');
     navLogo.classList.remove('display-none');
     logoContainer.classList.remove('display-none');
     navLogoSticky.classList.add('display-none');
-
+    mobileLogo.classList.add('display-none-mobile')
+    stickyMmobileLogo.classList.remove('display-none-mobile')
+    navMobileContainerHeader.style.height = '100px'
   }
 }
 

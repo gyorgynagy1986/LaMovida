@@ -178,6 +178,11 @@ $color-sec-footer:#000000;
   text-align: center;
 }
 
+
+.cursor-none {
+  pointer-events: none; 
+}
+
 .overflow-hidden {
   overflow-y: hidden !important;
 }

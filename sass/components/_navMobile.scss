@@ -5,6 +5,15 @@
 .nav-mobile {
     display: none;
 
+    .mobile-image-navbar {
+        width: 142px !important;
+        height: 100% !important;
+        
+        @include respond(phone) {
+            width: 95px !important;
+        }
+    }
+
     &-container {
         background-color: rgb(255, 255, 255);
         height: 100vh;
@@ -93,9 +102,6 @@
         }
 
     }
-
-    
-
 
     @media screen and (max-height: '480px') {
         margin-bottom: 2rem;

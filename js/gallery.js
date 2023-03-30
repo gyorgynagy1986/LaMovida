@@ -1,5 +1,4 @@
 
-
 // *****************************GALLERY ***********************************************//
 
 const galleryContainer = document.querySelector('.gallery');
@@ -10,7 +9,6 @@ const index = document.querySelector('.number-of-photo');
 const galleryClose = document.querySelector('.gallery-container-close');
 const ClickEffectL = document.querySelector('.click-effect-left');
 const ClickEffectR = document.querySelector('.click-effect-right');
-
 
 // Some effect on the left, and right button
 

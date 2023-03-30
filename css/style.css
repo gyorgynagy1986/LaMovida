@@ -18,6 +18,9 @@
 .text-align-center {
   text-align: center; }
 
+.cursor-none {
+  pointer-events: none; }
+
 .overflow-hidden {
   overflow-y: hidden !important; }
 
@@ -1636,19 +1639,22 @@ main {
   align-items: center; }
   .contact-container-social:nth-child(1) {
     margin-bottom: 2.6rem; }
-  .contact-container-social img:nth-child(1) {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 1rem; }
-  .contact-container-social img:nth-child(2) {
-    width: 32.55px;
-    height: 32.55px;
-    margin-right: 1rem; }
+  .contact-container-social img {
+    cursor: pointer; }
+    .contact-container-social img:nth-child(1) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem; }
+    .contact-container-social img:nth-child(2) {
+      width: 32.55px;
+      height: 32.55px;
+      margin-right: 1rem; }
 
 .container-contact-photo {
   width: 60%; }
   .container-contact-photo img {
-    object-position: -20%; }
+    object-position: -20%;
+    cursor: pointer; }
   @media only screen and (max-width: 37.5em) {
     .container-contact-photo {
       width: auto;
@@ -1656,6 +1662,14 @@ main {
   @media only screen and (max-width: 37.5em) {
     .container-contact-photo {
       background-position-y: 29px; } }
+
+.nav-logo-sticky-mobile {
+  width: 60px;
+  height: 44px; }
+  @media only screen and (max-width: 37.5em) {
+    .nav-logo-sticky-mobile {
+      width: 40px;
+      height: auto; } }
 
 .btn-big {
   padding: 10px 20px;
@@ -1719,7 +1733,8 @@ main {
   text-align: center; }
 
 .btn-lang-active {
-  color: #999999; }
+  color: #999999;
+  pointer-events: none; }
 
 .active-page {
   background: radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
@@ -1852,6 +1867,12 @@ main {
 
 .nav-mobile {
   display: none; }
+  .nav-mobile .mobile-image-navbar {
+    width: 142px !important;
+    height: 100% !important; }
+    @media only screen and (max-width: 37.5em) {
+      .nav-mobile .mobile-image-navbar {
+        width: 95px !important; } }
   .nav-mobile-container {
     background-color: white;
     height: 100vh;
@@ -2001,6 +2022,28 @@ main {
 
 .display-none {
   display: none; }
+
+.display-none-mobile {
+  display: none !important; }
+
+@media only screen and (max-width: 73.75em) {
+  .sticky-tablet {
+    width: 100%;
+    z-index: 9999999999999999999;
+    background-color: white;
+    position: fixed;
+    height: 10rem;
+    /* padding: 10rem; */
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 1px;
+    top: 0;
+    box-shadow: 0px 15px 25px -19px rgba(150, 150, 150, 0.24);
+    border-bottom: 1px solid #000000; } }
+
+@media only screen and (max-width: 37.5em) {
+  .sticky-tablet {
+    height: 7rem !important; } }
 
 .gallery {
   width: 100%;
