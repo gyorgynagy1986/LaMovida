@@ -54,9 +54,9 @@ const stickyNav = function(entries) {
     navLogo.classList.add('display-none');
     logoContainer.classList.add('display-none');
     navLogoSticky.classList.remove('display-none');
-    mobileLogo.classList.remove('display-none-mobile')
-    stickyMmobileLogo.classList.add('display-none-mobile')
-    navMobileContainerHeader.style.height = '70px'
+    mobileLogo.classList.remove('display-none-mobile');
+    stickyMmobileLogo.classList.add('display-none-mobile');
+    navMobileContainerHeader.classList.add('h-7');
   } else {
     nav.classList.remove('sticky');
     navMobile.classList.remove('sticky-tablet');
@@ -65,9 +65,9 @@ const stickyNav = function(entries) {
     navLogo.classList.remove('display-none');
     logoContainer.classList.remove('display-none');
     navLogoSticky.classList.add('display-none');
-    mobileLogo.classList.add('display-none-mobile')
-    stickyMmobileLogo.classList.remove('display-none-mobile')
-    navMobileContainerHeader.style.height = '100px'
+    mobileLogo.classList.add('display-none-mobile');
+    stickyMmobileLogo.classList.remove('display-none-mobile');
+    navMobileContainerHeader.classList.remove('h-7');
   }
 }
 

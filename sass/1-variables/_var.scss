@@ -200,6 +200,11 @@ $color-sec-footer:#000000;
   width: 100% !important;
 }
 
+.h-7 {
+  @include respond (phone) {
+    height: 7rem !important;
+  }
+}
 .mb-4 {
   @include respond (phone) {
     margin-bottom: 4rem;
