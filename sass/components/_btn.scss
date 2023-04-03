@@ -2,9 +2,9 @@
     padding: 10px 20px;
     width: 155px;
     height: 44px;
-    background:$color-grad-btn-main;
+    background-image:$color-grad-btn-main;
     color: $color-text-btn;
-
+    position: relative;
     font-family: $font-btn;
     font-style: normal;
     font-weight: 400;
@@ -12,7 +12,25 @@
     line-height: 24px;
     text-align: center;
     text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25);
+
+    &::before {
+     content: 'Asztalfoglalás';
+     position: absolute;
+     padding: 10px 20px;
+     left: 0px;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     background-image:$hover-btn-main;
+     opacity: 0;
+     transition: all .1s ease-in-out;
+   
+    }
 }
+
+    .btn-big:hover::before {
+        opacity: 1;
+    }
 
 .btn-sm {
     padding: 10px 20px;
