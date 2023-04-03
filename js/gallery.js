@@ -141,7 +141,7 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
         // User is moving finger to the left
         hasMoved = true;
         if (!hasTriggeredLC) {
-          lc();
+          rc();
           hasTriggeredLC = true;
           hasTriggeredRC = false;
         }
@@ -149,7 +149,7 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
         // User is moving finger to the right
         hasMoved = true;
         if (!hasTriggeredRC) {
-          rc();
+          lc();
           hasTriggeredRC = true;
           hasTriggeredLC = false;
         }
