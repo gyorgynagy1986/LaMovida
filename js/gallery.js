@@ -10,6 +10,10 @@ const galleryClose = document.querySelector('.gallery-container-close');
 const ClickEffectL = document.querySelector('.click-effect-left');
 const ClickEffectR = document.querySelector('.click-effect-right');
 
+
+
+
+
 // Some effect on the left, and right button
 
 ClickEffectL.addEventListener('click', ()=> {
@@ -69,7 +73,7 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
   
   function galerryHandeling(item) {
       
-      let counter = `${item}`;
+      var counter = `${item}`;
 
       bgImage.style.backgroundImage=`url(/assets/gallery/photos/${item}.png)`;
       index.textContent = `${item}`
@@ -118,6 +122,46 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
       }
     })
 
+    let hasMoved = false;
+    let hasTriggeredLC = false;
+    let hasTriggeredRC = false;
+    let startX;
+    
+    bgImage.addEventListener('touchstart', function(e) {
+      startX = e.touches[0].clientX;
+      hasMoved = false;
+      hasTriggeredLC = false;
+      hasTriggeredRC = false;
+    });
+    
+    bgImage.addEventListener('touchmove', function(e) {
+      var distX = e.touches[0].clientX - startX;
+      
+      if (distX < -50) {
+        // User is moving finger to the left
+        hasMoved = true;
+        if (!hasTriggeredLC) {
+          lc();
+          hasTriggeredLC = true;
+          hasTriggeredRC = false;
+        }
+      } else if (distX > 50) {
+        // User is moving finger to the right
+        hasMoved = true;
+        if (!hasTriggeredRC) {
+          rc();
+          hasTriggeredRC = true;
+          hasTriggeredLC = false;
+        }
+      }
+    });
+    
+    bgImage.addEventListener('touchend', function(e) {
+      if (hasMoved) {
+        hasTriggeredLC = false;
+        hasTriggeredRC = false;
+      }
+    });
 }
 
 // *****************************GALLERY ***********************************************//
