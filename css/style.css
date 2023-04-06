@@ -1875,11 +1875,18 @@ main {
       display: none; } }
   .logo-container img {
     width: 142.85px;
-    height: 60px; }
+    height: 60px;
+    cursor: pointer; }
+
+.nav-logo-sticky {
+  cursor: pointer; }
 
 .nav-logo {
   width: 142.85px;
-  height: 60px; }
+  height: 60px;
+  cursor: pointer; }
+  .nav-logo img {
+    cursor: pointer; }
 
 .nav {
   width: 100%;
@@ -2000,8 +2007,20 @@ main {
   width: 100%;
   color: #FFA800; }
 
+.active-hover-none:hover::after {
+  color: #ffaa0000 !important;
+  width: 0% !important; }
+
 .nav-sticky-prefix {
   position: relative; }
+
+.mobile-menu-open {
+  padding: 2rem !important;
+  margin-right: -2rem; }
+
+.mobile-menu-close {
+  padding: 2rem !important;
+  margin-right: -2rem; }
 
 .nav-mobile {
   display: none; }
