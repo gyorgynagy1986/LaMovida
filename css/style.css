@@ -784,7 +784,7 @@ h3 {
           display: none; } }
       @media only screen and (max-width: 73.75em) {
         .header_container-photo {
-          background-image: url(/assets/tablet/header_tablet.png);
+          background-image: url(/assets/webp/tablet/header_tablet.webp);
           display: block;
           background-position: center;
           background-size: cover;
@@ -1230,7 +1230,7 @@ h3 {
       .opening_container-photo {
         width: 100%;
         height: 55%;
-        background-image: url(/assets/tablet/map_tablet.png);
+        background-image: url(/assets/webp/tablet/map_tablet.webp);
         background-size: cover;
         background-repeat: no-repeat; } }
     @media only screen and (max-width: 37.5em) {
