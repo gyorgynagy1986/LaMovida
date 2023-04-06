@@ -791,7 +791,7 @@ h3 {
           width: 100%; } }
       @media only screen and (max-width: 22.5em) {
         .header_container-photo {
-          background-image: url(/assets/mobile/header_mobile.png);
+          background-image: url(/assets/webp/mobile/header_mobile.webp);
           background-position: bottom; } }
       .header_container-photo img {
         width: 100%;
@@ -1237,7 +1237,7 @@ h3 {
       .opening_container-photo {
         width: 100%;
         height: 60%;
-        background-image: url(/assets/mobile/mobile_map.png);
+        background-image: url(/assets/webp/mobile/mobile_map.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 105px; } }
