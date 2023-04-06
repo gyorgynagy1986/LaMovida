@@ -2027,6 +2027,9 @@ main {
 .mobile-menu-open {
   padding: 2rem !important;
   margin-right: -2rem; }
+  .mobile-menu-open img {
+    width: 24px !important;
+    height: 24px !important; }
 
 .mobile-menu-close {
   padding: 2rem !important;
