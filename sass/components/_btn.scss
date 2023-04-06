@@ -36,6 +36,7 @@
     padding: 10px 20px;
     width: 121px;
     height: 44px;
+    position: relative;
     background:$color-grad-btn-main;
     color: $color-text-btn;
     font-family: $font-btn;
@@ -45,13 +46,32 @@
     line-height: 24px;
     text-align: center;
     text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25);
+
+    &::before {
+        content: 'kapcsolat';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image:$hover-btn-main;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+      
+       }
+}
+
+    .btn-sm:hover::before {
+    opacity: 1;
 }
 
 .btn-sm-secoundary {
     padding: 10px 20px;
     width: 126px;
+    position: relative;
     height: 44px;
-    background:$color-grad-btn-sec;
+    background-image:$color-grad-btn-sec;
     font-family: $font-btn;
     color: $color-text-btn;
     font-style: normal;
@@ -60,6 +80,23 @@
     line-height: 24px;
     text-align: center;
     text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25);
+
+    &::before {
+        content: 'Étlapunk';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image:$hover-btn-sm-secoundary;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+       }
+}
+
+.btn-sm-secoundary:hover::before {
+    opacity: 1;
 }
 
 .btn-empty {
@@ -71,8 +108,13 @@
     background: none;
     text-align: center;
     text-decoration-line: underline;
-
+    transition: all .1s ease-in-out;
     color: $color-text-primary;
+
+    &:hover {
+      color: $hover-btn-empty;
+    }
+
 }
 
 .btn-lang {
@@ -87,4 +129,111 @@
 .btn-lang-active {
     color: #999999;
     pointer-events: none; 
+}
+
+
+
+///*******************************************///
+
+
+.btn-big-eng {
+    padding: 10px 20px;
+    width: 155px;
+    height: 44px;
+    background-image:$color-grad-btn-main;
+    color: $color-text-btn;
+    position: relative;
+    font-family: $font-btn;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25);
+
+    &::before {
+     content: 'BOOK A TABLE NOW';
+     position: absolute;
+     padding: 10px 20px;
+     left: 0px;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     background-image:$hover-btn-main;
+     opacity: 0;
+     transition: all .1s ease-in-out;
+   
+    }
+}
+
+    .btn-big-eng:hover::before {
+        opacity: 1;
+    }
+
+.btn-sm-eng {
+    padding: 10px 20px;
+    width: 121px;
+    height: 44px;
+    position: relative;
+    background:$color-grad-btn-main;
+    color: $color-text-btn;
+    font-family: $font-btn;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(255, 0, 0, 0.25);
+
+    &::before {
+        content: 'get in touch';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image:$hover-btn-main;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+      
+       }
+}
+
+    .btn-sm-eng:hover::before {
+    opacity: 1;
+}
+
+.btn-sm-secoundary-eng {
+    padding: 10px 20px;
+    width: 126px;
+    position: relative;
+    height: 44px;
+    background-image:$color-grad-btn-sec;
+    font-family: $font-btn;
+    color: $color-text-btn;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(0, 133, 255, 0.25);
+
+    &::before {
+        content: 'see the menu';
+        position: absolute;
+        padding: 10px 20px;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image:$hover-btn-sm-secoundary;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+       }
+}
+
+
+.btn-sm-secoundary-eng:hover::before {
+    opacity: 1;
 }

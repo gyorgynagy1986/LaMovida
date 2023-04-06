@@ -105,6 +105,7 @@
 
         &-buttons {
             display: flex;
+            align-items: center;
 
             @include respond (phone) {
                 width: 100%;

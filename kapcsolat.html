@@ -3,23 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
         <link rel="preload" href="https://fonts.gstatic.com/s/sniglet/v17/cIf9MaFLtkE3UjaJ9C6hYQ.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/rubikdirt/v1/DtVmJxC7WLEj1uIXEWAdilss6w.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/sniglet/v17/cIf9MaFLtkE3UjaJ9C6hYUsEkIo.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="https://fonts.gstatic.com/s/rubikdirt/v1/DtVmJxC7WLEj1uIXEWAdilss6yLUrwA.woff2" as="font" type="font/woff2" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+       
         <link rel="stylesheet" href="/css/style.css">
        
+        <link
+            rel="preload"
+            href="/assets/webp/map.webp"
+            as="image"
+         />
+        
         <link
             rel="preload"
             href="/assets/svg/instagram.svg"
             as="image"
         />
+
         <link
             rel="preload"
             href="/assets/svg/facebook.svg"
@@ -35,23 +44,101 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/fav//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/fav//favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        
         <title>Kapcsolat — La Movida</title>
     </head>
 <body >
 <!-- PARALLAX CONTAINER-->      
-    <figure class="parallax-container top-300-negative fade-in ">
-        <div class="svg-container-fish parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/fish.svg" alt=""></div>
-        <div class="svg-container-crab parallax-image-display-none"><img class="parallax-img-crab parallax-image-display-none" src="/assets/svg/crab.svg" alt=""></div>
-        <div class="svg-container-octopus parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/octopus.svg" alt=""></div>
-        <div class="svg-container-dec parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/dec.svg" alt=""></div>
-        <div class="svg-container-seaurchinsmall parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/seaurchinsmall.svg" alt=""></div>
-        <div class="svg-container-fishSteak parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/fishSteak.svg" alt=""></div>
-        <div class="svg-container-flower parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/flower.svg" alt=""></div>
-        <div class="svg-container-shell parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/shell.svg" alt=""></div>
-        <div class="svg-container-something parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/something.svg" alt=""></div>
-        <div class="svg-container-smshell parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/smshell.svg" alt=""></div>
-        <div class="svg-container-bgseaurchinsmall parallax-image-display-none"><img class="parallax-image-display-none" src="/assets/svg/bgseaurchinsmall.svg" alt=""></div>
-    </figure>
+<figure class="parallax-container top-300-negative fade-in ">
+    <div class="svg-container-fish parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/fish.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/fish.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-crab parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/crab.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class=" parallax-img-crab parallax-image-display-none" src="/assets/svg/crab.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-octopus parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/octopus.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/octopus.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-dec  parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/dec.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/dec.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-seaurchinsmall  parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/seaurchinsmall.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/seaurchinsmall.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-fishSteak  parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/fishSteak.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/fishSteak.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-flower parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/flower.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/flower.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-shell parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/shell.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/shell.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-something parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/something.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/something.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-smshell parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/smshell.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/smshell.svg" alt="">
+        </picture>
+    </div>
+
+    <div class="svg-container-bgseaurchinsmall parallax-image-display-none">
+        <picture>
+            <source srcset="/assets/svg/bgseaurchinsmall.svg" type="image/webp" media="(min-width: 600px)">
+            <source srcset="/" type="image/webp" media="(max-width: 600px)">  
+            <img class="parallax-image-display-none" src="/assets/svg/bgseaurchinsmall.svg" alt="">
+        </picture>
+    </div>
+
+</figure>
 <!-- PARALLAX CONTAINER END-->    
 <!-- HEADER-->      
     <header class="header">

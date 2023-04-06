@@ -112,6 +112,16 @@ footer {
                 background-clip: text;
                 text-fill-color: transparent;
                 border-bottom: 1px solid #F4720A;
+
+                &:hover {
+                    background: radial-gradient(50.73% 235% at 24.51% 131.52%, #EE0000 0%, #EE0000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+                    border-bottom: 1px solid #EE0000;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+
               }
 
         }
@@ -219,9 +229,15 @@ footer {
                 font-size: 14px;
                 line-height: 17px;
                 text-align: center;
-                color: $color-sec-background;    
+                color: $color-sec-background;   
+                transition: all .1s ease-in-out; 
                 @include respond (phone) {
-                display: none;                }
+                display: none;     
+                 }
+
+                 &:hover {
+                    color:#FF6B00;
+                 }
             }
         }
     }

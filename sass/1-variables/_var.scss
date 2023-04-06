@@ -22,8 +22,11 @@ $color-grad-btn-sec:radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%
 // Hover
 
 $hover-btn-main:radial-gradient(72.58% 318.91% at 7.42% 100%, #EE8100 0%, #EC4700 64.24%, #EC0E00 100%);
+$hover-btn-sm-secoundary: radial-gradient(85.42% 369.23% at 0% 155.68%, #009D8C 0%, #003FE1 53.88%, #3400C9 100%);
+$hover-btn-empty:#000000;
 
-  // Layouts
+
+// Layouts
 
 $max-width:140rem;
 $max-width-resized:140rem;

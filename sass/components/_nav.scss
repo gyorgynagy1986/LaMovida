@@ -87,6 +87,18 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 22px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    background-color: #F4720A;
+                    transition: all 160ms ease-in;
+                }
                 
                 &:not(:last-child) {
                     margin-right: 4rem;
@@ -175,3 +187,10 @@
         height: auto;
     }
 }
+
+
+.nav_container_items ul li:hover::after {
+    width: 100%;
+    color: #FFA800;
+}
+
