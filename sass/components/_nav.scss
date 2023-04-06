@@ -203,6 +203,11 @@
 .nav_container_items ul li:hover::after {
     width: 100%;
     color: #FFA800;
+
+    @include respond (tablet) {
+        width: 0%;
+    }
+
 }
 
 .active-hover-none:hover::after {
