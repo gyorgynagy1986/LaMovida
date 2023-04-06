@@ -564,7 +564,9 @@ h3 {
               margin-right: 0rem;
               margin-bottom: 2.1rem; } }
           .events_container-text .events_social-facebook img {
-            margin-right: 1rem; }
+            margin-right: 1rem;
+            width: 32px;
+            height: 32px; }
           .events_container-text .events_social-facebook button {
             line-height: 29px;
             color: #000000;
@@ -579,7 +581,9 @@ h3 {
             .events_container-text .events_social-instagram {
               margin-bottom: 6rem; } }
           .events_container-text .events_social-instagram img {
-            margin-right: 1rem; }
+            margin-right: 1rem;
+            width: 32px;
+            height: 32px; }
           .events_container-text .events_social-instagram button {
             line-height: 29px;
             color: #000000;
@@ -2027,6 +2031,9 @@ main {
 .mobile-menu-close {
   padding: 2rem !important;
   margin-right: -2rem; }
+  .mobile-menu-close img {
+    width: 24px !important;
+    height: 24px !important; }
 
 .nav-mobile {
   display: none; }
