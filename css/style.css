@@ -677,14 +677,17 @@ h3 {
     overflow: hidden;
     z-index: 1; }
     .header_container .tripdad {
-      width: 85px;
-      height: 85px;
+      width: 150px;
+      height: auto;
       position: absolute;
-      top: 0;
-      right: 4rem; }
+      top: -3px;
+      right: 4rem;
+      cursor: pointer; }
       @media only screen and (max-width: 37.5em) {
         .header_container .tripdad {
-          right: 1rem; } }
+          right: 1rem;
+          width: 102px;
+          height: auto; } }
     @media only screen and (max-width: 73.75em) {
       .header_container {
         min-height: 695px;

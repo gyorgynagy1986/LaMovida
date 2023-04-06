@@ -13,15 +13,17 @@
     position: relative;
 
     .tripdad {
-        width: 85px;
-        height: 85px;
+        width:  150px;
+        height: auto;
         position: absolute;
-        top: 0;
+        top: -3px;
         right: 4rem;
+        cursor: pointer;
 
         @include respond (phone) {
             right: 1rem;
-
+            width:  102px;
+            height: auto;
         }
     }
 
