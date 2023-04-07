@@ -1232,7 +1232,7 @@ h3 {
       min-width: 66rem; } }
     @media only screen and (max-width: 73.75em) {
       .opening_container-photo {
-        width: 100%;
+        width: 101%;
         height: 55%;
         background-image: url(/assets/webp/tablet/map_tablet.webp);
         background-size: cover;
@@ -1550,6 +1550,9 @@ main {
   height: 100%;
   min-height: 618px;
   width: 100%; }
+  @media only screen and (max-width: 73.75em) {
+    .container-contact {
+      height: 0; } }
   @media only screen and (max-width: 37.5em) {
     .container-contact {
       height: 0;
@@ -1579,6 +1582,9 @@ main {
   line-height: 33.18px !important;
   margin-top: 3rem !important;
   margin-bottom: 2.2rem !important; }
+  @media only screen and (max-width: 73.75em) {
+    .contact-h2 {
+      margin: 0 !important; } }
   @media only screen and (max-width: 37.5em) {
     .contact-h2 {
       line-height: 21px !important;
@@ -1595,6 +1601,12 @@ main {
   padding: 0;
   padding-left: 8rem;
   padding-top: 10.2rem; }
+  @media only screen and (max-width: 73.75em) {
+    .container-contact-text {
+      width: auto;
+      padding: 0;
+      height: auto;
+      margin-top: 0 !important; } }
   @media only screen and (max-width: 37.5em) {
     .container-contact-text {
       width: auto;
@@ -1651,6 +1663,11 @@ main {
   .container-contact-photo img {
     object-position: -20%;
     cursor: pointer; }
+  @media only screen and (max-width: 73.75em) {
+    .container-contact-photo {
+      width: 101%;
+      padding: 0;
+      height: 56% !important; } }
   @media only screen and (max-width: 37.5em) {
     .container-contact-photo {
       width: auto;
@@ -1666,6 +1683,34 @@ main {
     .nav-logo-sticky-mobile {
       width: 40px;
       height: auto; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1180px) {
+  .tablet-container {
+    display: flex;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem; } }
+
+@media only screen and (max-width: 73.75em) {
+  .tablet-container {
+    justify-content: space-around; } }
+
+@media only screen and (max-width: 51.25em) {
+  .tablet-container {
+    justify-content: space-between; } }
+
+@media only screen and (max-width: 650px) {
+  .tablet-container {
+    padding-left: 2rem;
+    padding-right: 2rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .tablet-container {
+    padding-top: 3rem; } }
+
+.contact-container-text-box {
+  min-width: 34rem !important; }
 
 .btn-big {
   padding: 10px 20px;
@@ -2068,7 +2113,7 @@ main {
     width: 100%;
     padding-right: 4rem;
     height: 100%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 42.625em) {
       .nav-mobile .mobile-items-container {
         display: none; } }
   .nav-mobile .mobile-nav_container {

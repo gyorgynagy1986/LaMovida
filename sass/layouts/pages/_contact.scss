@@ -17,6 +17,10 @@ main {
     min-height:618px;
     width: 100%;
 
+    @include respond (custom) {
+        height:0;
+    }
+
     @include respond (phone) {
         height:0;
         min-height:860px;
@@ -47,13 +51,17 @@ main {
         }
     }
 
-
 }
 
 .contact-h2 {
     line-height: 33.18px !important;
     margin-top: 3rem !important;
     margin-bottom: 2.2rem !important;
+
+    @include respond (custom) {
+        margin: 0 !important;
+    }
+
     @include respond (phone) {
         line-height: 21px !important;     
         margin-bottom: 2rem !important;
@@ -75,11 +83,20 @@ main {
     padding-left: 8rem;
     padding-top: 10.2rem;
 
+    @include respond (custom) {
+        width: auto;
+        padding: 0;
+        height: auto;
+        margin-top: 0 !important;
+    }
+    
     @include respond (phone) {
         width: auto;
         padding: 0;
         height: auto;
     }
+
+
 }
 
 .contect-mail {
@@ -149,11 +166,20 @@ main {
             object-position: -20%;
             cursor: pointer;
         }
+        
+        @include respond (custom) {
+            width: 101%;
+            padding: 0;
+            height: 56% !important;
+
+        }
+
 
         @include respond (phone) {
             width: auto;
             padding: 0;
         }
+
     @include respond (phone) {
         background-position-y:29px;
     }
@@ -168,4 +194,39 @@ main {
         height: auto;    
     }
     
+}
+.tablet-container {
+
+
+    @media only screen and (min-width: 600px) and (max-width: 1180px) {
+        display: flex;
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 4rem;
+      }
+
+      @include respond (custom) {
+        justify-content: space-around;
+      }
+
+      @include respond (SCtablet) {
+        justify-content: space-between;
+
+      }
+
+      @media only screen and (max-width: 650px) {
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+
+      @include respond (phone) {
+        padding-top: 3rem;
+      }
+}
+
+.contact-container-text-box {
+    min-width: 34rem !important;
 }

@@ -59,7 +59,9 @@
         padding-right: 4rem;
         height: 100%;
 
-        @include respond(phone) {
+    
+
+        @media only screen and (max-width: 42.625em) {
             display: none;
         }
 
