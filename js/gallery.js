@@ -81,7 +81,6 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
       photos =  function (c) {
 
         bgImage.style.backgroundImage=`url(/assets/gallery/photos/${c}.webp)`;
-        bgImage.style.transition = ('.3s all');
     }
     
     numP = function () {
