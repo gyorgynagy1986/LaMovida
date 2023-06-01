@@ -58,3 +58,11 @@ h3 {
 $fontsize-p: 18px;
 $fontsize-p-mobile: 16px;
 
+
+
+
+@media (min-width: 600px) and (max-width: 923px) {
+  .service-flow-prefix {
+    font-size: 32px !important;
+  }
+}

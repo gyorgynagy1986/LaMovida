@@ -476,6 +476,10 @@ h3 {
     h3 {
       font-size: 20px; } }
 
+@media (min-width: 600px) and (max-width: 923px) {
+  .service-flow-prefix {
+    font-size: 32px !important; } }
+
 .events {
   padding-left: 5%;
   padding-right: 5%; }
