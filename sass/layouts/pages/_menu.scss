@@ -20,9 +20,15 @@ main {
         cursor: pointer;
         display: flex;
         justify-content: center;
-
+        margin-top: 5rem;
         &:nth-child(1) {
             margin-bottom: 5rem;
+        }
+
+        @include respond (phone) {
+            margin-top: 3rem;
+
+            
         }
 
     

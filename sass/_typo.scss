@@ -14,12 +14,16 @@ h1 {
   line-height: 57px;
   letter-spacing: 0.02em;
 
+  @media only screen and (max-width: 1220px) {
+    font-size:46px ;
+  }
 
   @include respond (phone) {
     font-size:$fontsize-h1-mobile;
     margin-top: 0;
     line-height: 28px;
  }
+
 
 }
 

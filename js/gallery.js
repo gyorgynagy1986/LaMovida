@@ -75,12 +75,12 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
       
       var counter = `${item}`;
 
-      bgImage.style.backgroundImage=`url(/assets/gallery/photos/${item}.png)`;
+      bgImage.style.backgroundImage=`url(/assets/gallery/photos/${item}.webp)`;
       index.textContent = `${item}`
     
       photos =  function (c) {
 
-        bgImage.style.backgroundImage=`url(/assets/gallery/photos/${c}.png)`;
+        bgImage.style.backgroundImage=`url(/assets/gallery/photos/${c}.webp)`;
         bgImage.style.transition = ('.3s all');
     }
     

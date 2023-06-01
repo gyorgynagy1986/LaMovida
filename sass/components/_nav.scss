@@ -213,3 +213,15 @@
     color: #ffaa0000 !important;
     width: 0% !important;
 } 
+
+.prefix-footer-nav-items {
+
+    @media (min-width: 600px) and (max-width: 740px) {
+        ul {
+            li {
+                font-size: 17px;
+                margin-right: 2rem !important;
+            }
+        }
+      }
+}

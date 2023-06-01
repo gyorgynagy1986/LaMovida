@@ -58,8 +58,8 @@
             max-height: 494px;
             background-color: rgb(255, 255, 255);
             background-position: center;
-            background-image: url(/assets/gallery/photos/1.png);
-            background-size: cover;
+            background-image: url(/assets/gallery/photos/1.webp);
+            background-size: contain;
             background-repeat: no-repeat;
 
             @include respond (phone) {
