@@ -88,7 +88,7 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
     }
     
     const rc = () => {
-      if(counter > 7) {
+      if(counter > 8) {
         counter = 1; 
       } else {
         counter++;
@@ -99,7 +99,7 @@ document.querySelector('.gallery-covers').addEventListener('click', (e) => {
     
     const lc = () => {
       if(counter < 2) {
-        counter = 8; 
+        counter = 9; 
       } else {
         counter--;
       }
