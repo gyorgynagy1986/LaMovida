@@ -1,0 +1,199 @@
+.opening {
+    width: 100%;
+   // @include sectionPadding;
+    margin-bottom: 9rem;
+
+    &_container {
+        width: 100%;
+        height: 454px;
+        display: flex;
+        @include containerPosition;
+        background: #FFFFFF;
+        border-width: 3px 3px 7px 7px;
+        border-style: solid;
+        border-color: #000000;
+        overflow: hidden;
+
+        @include respond(custom) {
+            flex-direction: column;
+            min-height: 675px;
+         }
+
+        @include respond(phone) {
+           flex-direction: column;
+           min-height: 843px;
+        }
+
+
+        &-text {
+        @include containerWidthText;
+        padding: 105px 50px 104px 80px;
+
+       
+            @include respond(custom) {
+                margin-top: 3rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 45%;
+                padding: 0; 
+            }
+        
+
+        @include respond(phone) {
+            width: 100%;
+            height: 40%;
+            padding: 0;
+            margin-top: 0rem;
+
+         }
+
+        h2 {
+            font-family: $font-primary-title;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 57px;
+            letter-spacing: 0.02em;
+            color: #000000;
+            margin-bottom: 2rem;
+
+            @include respond(phone) {
+                text-align: center;
+                margin-top: 2rem;
+    
+             }
+        }
+
+        &-box {
+            width: 100%;
+            max-width: 388px;
+            @include textbox;
+            color: $color-text-primary;
+            margin-bottom: 3rem;
+
+            @include respond(custom) {
+                max-width: 100%;
+                min-width: 40rem;
+ 
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                @include respond (phone) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin-bottom: 2rem;
+
+                    p {
+                        margin-bottom: .5rem;
+                    }
+                }
+
+            }
+
+
+        }
+        &-buttons {
+            display: flex;
+            
+            button {
+                &:not(:last-child) {
+                    margin-right: 5rem;
+
+                    @include respond(phone) {
+                        margin-right: 0rem;
+
+                        &:nth-child(1) {
+                            margin-bottom: 2rem;
+                        }
+            
+                     }
+                }
+            }
+
+            @include respond(phone) {
+                flex-direction: column;
+                align-items: center
+    
+             }
+        }
+    }
+
+        &-photo {
+
+            @include respond(phoneMinwidth) {
+                @include containerWidthPhoto;
+            }        
+
+
+            @include respond(custom) {
+                width: 101%;
+                height: 55%;
+
+                background-image: url(/assets/webp/tablet/map_tablet.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+             @include respond(phone) {
+                width: 100%;
+                height: 60%;
+
+                background-image: url(/assets/webp/mobile/mobile_map.webp);
+                background-size: cover;
+                background-repeat: no-repeat; 
+                background-position-y: 105px;
+            }
+
+            img {
+                position: relative;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                @include respond(custom) {
+                    display: none;
+                 }
+            }
+        }
+    }
+}
+
+
+.tex-box-container {
+    @include respond(custom) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     @include respond(phone) {
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
+     
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .eng-prefix{
+        min-width: 50%;
+    }
+   
+    .eng-prefix-text{
+        padding: 105px 50px 104px 50px;
+    }
+}
+  
+@media only screen and (max-width: 73.75em) {
+    .eng-prefix-text{
+        padding: unset;
+    }
+}
+   

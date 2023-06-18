@@ -1,0 +1,93 @@
+.infoBox {
+
+    @include respond(custom) {
+        display: none;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+
+
+    width: 100%;
+    @include sectionPadding;
+    margin-bottom: 9rem;
+
+    @include respond (tabletPrefix) {
+        margin-bottom: 4rem;
+
+     }
+
+
+
+    &_container {
+        @include containerPosition;
+        height: 100%;
+        min-height: 308px;
+        background: $color-sec-background;
+        border-width: 3px 3px 7px 7px;
+        border-style: solid;
+        border-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 14.8rem 5rem 14.8rem ;
+
+        @include respond (phone) {
+            height: 100%;
+            padding: 2rem ;
+         }
+
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1rem;
+          font-family: $font-primary-title;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: $color-text-title-orange;
+
+          @include respond (phone) {
+            font-size: 20px;
+         }
+
+        }
+
+        &-text {
+            @include textbox;
+            max-width: 678px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+
+}
+
+
+.tablet-view-infobox {
+
+    display: none;
+
+    @include respond (custom) {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        padding: 3.9rem 4rem 3.9rem 4rem;
+
+    h2 {
+        font-size: 32px;
+    }
+    
+    }
+
+    @include respond (phone) {
+        display: none;
+     }
+   
+}

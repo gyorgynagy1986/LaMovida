@@ -1,0 +1,184 @@
+
+.header {
+    padding-top: 4rem;
+    @include sectionPadding;
+
+    @include respond (custom) {
+        padding-top: 0rem;
+
+     }
+     position: relative;
+ &_container {
+
+    position: relative;
+
+    .tripdad {
+        width:  150px;
+        height: auto;
+        position: absolute;
+        top: -3px;
+        right: 4rem;
+        cursor: pointer;
+
+        @include respond (phone) {
+            right: 1rem;
+            width:  102px;
+            height: auto;
+        }
+    }
+
+
+        height: 495px;
+        @include containerPosition;
+        display: flex;
+        background: #FFFFFF;
+        border-width: 3px 3px 7px 7px;
+        border-style: solid;
+        border-color: #000000;
+        overflow: hidden;
+        z-index: 1;
+        margin-bottom: 9rem;
+
+
+        @include respond (custom) {
+           height: 100%;
+           flex-direction: column-reverse;
+
+        }
+        
+
+        @include respond (phone) {
+            min-height:806px;
+            flex-direction: column-reverse;
+            margin-bottom: 4rem;
+        }
+
+    &-text {
+       @include containerWidthText; 
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       padding-top: 8.83rem;
+       padding-left: 8rem;
+
+       @include respond (custom) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+       
+       @include respond (phone) {
+            height: 50%;
+            padding-top: 0;
+            padding-left: 2.2rem;
+            padding-right: 2.2rem;
+        }
+
+       h1 {
+       
+        color: #000000;
+        margin-bottom: 2rem;
+
+            
+        @include respond (phone) {
+            margin-top: 3rem !important;
+            margin-bottom: 1rem;
+            line-height: 28px;
+            text-align: center;
+        }
+
+       }
+
+        &-textbox {
+            width: 388px;
+            font-style: normal;
+            @include textbox;
+            color: $color-text-primary;
+            margin-bottom: 3rem;
+
+            @include respond (custom) {
+                padding: 0;
+                width: 100%;
+            }
+
+            @include respond (phone) {
+                width: 100%; 
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            align-items: center;
+
+            @include respond (phone) {
+                width: 100%;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+             }
+            
+            button {
+                
+                &:not(:last-child) {
+                    margin-right: 5rem;
+                   
+                    @include respond (phone) {
+                        margin-right: 0;
+                        margin-bottom: 3rem;
+                     }
+                }
+            }
+        }
+    }
+
+    &-photo {
+        height: 100%;
+
+        @include respond(phoneMinwidth) {
+            @include containerWidthPhoto;
+        }
+
+        .header-photo-desktopn {
+            @include respond (custom) {
+                display: none;
+             }
+        }
+             @include respond (custom) {
+                background-image: url(/assets/webp/tablet/header_tablet.webp);
+                display: block;
+                background-position:bottom;
+                background-size: cover;
+                width: 101%;
+                height: 481px;
+                background-position-x: -5px;
+
+             }
+    
+            @include respond (phone) {
+                background-position:center;
+                background-image: url(/assets/webp/mobile/header_mobile.webp);
+                background-position:bottom;
+             }
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include respond (phone) {
+                object-fit:cover;
+             }
+        }
+
+        @include respond (phone) {
+            width: 100%; 
+         }
+
+    }
+
+}
+
+}
+

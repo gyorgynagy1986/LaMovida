@@ -1,0 +1,69 @@
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: red;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;
+}
+
+
+*::-webkit-scrollbar {
+    width: .8em;
+    background-color: #fde4cf ;
+  } 
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #f4730ab2 ;
+    height: 300px;
+    border-radius: 50px;
+  }
+
+*:focus, *:active {
+    outline: none;
+    box-shadow: none;
+    /* any other relevant styles */
+}
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16xp = 62.5% = 1 rem
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    @include respond (phone) {
+        scroll-behavior: auto;
+        overflow-x: hidden;
+     }
+}
+
+body {
+    font-family: $font-primary;
+    position: relative;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+button {
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background: unset;
+  }
+  
+

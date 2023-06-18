@@ -1,0 +1,38 @@
+// Vars
+
+@import "1-variables/var";
+
+// Abstract
+
+@import "2-abstract/parallax";
+@import "2-abstract/effects";
+
+// Base
+
+@import "base";
+@import "typo";
+
+// Layouts
+
+@import "layouts/events";
+@import "layouts/header";
+@import "layouts/infoBox";
+@import "layouts/ourStory";
+@import "layouts/services";
+@import "layouts/opening";
+@import "layouts/footer";
+
+// Pages
+@import "layouts/pages/gallery";
+@import "layouts/pages/menu";
+@import "layouts/pages/contact";
+
+// Components
+
+@import "components/btn";
+@import "components/nav";
+@import "components/navMobile";
+@import "components/stickynav";
+@import "components/gallery";
+
+

@@ -1,0 +1,68 @@
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&family=Sniglet:wght@400;800&display=swap');
+
+
+//h1
+
+$fontsize-h1:48px;
+$fontsize-h1-mobile:24px;
+
+h1 {
+  font-size:$fontsize-h1;
+  font-family: $font-primary-title;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0.02em;
+
+  @media only screen and (max-width: 1220px) {
+    font-size:46px ;
+  }
+
+  @include respond (phone) {
+    font-size:$fontsize-h1-mobile;
+    margin-top: 0;
+    line-height: 28px;
+ }
+
+
+}
+
+//H2
+
+$fontsize-h2:42px;
+$fontsize-h2-mobile:24px;
+
+h2 {
+    font-size:$fontsize-h2 ;
+    @include respond (phone) {
+      font-size:$fontsize-h2-mobile;
+    }
+
+}
+
+// H3
+
+$fontsize-h3:24px;
+$fontsize-h3-mobile:20px;
+
+h3 {
+    font-size:$fontsize-h3 ;
+    @include respond (phone) {
+      font-size:$fontsize-h3-mobile;
+    }
+
+}
+
+// P 
+
+$fontsize-p: 18px;
+$fontsize-p-mobile: 16px;
+
+
+
+
+@media (min-width: 600px) and (max-width: 923px) {
+  .service-flow-prefix {
+    font-size: 32px !important;
+  }
+}

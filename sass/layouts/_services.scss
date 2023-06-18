@@ -1,0 +1,523 @@
+
+.services {
+    padding-top: 4rem;
+    @include sectionPadding;
+
+    @include respond (custom) {
+        padding-top: 0rem;
+
+     }
+     position: relative;
+ &_container {
+
+    position: relative;
+
+    .tripdad {
+        width:  150px;
+        height: auto;
+        position: absolute;
+        top: -3px;
+        right: 4rem;
+        cursor: pointer;
+
+        @include respond (phone) {
+            right: 1rem;
+            width:  102px;
+            height: auto;
+        }
+    }
+
+
+        height: 685px;
+        @include containerPosition;
+        display: flex;
+        background: #FFFFFF;
+        border-width: 3px 3px 7px 7px;
+        border-style: solid;
+        border-color: #000000;
+        overflow: hidden;
+        z-index: 1;
+        margin-bottom: 9rem;
+
+
+        @include respond (custom) {
+           height: 100%;
+           flex-direction: column-reverse;
+
+        }
+        
+
+        @include respond (phone) {
+            min-height:100%;
+            flex-direction: column-reverse;
+            margin-bottom: 4rem;
+        }
+
+    &-text {
+       @include containerWidthText; 
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       padding-top: 8.83rem;
+       padding-left: 8rem;
+
+       @include respond (custom) {
+        width: 100%;
+        padding: 3rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+       
+       @include respond (phone) {
+            height: 50%;
+            padding-top: 0;
+            padding-left: 2.2rem;
+            padding-right: 2.2rem;
+        }
+
+       h1 {
+       
+        color: #000000;
+        margin-bottom: 2rem;
+
+            
+        @include respond (phone) {
+            margin-top: 3rem !important;
+            margin-bottom: 1rem;
+            line-height: 28px;
+            text-align: center;
+        }
+
+       }
+
+        &-textbox {
+            width: 388px;
+            font-style: normal;
+            @include textbox;
+            color: $color-text-primary;
+            margin-bottom: 3rem;
+
+            @include respond (custom) {
+                padding: 0;
+                width: 100%;
+            }
+
+            @include respond (phone) {
+                width: 100%; 
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            align-items: center;
+
+            @include respond (phone) {
+                width: 100%;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+             }
+            
+            button {
+                
+                &:not(:last-child) {
+                    margin-right: 5rem;
+                   
+                    @include respond (phone) {
+                        margin-right: 0;
+                        margin-bottom: 3rem;
+                     }
+                }
+            }
+        }
+    }
+
+    &-photo {
+        height: 100%;
+        .header-photo-desktopn {
+            
+            @include respond (custom) {
+                display: block;
+            }
+        }
+        
+            background-image: url(/assets/webp/services.webp);
+            width: 60%;
+            background-size: cover;
+            background-position:left;
+            background-position-x:100px;
+            background-repeat: no-repeat;
+
+
+
+             @include respond (custom) {
+                background-image: url(/assets/webp/tablet/services.webp);
+                display: block;
+                background-position:bottom;
+                background-size: cover;
+                width: 101%;
+                height: 481px;
+                background-position-x: -5px;
+
+             }
+    
+            @include respond (phone) {
+                background-position:center;
+                background-image: url(/assets/webp/mobile/services.webp);
+                background-position:bottom;
+                height: 300px;
+             }
+        
+
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+            @include respond (phone) {
+                object-fit:cover;
+             }
+        }
+
+        @include respond (phone) {
+            width: 100%; 
+         }
+
+    }
+
+}
+
+}
+
+
+
+
+//.services {
+//    padding-top: 4rem;
+//    @include sectionPadding;
+//
+//    @include respond (custom) {
+//        padding-top: 0rem;
+//
+//     }
+//     position: relative;
+// &_container {
+//    @include containerPosition;
+//
+//    position: relative;
+//
+//    .tripdad {
+//        width:  150px;
+//        height: auto;
+//        position: absolute;
+//        top: -3px;
+//        right: 4rem;
+//        cursor: pointer;
+//
+//        @include respond (phone) {
+//            right: 1rem;
+//            width:  102px;
+//            height: auto;
+//        }
+//    }
+//
+//      //  height: 100%;
+//         height: 658px;
+//       // @include containerPosition;
+//        display: flex;
+//        background: #FFFFFF;
+//        border-width: 3px 3px 7px 7px;
+//        border-style: solid;
+//        border-color: #000000;
+//        overflow: hidden;
+//        z-index: 1;
+//        margin-bottom: 2rem;
+//
+//        @include respond (custom) {
+//            height: auto;
+//           flex-direction: column-reverse;
+//
+//        }
+//        
+//
+//        @include respond (phone) {
+//            height: auto;
+//            flex-direction: column-reverse;
+//            margin-bottom: 4rem;
+//        }
+//
+//    &-text {
+//       @include containerWidthText; 
+//       display: flex;
+//       flex-direction: column;
+//       height: 100%;
+//       padding-top: 8.83rem;
+//       padding-left: 8rem;
+//       padding-bottom: 8rem;
+//
+//       @include respond (custom) {
+//        width: 100%;
+//        padding: 3rem;
+//        padding-left: 2.5rem;
+//        padding-right: 2.5rem;
+//    }
+//       
+//       @include respond (phone) {
+//            height: 50%;
+//            padding-top: 0;
+//            padding-left: 2.2rem;
+//            padding-right: 2.2rem;
+//        }
+//
+//       h1 {
+//       
+//        color: #000000;
+//        margin-bottom: 4rem;
+//
+//            
+//        @include respond (phone) {
+//            margin-top: 3rem !important;
+//            margin-bottom: 1rem;
+//            line-height: 28px;
+//            text-align: center;
+//        }
+//
+//       }
+//
+//        &-textbox {
+//            width: 388px;
+//            font-style: normal;
+//            @include textbox;
+//            color: $color-text-primary;
+//            margin-bottom: 3rem;
+//
+//            @include respond (custom) {
+//                padding: 0;
+//                width: 100%;
+//            }
+//
+//            @include respond (phone) {
+//                width: 100%; 
+//                margin-bottom: 2rem;
+//            }
+//        }
+//
+//        &-buttons {
+//            display: flex;
+//            align-items: center;
+//
+//            @include respond (phone) {
+//                width: 100%;
+//               flex-direction: column;
+//               justify-content: center;
+//               align-items: center;
+//             }
+//            
+//            button {
+//                
+//                &:not(:last-child) {
+//                    margin-right: 5rem;
+//                   
+//                    @include respond (phone) {
+//                        margin-right: 0;
+//                        margin-bottom: 3rem;
+//                     }
+//                }
+//            }
+//        }
+//    }
+//
+//    &-photo {
+//        height: 100%;
+//
+//        @include respond(phoneMinwidth) {
+//            @include containerWidthPhoto;
+//        }
+//
+//        .header-photo-desktopn {
+//            @include respond (custom) {
+//                display: auto;
+//             }
+//        }
+//             @include respond (custom) {
+//                background-image: url(/assets/webp/tablet/header_tablet.webp);
+//                display: block;
+//                background-position:center;
+//                background-size: cover;
+//                width: 100%;
+//
+//             }
+//    
+//            @include respond (SMphone) {
+//                background-image: url(/assets/webp/mobile/header_mobile.webp);
+//                background-position:bottom;
+//
+//             }
+//        
+//
+//        img {
+//            width: 100%;
+//            height: 100%;
+//            object-fit: cover;
+//            @include respond (phone) {
+//                object-fit:cover;
+//             }
+//        }
+//
+//        @include respond (phone) {
+//            width: 100%; 
+//            height: 70%
+//         }
+//
+//    }
+//
+//}
+//
+//}
+//
+.services_ul  {
+   margin-bottom: 3rem;
+   padding-left: 2rem;
+
+   @include respond (phone) {
+   margin: 0 auto;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+ }
+
+}
+.services_li {
+
+    @include respond (phone) {
+        font-size: 20px;
+ 
+     }
+
+    list-style: disc;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+    color: #666666;
+}
+
+
+
+//.services {
+//    width: 100%;
+//    @include sectionPadding;
+//    margin-bottom: 4.3rem;
+//
+//    &-title {
+//        @include containerPosition;
+//        margin-bottom: 3.3rem;
+//        
+//        @include respond (phone) {
+//            margin-bottom: 2.3rem;
+//
+//         }
+//
+//        h2 {
+//            font-family: $font-primary-title;
+//            font-weight: 400;
+//            line-height: 120%;
+//            letter-spacing: 0.02em;
+//            color: $color-text-title-black;
+//
+//            @include respond (phone) {
+//                font-size: 24px;
+//             }
+//        }
+//
+//    }
+//
+//    &_container {
+//        @include containerPosition;
+//        display: flex;
+//
+//        
+//        @include respond (custom) {
+//            display: grid;
+//            grid-template-columns: 1fr 1fr;
+//            gap: 3rem;
+//         }
+//
+//        @include respond (phone) {
+//            flex-direction: column;
+//            display: flex;
+//
+//         }
+//
+//        &-box {
+//            width: 100%;
+//            min-height: 512px;
+//            display: flex;
+//            flex-direction: column;
+//            background-color: white;
+//            border-width: 3px 3px 7px 7px;
+//            border-style: solid;
+//            border-color: #000000;
+//
+//            &:not(:nth-child(3)) {
+//                margin-right: 4.3rem;
+//                
+//                @include respond (SCLaptop) {
+//                    margin-right: 2%;
+//                }
+//
+//                @include respond (phone) {
+//                    margin-right: 0;
+//                    margin-bottom: 1.3rem;
+//                 }
+//                
+//            }
+//
+//            &-header {
+//                width: 100%;
+//             //   min-width: 30rem;
+//
+//                img {
+//                    width: 100%;
+//                    height: 100%;
+//                }
+//            }
+//
+//            &-body {
+//                width: 100%;
+//                padding-left: 3.3rem;
+//                padding-right: 3.3rem;
+//                padding-bottom: 4rem;
+//                
+//                h3 {
+//                    margin-top: 2rem;
+//                    font-family: $font-primary-title;
+//                    font-weight: 400;
+//                    line-height: 150%;
+//                    letter-spacing: 0.02em;
+//                    color: $color-text-title-black;
+//                   
+//                    @include respond (phone) {
+//                        font-size: 20px;
+//                     }
+//                }
+//
+//                p {
+//                    margin-top: 2rem;
+//                    font-style: normal;
+//                    @include textbox;
+//                    color: $color-text-primary;
+//                }
+//            }
+//
+//        }        
+//
+//
+//    }
+//}
+
+
+
+
+

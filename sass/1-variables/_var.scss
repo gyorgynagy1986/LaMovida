@@ -1,0 +1,277 @@
+//Fonts
+
+$font-primary:'Sniglet', Sniglet;
+$font-primary-title:'Rubik Dirt', Rubik Dirt;
+$font-btn:'Bebas Neue', Bebas Neue;
+
+// COLORS
+
+  // Text
+
+$color-text-title-black:#000000;
+$color-text-nav:#000000;
+$color-text-title-orange:#FF6B00;
+$color-text-primary:#666666;
+$color-text-btn:#FFEEEE;
+
+  // Graditent
+
+$color-grad-btn-main:radial-gradient(50.73% 235% at 24.51% 131.52%, #FFA800 0%, #F4720A 100%);
+$color-grad-btn-sec:radial-gradient(66.67% 318.28% at 18.75% 190.82%, #00E4CC 0%, #0083E1 100%);
+
+// Hover
+
+$hover-btn-main:radial-gradient(72.58% 318.91% at 7.42% 100%, #EE8100 0%, #EC4700 64.24%, #EC0E00 100%);
+$hover-btn-sm-secoundary: radial-gradient(85.42% 369.23% at 0% 155.68%, #009D8C 0%, #003FE1 53.88%, #3400C9 100%);
+$hover-btn-empty:#000000;
+
+
+// Layouts
+
+$max-width:140rem;
+$max-width-resized:140rem;
+
+
+$color-sec-background:#FFF4E5;
+$color-footer:#FFF4E5;;
+$color-sec-footer:#000000;
+
+// BREAKPOINTS
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == SMphone {
+        @media only screen and (max-width: 22.5em) { @content };    //360px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tabletPrefix {
+      @media only screen and (max-width: 45.625em) { @content };    //730px
+  }
+
+    @if $breakpoint == phoneMinwidth {
+      @media only screen and (min-width: 37.5em) { @content };    //600px
+  }
+
+    @if $breakpoint == SCtablet {
+        @media only screen and (max-width: 51.25em ) { @content };    //820px
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 64.5em) { @content };    //1032px
+    }
+
+    @if $breakpoint == custom {
+      @media only screen and (max-width: 73.75em) { @content };    //1180px
+  }
+
+    @if $breakpoint == SCLaptop {
+        @media only screen and (max-width: 80em) { @content };     // 1280px
+    }
+
+    @if $breakpoint == Laptop {
+      @media only screen and (max-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == LaptopMinwidth {
+      @media only screen and (min-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == SC1600 {
+      @media only screen and (max-width: 100em) { @content };       // 1440px
+  }
+}
+
+//#preloader {
+//  height: 100vh;
+//  width: 100%;
+//  background: rgb(255, 255, 255);
+//  position: fixed;
+//  z-index: 1000000000000;
+//}
+
+
+// responsize logics
+
+
+@mixin containerWidthText { 
+  width: 40%;
+  @include respond(Laptop) {
+    width: 43%;
+  }
+  @include respond(tablet) {
+    width: 40%;
+  }
+}
+
+@mixin containerWidthPhoto { 
+  width: 60%;
+  @include respond(Laptop) {
+    width: 62%;
+  }
+  @include respond(SCLaptop) {
+    width:60%;
+    min-width: 75rem;
+  }
+}
+
+
+// MIXINS 
+
+@mixin textbox {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-p;
+  line-height: 150%;
+  color: $color-text-primary;
+
+  @include respond (phone) {
+    font-size: $fontsize-p-mobile;
+
+  }
+}
+
+@mixin containerPosition {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+}
+
+@mixin containerPositionResized {
+  width: 100%;
+  max-width: $max-width-resized;
+  margin-inline: auto;
+}
+
+
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+  
+  @include respond (phone) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+}
+
+@mixin sectionPadding  {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    @include respond (phone) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+}
+
+//  Helpers
+
+section {
+  padding:0 !important;
+}
+
+.active {
+  display: block ;
+}
+
+.display-none-tablet {
+  @include respond (custom) {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important ;
+}
+
+.top-300-negative {
+  top:-300px
+}
+
+.top-100-negative {
+  top:-100px
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+
+.cursor-none {
+  pointer-events: none; 
+}
+
+.overflow-hidden {
+  overflow-y: hidden !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.mgt-1 {
+  margin-top: 1rem;
+}
+.text-align-right {
+  text-align: right;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-7 {
+  @include respond (phone) {
+    height: 7rem !important;
+  }
+}
+.mb-4 {
+  @include respond (phone) {
+    margin-bottom: 4rem;
+  }
+}
+
+.display-block {
+  display: block !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.margin-prefix-nav-bottom {
+  margin-right: -38.47px !important;
+}
+
+.prefix-width-footer-max-width-141 {
+  max-width: 141rem !important;
+}
+
+.parallax-image-display-none {
+  @include respond (phone) {
+    display: none;
+  }
+}
+
+.mobile-center-story {
+ 
+  @include respond (custom) {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0rem;
+  }
+
+  @include respond (tabletPrefix) {
+    margin-bottom: 5rem;
+    justify-content: center;
+  }
+}
+
+
+.display-only-mobile {
+  display: none;
+  @include respond (phone) {
+    display: block;
+  }
+}
